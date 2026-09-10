@@ -1,0 +1,205 @@
+name: Parcel Case Control Tower
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7,11,15,19 * * *'
+      timezone: 'Europe/Warsaw'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: parcel-case-control-tower
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out public snapshot repository
+        uses: actions/checkout@v4
+
+      - name: Fetch, sanitize and compare Control Tower report
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+
+          const ENDPOINT = 'https://shipsgo-bridge.vercel.app/api/report';
+          const SENSITIVE_KEY = /(token|secret|api[_-]?key|authorization|password|cookie|credential)/i;
+
+          function sanitize(value) {
+            if (Array.isArray(value)) return value.map(sanitize);
+            if (!value || typeof value !== 'object') return value;
+            return Object.fromEntries(
+              Object.entries(value)
+                .filter(([key]) => !SENSITIVE_KEY.test(key))
+                .map(([key, child]) => [key, sanitize(child)])
+            );
+          }
+
+          async function fetchReport() {
+            let lastError;
+            for (let attempt = 1; attempt <= 3; attempt++) {
+              try {
+                const response = await fetch(ENDPOINT, {
+                  headers: { Accept: 'application/json', 'User-Agent': 'Parcel-Case-Control-Tower-GitHub-Action' },
+                  signal: AbortSignal.timeout(90000)
+                });
+                if (!response.ok) throw new Error(`Control Tower returned HTTP ${response.status}`);
+                return await response.json();
+              } catch (error) {
+                lastError = error;
+                if (attempt < 3) await new Promise(resolve => setTimeout(resolve, attempt * 5000));
+              }
+            }
+            throw lastError;
+          }
+
+          function readPrevious() {
+            if (!fs.existsSync('latest-report.json')) return null;
+            try { return JSON.parse(fs.readFileSync('latest-report.json', 'utf8')); }
+            catch { return null; }
+          }
+
+          function shipments(report) {
+            return [...(report.priority_inpost || []), ...(report.other_exceptions || [])];
+          }
+
+          function shipmentKey(shipment) {
+            return shipment.container || shipment.reference;
+          }
+
+          function get(object, path) {
+            return path.split('.').reduce((value, key) => value?.[key], object) ?? null;
+          }
+
+          function same(a, b) {
+            return JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
+          }
+
+          const trackedFields = [
+            'risk', 'status', 'container_status',
+            'etd', 'etd_initial', 'atd',
+            'eta', 'eta_carrier', 'eta_initial', 'ata',
+            'vessel', 'voyage', 'transshipments',
+            'metrics.etd_slip_days', 'metrics.eta_slip_days',
+            'metrics.predicted_vs_carrier_days',
+            'last_movement', 'next_movement', 'recommended_action'
+          ];
+
+          function compare(previous, current) {
+            if (!previous) return { baseline: true, changes: [] };
+
+            const before = new Map(shipments(previous).map(item => [shipmentKey(item), item]));
+            const after = new Map(shipments(current).map(item => [shipmentKey(item), item]));
+            const changes = [];
+
+            for (const [key, item] of after) {
+              if (!before.has(key)) {
+                changes.push({ type: 'NEW_SHIPMENT', container: item.container, reference: item.reference, risk: item.risk });
+                continue;
+              }
+
+              const old = before.get(key);
+              const fields = trackedFields
+                .filter(field => !same(get(old, field), get(item, field)))
+                .map(field => ({ field, before: get(old, field), after: get(item, field) }));
+
+              if (fields.length) {
+                changes.push({
+                  type: 'CHANGED',
+                  container: item.container,
+                  reference: item.reference,
+                  risk: item.risk,
+                  fields
+                });
+              }
+            }
+
+            for (const [key, item] of before) {
+              if (!after.has(key)) {
+                changes.push({ type: 'REMOVED_SHIPMENT', container: item.container, reference: item.reference, previous_risk: item.risk });
+              }
+            }
+
+            return { baseline: false, changes };
+          }
+
+          const raw = await fetchReport();
+          const now = new Date().toISOString();
+          if (!Array.isArray(raw.priority_inpost) || !Array.isArray(raw.other_exceptions)) {
+            throw new Error('Invalid Control Tower v2.6 report structure');
+          }
+
+          const previous = readPrevious();
+          const report = {
+            ...sanitize(raw),
+            version: '2.6',
+            generated_at: raw.generated_at || raw.fetched_at || now,
+            published_at: now,
+            source: 'Parcel Case Control Tower'
+          };
+          const comparison = compare(previous, report);
+          const allShipments = shipments(report);
+
+          const analysis = {
+            version: '1.0',
+            source: 'Parcel Case Control Tower comparison',
+            analyzed_at: now,
+            current_generated_at: report.generated_at,
+            previous_generated_at: previous?.generated_at || previous?.fetched_at || null,
+            baseline: comparison.baseline,
+            change_count: comparison.changes.length,
+            summary: report.summary,
+            red_alerts: allShipments
+              .filter(item => item.risk === 'RED')
+              .map(item => ({
+                reference: item.reference,
+                container: item.container,
+                status: item.status,
+                eta: item.eta,
+                risk: item.risk,
+                recommended_action: item.recommended_action
+              })),
+            changes: comparison.changes
+          };
+
+          const secretPaths = [];
+          function scan(value, path = []) {
+            if (Array.isArray(value)) return value.forEach((child, index) => scan(child, [...path, index]));
+            if (!value || typeof value !== 'object') return;
+            for (const [key, child] of Object.entries(value)) {
+              if (SENSITIVE_KEY.test(key)) secretPaths.push([...path, key].join('.'));
+              scan(child, [...path, key]);
+            }
+          }
+          scan(report);
+          if (secretPaths.length) throw new Error('Sensitive keys remain after sanitization');
+
+          fs.writeFileSync('latest-report.json', `${JSON.stringify(report, null, 2)}\n`);
+          fs.writeFileSync('latest-analysis.json', `${JSON.stringify(analysis, null, 2)}\n`);
+
+          console.log(`Fetched ${allShipments.length} report rows; detected ${comparison.changes.length} meaningful changes.`);
+          NODE
+
+      - name: Validate generated JSON
+        run: |
+          jq empty latest-report.json
+          jq empty latest-analysis.json
+          jq -e '.version == "2.6" and (.priority_inpost | type == "array")' latest-report.json >/dev/null
+
+      - name: Commit the latest snapshot
+        run: |
+          git config user.name "parcel-case-control-tower[bot]"
+          git config user.email "parcel-case-control-tower[bot]@users.noreply.github.com"
+          git add latest-report.json latest-analysis.json
+          if git diff --cached --quiet; then
+            echo "No snapshot changes to commit."
+            exit 0
+          fi
+          git commit -m "Update Control Tower snapshot $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push
