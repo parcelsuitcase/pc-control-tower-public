@@ -1,0 +1,1434 @@
+{
+  "source": "Parcel Case Control Tower",
+  "bridge_version": "2.6.0",
+  "fetched_at": "2026-09-10T20:38:50.986Z",
+  "previous_snapshot_at": "2026-09-10T20:35:35.181Z",
+  "detail_errors": 0,
+  "summary": {
+    "inpost_total": 11,
+    "inpost_red": 7,
+    "inpost_orange": 1,
+    "other_exceptions": 11,
+    "detected_changes": 0
+  },
+  "priority_inpost": [
+    {
+      "reference": "#17 InPost",
+      "container": "CMAU9857534",
+      "carrier": "CMA CGM",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-08T12:00:00+08:00",
+      "etd_initial": "2026-08-31T12:00:00+08:00",
+      "atd": "2026-09-08T12:00:00+08:00",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "eta_carrier": "2026-10-27T12:00:00+01:00",
+      "eta_initial": "2026-10-27T12:00:00+01:00",
+      "ata": null,
+      "vessel": "CMA CGM LOUIS BLERIOT",
+      "voyage": "0FLMVW1MA",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "CMA CGM LOUIS BLERIOT",
+          "imo": 9776432
+        },
+        "voyage": "0FLMVW1MA",
+        "timestamp": "2026-09-08T12:00:00+08:00",
+        "container_number": "CMAU9857534"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "CMA CGM LOUIS BLERIOT",
+          "imo": 9776432
+        },
+        "voyage": "0FLMVW1MA",
+        "timestamp": "2026-10-27T12:00:00+01:00",
+        "container_number": "CMAU9857534"
+      },
+      "metrics": {
+        "etd_slip_days": 8,
+        "eta_slip_days": 1,
+        "predicted_vs_carrier_days": 1
+      },
+      "risk": "RED",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#09 InPost",
+      "container": "UETU6022230",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-05T12:00:00+08:00",
+      "etd_initial": "2026-09-01T12:00:00+08:00",
+      "atd": "2026-09-05T12:00:00+08:00",
+      "eta": "2026-10-23T12:00:00+02:00",
+      "eta_carrier": "2026-10-21T12:00:00+02:00",
+      "eta_initial": "2026-10-20T12:00:00+02:00",
+      "ata": null,
+      "vessel": "MSC KALINA",
+      "voyage": "GA633W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "MSC KALINA",
+          "imo": 9399026
+        },
+        "voyage": "GA633W",
+        "timestamp": "2026-09-05T12:00:00+08:00",
+        "container_number": "UETU6022230"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "MSC KALINA",
+          "imo": 9399026
+        },
+        "voyage": "GA633W",
+        "timestamp": "2026-10-21T12:00:00+02:00",
+        "container_number": "UETU6022230"
+      },
+      "metrics": {
+        "etd_slip_days": 4,
+        "eta_slip_days": 3,
+        "predicted_vs_carrier_days": 2
+      },
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
+      "reference": "#06 InPost",
+      "container": "MRSU8730547",
+      "carrier": "MAERSK LINE",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-05T12:00:00+08:00",
+      "etd_initial": "2026-08-30T12:00:00+08:00",
+      "atd": "2026-09-05T12:00:00+08:00",
+      "eta": "2026-10-23T12:00:00+02:00",
+      "eta_carrier": "2026-10-22T12:00:00+02:00",
+      "eta_initial": "2026-10-22T12:00:00+02:00",
+      "ata": null,
+      "vessel": "ANE MAERSK",
+      "voyage": "634W",
+      "transshipments": 1,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "ANE MAERSK",
+          "imo": 9948748
+        },
+        "voyage": "634W",
+        "timestamp": "2026-09-05T12:00:00+08:00",
+        "container_number": "MRSU8730547"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "MATNG",
+          "name": "TANGER (TANGIER)",
+          "timezone": "Africa/Casablanca",
+          "country": {
+            "code": "MA",
+            "name": "Morocco"
+          }
+        },
+        "vessel": {
+          "name": "ANE MAERSK",
+          "imo": 9948748
+        },
+        "voyage": "634W",
+        "timestamp": "2026-10-11T12:00:00+00:00",
+        "container_number": "MRSU8730547"
+      },
+      "metrics": {
+        "etd_slip_days": 6,
+        "eta_slip_days": 1,
+        "predicted_vs_carrier_days": 1
+      },
+      "risk": "RED",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#07 InPost",
+      "container": "MSNU7337919",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-08-26T12:00:00+08:00",
+      "etd_initial": "2026-08-26T12:00:00+08:00",
+      "atd": "2026-08-26T12:00:00+08:00",
+      "eta": "2026-10-24T12:00:00+02:00",
+      "eta_carrier": "2026-10-21T12:00:00+02:00",
+      "eta_initial": "2026-10-12T12:00:00+02:00",
+      "ata": null,
+      "vessel": "MSC ROSE",
+      "voyage": "GA632W",
+      "transshipments": 1,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "MSC ROSE",
+          "imo": 9957359
+        },
+        "voyage": "GA632W",
+        "timestamp": "2026-08-26T12:00:00+08:00",
+        "container_number": "MSNU7337919"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "SGSIN",
+          "name": "SINGAPORE",
+          "timezone": "Asia/Singapore",
+          "country": {
+            "code": "SG",
+            "name": "Singapore"
+          }
+        },
+        "vessel": {
+          "name": "MSC ROSE",
+          "imo": 9957359
+        },
+        "voyage": "GA632W",
+        "timestamp": "2026-09-11T12:00:00+08:00",
+        "container_number": "MSNU7337919"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 12,
+        "predicted_vs_carrier_days": 3
+      },
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#08 InPost",
+      "container": "MSNU7461112",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-08-26T12:00:00+08:00",
+      "etd_initial": "2026-08-26T12:00:00+08:00",
+      "atd": "2026-08-26T12:00:00+08:00",
+      "eta": "2026-10-24T12:00:00+02:00",
+      "eta_carrier": "2026-10-20T12:00:00+02:00",
+      "eta_initial": "2026-10-12T12:00:00+02:00",
+      "ata": null,
+      "vessel": "MSC ROSE",
+      "voyage": "GA632W",
+      "transshipments": 1,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "MSC ROSE",
+          "imo": 9957359
+        },
+        "voyage": "GA632W",
+        "timestamp": "2026-08-26T12:00:00+08:00",
+        "container_number": "MSNU7461112"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "SGSIN",
+          "name": "SINGAPORE",
+          "timezone": "Asia/Singapore",
+          "country": {
+            "code": "SG",
+            "name": "Singapore"
+          }
+        },
+        "vessel": {
+          "name": "MSC ROSE",
+          "imo": 9957359
+        },
+        "voyage": "GA632W",
+        "timestamp": "2026-09-11T12:00:00+08:00",
+        "container_number": "MSNU7461112"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 12,
+        "predicted_vs_carrier_days": 4
+      },
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#05 InPost",
+      "container": "CMAU8984730",
+      "carrier": "CMA CGM",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-08-26T12:00:00+08:00",
+      "etd_initial": "2026-08-25T12:00:00+08:00",
+      "atd": "2026-08-26T12:00:00+08:00",
+      "eta": "2026-10-16T12:00:00+02:00",
+      "eta_carrier": "2026-10-16T12:00:00+02:00",
+      "eta_initial": "2026-10-10T12:00:00+02:00",
+      "ata": null,
+      "vessel": "COSCO SHIPPING AQUARIUS",
+      "voyage": "0VAOJW1MA",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "COSCO SHIPPING AQUARIUS",
+          "imo": 9789623
+        },
+        "voyage": "0VAOJW1MA",
+        "timestamp": "2026-08-26T12:00:00+08:00",
+        "container_number": "CMAU8984730"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "COSCO SHIPPING AQUARIUS",
+          "imo": 9789623
+        },
+        "voyage": "0VAOJW1MA",
+        "timestamp": "2026-10-16T12:00:00+02:00",
+        "container_number": "CMAU8984730"
+      },
+      "metrics": {
+        "etd_slip_days": 1,
+        "eta_slip_days": 6,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
+      "reference": "#04 InPost",
+      "container": "FCIU9715664",
+      "carrier": "CMA CGM",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-08-26T12:00:00+08:00",
+      "etd_initial": "2026-08-25T12:00:00+08:00",
+      "atd": "2026-08-26T12:00:00+08:00",
+      "eta": "2026-10-16T12:00:00+02:00",
+      "eta_carrier": "2026-10-16T12:00:00+02:00",
+      "eta_initial": "2026-10-10T12:00:00+02:00",
+      "ata": null,
+      "vessel": "COSCO SHIPPING AQUARIUS",
+      "voyage": "0VAOJW1MA",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "COSCO SHIPPING AQUARIUS",
+          "imo": 9789623
+        },
+        "voyage": "0VAOJW1MA",
+        "timestamp": "2026-08-26T12:00:00+08:00",
+        "container_number": "FCIU9715664"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "COSCO SHIPPING AQUARIUS",
+          "imo": 9789623
+        },
+        "voyage": "0VAOJW1MA",
+        "timestamp": "2026-10-16T12:00:00+02:00",
+        "container_number": "FCIU9715664"
+      },
+      "metrics": {
+        "etd_slip_days": 1,
+        "eta_slip_days": 6,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
+      "reference": "#03 InPost - CAX",
+      "container": "TFLU4987555",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDYNIA",
+      "etd": "2026-08-15T12:00:00+08:00",
+      "etd_initial": "2026-08-15T12:00:00+08:00",
+      "atd": "2026-08-15T12:00:00+08:00",
+      "eta": "2026-09-15T12:00:00+02:00",
+      "eta_carrier": "2026-09-15T12:00:00+02:00",
+      "eta_initial": "2026-09-13T12:00:00+02:00",
+      "ata": null,
+      "vessel": "DUBAI TOWER",
+      "voyage": "2633W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "DUBAI TOWER",
+          "imo": 9433066
+        },
+        "voyage": "2633W",
+        "timestamp": "2026-08-15T12:00:00+08:00",
+        "container_number": "TFLU4987555"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDY",
+          "name": "GDYNIA",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "DUBAI TOWER",
+          "imo": 9433066
+        },
+        "voyage": "2633W",
+        "timestamp": "2026-09-15T12:00:00+02:00",
+        "container_number": "TFLU4987555"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 2,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "ORANGE",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#18 InPost",
+      "container": "TFLU4500543",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "BOOKED",
+      "container_status": "UNKNOWN",
+      "pol": "NINGBO",
+      "pod": "GDYNIA",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "etd_initial": "2026-09-15T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-10-15T12:00:00+02:00",
+      "eta_carrier": "2026-10-15T12:00:00+02:00",
+      "eta_initial": "2026-10-15T12:00:00+02:00",
+      "ata": null,
+      "vessel": "TIGER MAANSHAN",
+      "voyage": "2636W",
+      "transshipments": 0,
+      "last_movement": null,
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-09-15T12:00:00+08:00",
+        "container_number": "TFLU4500543"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 0,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "GREEN",
+      "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
+    },
+    {
+      "reference": "#19 InPost",
+      "container": "TFLU4502443",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "BOOKED",
+      "container_status": "EMPTY_SHIPPER",
+      "pol": "NINGBO",
+      "pod": "GDYNIA",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "etd_initial": "2026-09-15T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-10-15T12:00:00+02:00",
+      "eta_carrier": "2026-10-15T12:00:00+02:00",
+      "eta_initial": "2026-10-15T12:00:00+02:00",
+      "ata": null,
+      "vessel": "TIGER MAANSHAN",
+      "voyage": "2636W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "EMSH",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-08T12:00:00+08:00",
+        "container_number": "TFLU4502443"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-09-15T12:00:00+08:00",
+        "container_number": "TFLU4502443"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 0,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "GREEN",
+      "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
+    },
+    {
+      "reference": "#26 InPost XMAS",
+      "container": "TFLU4502607",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "BOOKED",
+      "container_status": "EMPTY_SHIPPER",
+      "pol": "NINGBO",
+      "pod": "GDYNIA",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "etd_initial": "2026-09-15T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-10-15T12:00:00+02:00",
+      "eta_carrier": "2026-10-15T12:00:00+02:00",
+      "eta_initial": "2026-10-15T12:00:00+02:00",
+      "ata": null,
+      "vessel": "TIGER MAANSHAN",
+      "voyage": "2636W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "EMSH",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-08T12:00:00+08:00",
+        "container_number": "TFLU4502607"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-09-15T12:00:00+08:00",
+        "container_number": "TFLU4502607"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 0,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "GREEN",
+      "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
+    }
+  ],
+  "changes": [],
+  "other_exceptions": [
+    {
+      "reference": "#16 black",
+      "container": "MRKU2538940",
+      "carrier": "MAERSK LINE",
+      "status": "BOOKED",
+      "container_status": "EMPTY_SHIPPER",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "etd_initial": "2026-09-15T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-11-05T12:00:00+01:00",
+      "eta_carrier": "2026-10-31T12:00:00+01:00",
+      "eta_initial": "2026-10-31T12:00:00+01:00",
+      "ata": null,
+      "vessel": "AL MURAYKH",
+      "voyage": "636W",
+      "transshipments": 1,
+      "last_movement": {
+        "event": "EMSH",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-09T12:00:00+08:00",
+        "container_number": "MRKU2538940"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "AL MURAYKH",
+          "imo": 9708863
+        },
+        "voyage": "636W",
+        "timestamp": "2026-09-15T12:00:00+08:00",
+        "container_number": "MRKU2538940"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 5,
+        "predicted_vs_carrier_days": 5
+      },
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#36 black",
+      "container": "MRSU6424825",
+      "carrier": "MAERSK LINE",
+      "status": "BOOKED",
+      "container_status": "EMPTY_SHIPPER",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "etd_initial": "2026-09-15T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-11-05T12:00:00+01:00",
+      "eta_carrier": "2026-10-31T12:00:00+01:00",
+      "eta_initial": "2026-10-31T12:00:00+01:00",
+      "ata": null,
+      "vessel": "AL MURAYKH",
+      "voyage": "636W",
+      "transshipments": 1,
+      "last_movement": {
+        "event": "EMSH",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-09T12:00:00+08:00",
+        "container_number": "MRSU6424825"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "AL MURAYKH",
+          "imo": 9708863
+        },
+        "voyage": "636W",
+        "timestamp": "2026-09-15T12:00:00+08:00",
+        "container_number": "MRSU6424825"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 5,
+        "predicted_vs_carrier_days": 5
+      },
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#35 BLACK",
+      "container": "EGHU9809241",
+      "carrier": "EVERGREEN",
+      "status": "BOOKED",
+      "container_status": "GATE_IN",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-13T12:00:00+08:00",
+      "etd_initial": "2026-09-07T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-10-30T12:00:00+01:00",
+      "eta_carrier": "2026-10-28T12:00:00+01:00",
+      "eta_initial": "2026-10-28T12:00:00+01:00",
+      "ata": null,
+      "vessel": "OOCL VALENCIA",
+      "voyage": "011W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "GTIN",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-04T12:00:00+08:00",
+        "container_number": "EGHU9809241"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "OOCL VALENCIA",
+          "imo": 9922598
+        },
+        "voyage": "011W",
+        "timestamp": "2026-09-13T12:00:00+08:00",
+        "container_number": "EGHU9809241"
+      },
+      "metrics": {
+        "etd_slip_days": 6,
+        "eta_slip_days": 2,
+        "predicted_vs_carrier_days": 2
+      },
+      "risk": "RED",
+      "recommended_action": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem."
+    },
+    {
+      "reference": "#33 black",
+      "container": "TRHU5809002",
+      "carrier": "EVERGREEN",
+      "status": "BOOKED",
+      "container_status": "GATE_IN",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-13T12:00:00+08:00",
+      "etd_initial": "2026-09-07T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-10-30T12:00:00+01:00",
+      "eta_carrier": "2026-10-28T12:00:00+01:00",
+      "eta_initial": "2026-10-28T12:00:00+01:00",
+      "ata": null,
+      "vessel": "OOCL VALENCIA",
+      "voyage": "011W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "GTIN",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-03T12:00:00+08:00",
+        "container_number": "TRHU5809002"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "OOCL VALENCIA",
+          "imo": 9922598
+        },
+        "voyage": "011W",
+        "timestamp": "2026-09-13T12:00:00+08:00",
+        "container_number": "TRHU5809002"
+      },
+      "metrics": {
+        "etd_slip_days": 6,
+        "eta_slip_days": 2,
+        "predicted_vs_carrier_days": 2
+      },
+      "risk": "RED",
+      "recommended_action": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem."
+    },
+    {
+      "reference": "#34 black",
+      "container": "EITU9218804",
+      "carrier": "EVERGREEN",
+      "status": "BOOKED",
+      "container_status": "GATE_IN",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-13T12:00:00+08:00",
+      "etd_initial": "2026-09-07T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-10-30T12:00:00+01:00",
+      "eta_carrier": "2026-10-28T12:00:00+01:00",
+      "eta_initial": "2026-10-28T12:00:00+01:00",
+      "ata": null,
+      "vessel": "OOCL VALENCIA",
+      "voyage": "011W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "GTIN",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-03T12:00:00+08:00",
+        "container_number": "EITU9218804"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "OOCL VALENCIA",
+          "imo": 9922598
+        },
+        "voyage": "011W",
+        "timestamp": "2026-09-13T12:00:00+08:00",
+        "container_number": "EITU9218804"
+      },
+      "metrics": {
+        "etd_slip_days": 6,
+        "eta_slip_days": 2,
+        "predicted_vs_carrier_days": 2
+      },
+      "risk": "RED",
+      "recommended_action": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem."
+    },
+    {
+      "reference": "#32 PSC black",
+      "container": "SEKU5853360",
+      "carrier": "CMA CGM",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-08T12:00:00+08:00",
+      "etd_initial": "2026-08-31T12:00:00+08:00",
+      "atd": "2026-09-08T12:00:00+08:00",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "eta_carrier": "2026-10-27T12:00:00+01:00",
+      "eta_initial": "2026-10-27T12:00:00+01:00",
+      "ata": null,
+      "vessel": "CMA CGM LOUIS BLERIOT",
+      "voyage": "0FLMVW1MA",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "CMA CGM LOUIS BLERIOT",
+          "imo": 9776432
+        },
+        "voyage": "0FLMVW1MA",
+        "timestamp": "2026-09-08T12:00:00+08:00",
+        "container_number": "SEKU5853360"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "CMA CGM LOUIS BLERIOT",
+          "imo": 9776432
+        },
+        "voyage": "0FLMVW1MA",
+        "timestamp": "2026-10-27T12:00:00+01:00",
+        "container_number": "SEKU5853360"
+      },
+      "metrics": {
+        "etd_slip_days": 8,
+        "eta_slip_days": 1,
+        "predicted_vs_carrier_days": 1
+      },
+      "risk": "RED",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#13 PSC blue+green (Empik)",
+      "container": "TCNU3222115",
+      "carrier": "CMA CGM",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-08T12:00:00+08:00",
+      "etd_initial": "2026-08-31T12:00:00+08:00",
+      "atd": "2026-09-08T12:00:00+08:00",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "eta_carrier": "2026-10-27T12:00:00+01:00",
+      "eta_initial": "2026-10-27T12:00:00+01:00",
+      "ata": null,
+      "vessel": "CMA CGM LOUIS BLERIOT",
+      "voyage": "0FLMVW1MA",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "CMA CGM LOUIS BLERIOT",
+          "imo": 9776432
+        },
+        "voyage": "0FLMVW1MA",
+        "timestamp": "2026-09-08T12:00:00+08:00",
+        "container_number": "TCNU3222115"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "CMA CGM LOUIS BLERIOT",
+          "imo": 9776432
+        },
+        "voyage": "0FLMVW1MA",
+        "timestamp": "2026-10-27T12:00:00+01:00",
+        "container_number": "TCNU3222115"
+      },
+      "metrics": {
+        "etd_slip_days": 8,
+        "eta_slip_days": 1,
+        "predicted_vs_carrier_days": 1
+      },
+      "risk": "RED",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#11 BLACK",
+      "container": "TGHU9300599",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-05T12:00:00+08:00",
+      "etd_initial": "2026-09-01T12:00:00+08:00",
+      "atd": "2026-09-05T12:00:00+08:00",
+      "eta": "2026-10-23T12:00:00+02:00",
+      "eta_carrier": "2026-10-20T12:00:00+02:00",
+      "eta_initial": "2026-10-20T12:00:00+02:00",
+      "ata": null,
+      "vessel": "MSC KALINA",
+      "voyage": "GA633W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "MSC KALINA",
+          "imo": 9399026
+        },
+        "voyage": "GA633W",
+        "timestamp": "2026-09-05T12:00:00+08:00",
+        "container_number": "TGHU9300599"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "MSC KALINA",
+          "imo": 9399026
+        },
+        "voyage": "GA633W",
+        "timestamp": "2026-10-20T12:00:00+02:00",
+        "container_number": "TGHU9300599"
+      },
+      "metrics": {
+        "etd_slip_days": 4,
+        "eta_slip_days": 3,
+        "predicted_vs_carrier_days": 3
+      },
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#10 PSC black",
+      "container": "MSDU7730546",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-05T12:00:00+08:00",
+      "etd_initial": "2026-09-01T12:00:00+08:00",
+      "atd": "2026-09-05T12:00:00+08:00",
+      "eta": "2026-10-23T12:00:00+02:00",
+      "eta_carrier": "2026-10-20T12:00:00+02:00",
+      "eta_initial": "2026-10-20T12:00:00+02:00",
+      "ata": null,
+      "vessel": "MSC KALINA",
+      "voyage": "GA633W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "MSC KALINA",
+          "imo": 9399026
+        },
+        "voyage": "GA633W",
+        "timestamp": "2026-09-05T12:00:00+08:00",
+        "container_number": "MSDU7730546"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "MSC KALINA",
+          "imo": 9399026
+        },
+        "voyage": "GA633W",
+        "timestamp": "2026-10-20T12:00:00+02:00",
+        "container_number": "MSDU7730546"
+      },
+      "metrics": {
+        "etd_slip_days": 4,
+        "eta_slip_days": 3,
+        "predicted_vs_carrier_days": 3
+      },
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "TJX-2",
+      "container": "ONEU0423082",
+      "carrier": "ONE LINE",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "BIRMINGHAM (UK)",
+      "etd": "2026-07-30T12:00:00+08:00",
+      "etd_initial": "2026-07-30T12:00:00+08:00",
+      "atd": "2026-07-31T12:00:00+08:00",
+      "eta": "2026-09-09T12:00:00+01:00",
+      "eta_carrier": "2026-09-09T12:00:00+01:00",
+      "eta_initial": "2026-09-06T12:00:00+01:00",
+      "ata": null,
+      "vessel": "YM TOPMOST",
+      "voyage": "025W",
+      "transshipments": 1,
+      "last_movement": {
+        "event": "ARRV",
+        "status": "ACT",
+        "location": {
+          "code": "GBSOU",
+          "name": "SOUTHAMPTON",
+          "timezone": "Europe/London",
+          "country": {
+            "code": "GB",
+            "name": "United Kingdom"
+          }
+        },
+        "vessel": {
+          "name": "YM TOPMOST",
+          "imo": 9878515
+        },
+        "voyage": "025W",
+        "timestamp": "2026-09-06T12:00:00+01:00",
+        "container_number": "ONEU0423082"
+      },
+      "next_movement": {
+        "event": "DEPA",
+        "status": "EST",
+        "location": {
+          "code": "GBSOU",
+          "name": "SOUTHAMPTON",
+          "timezone": "Europe/London",
+          "country": {
+            "code": "GB",
+            "name": "United Kingdom"
+          }
+        },
+        "vessel": {
+          "name": "RAILWAY",
+          "imo": null
+        },
+        "voyage": null,
+        "timestamp": "2026-09-08T12:00:00+01:00",
+        "container_number": "ONEU0423082"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 3,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
+      "reference": "#15 (4 kolory)",
+      "container": "TLLU4090821",
+      "carrier": "CMA CGM",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-08T12:00:00+08:00",
+      "etd_initial": "2026-09-07T12:00:00+08:00",
+      "atd": "2026-09-08T12:00:00+08:00",
+      "eta": "2026-10-27T12:00:00+01:00",
+      "eta_carrier": "2026-10-25T12:00:00+01:00",
+      "eta_initial": "2026-10-25T12:00:00+01:00",
+      "ata": null,
+      "vessel": "OOCL SPAIN",
+      "voyage": "0VAONW1MA",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "OOCL SPAIN",
+          "imo": 9908126
+        },
+        "voyage": "0VAONW1MA",
+        "timestamp": "2026-09-08T12:00:00+08:00",
+        "container_number": "TLLU4090821"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "OOCL SPAIN",
+          "imo": 9908126
+        },
+        "voyage": "0VAONW1MA",
+        "timestamp": "2026-10-25T12:00:00+01:00",
+        "container_number": "TLLU4090821"
+      },
+      "metrics": {
+        "etd_slip_days": 1,
+        "eta_slip_days": 2,
+        "predicted_vs_carrier_days": 2
+      },
+      "risk": "ORANGE",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    }
+  ],
+  "version": "2.6",
+  "generated_at": "2026-09-10T20:38:50.986Z",
+  "published_at": "2026-09-10T20:38:51.051Z"
+}

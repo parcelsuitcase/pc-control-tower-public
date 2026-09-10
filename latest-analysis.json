@@ -1,0 +1,155 @@
+{
+  "version": "1.0",
+  "source": "Parcel Case Control Tower comparison",
+  "analyzed_at": "2026-09-10T20:38:51.051Z",
+  "current_generated_at": "2026-09-10T20:38:50.986Z",
+  "previous_generated_at": null,
+  "baseline": true,
+  "change_count": 0,
+  "summary": {
+    "inpost_total": 11,
+    "inpost_red": 7,
+    "inpost_orange": 1,
+    "other_exceptions": 11,
+    "detected_changes": 0
+  },
+  "red_alerts": [
+    {
+      "reference": "#17 InPost",
+      "container": "CMAU9857534",
+      "status": "SAILING",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#09 InPost",
+      "container": "UETU6022230",
+      "status": "SAILING",
+      "eta": "2026-10-23T12:00:00+02:00",
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
+      "reference": "#06 InPost",
+      "container": "MRSU8730547",
+      "status": "SAILING",
+      "eta": "2026-10-23T12:00:00+02:00",
+      "risk": "RED",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#07 InPost",
+      "container": "MSNU7337919",
+      "status": "SAILING",
+      "eta": "2026-10-24T12:00:00+02:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#08 InPost",
+      "container": "MSNU7461112",
+      "status": "SAILING",
+      "eta": "2026-10-24T12:00:00+02:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#05 InPost",
+      "container": "CMAU8984730",
+      "status": "SAILING",
+      "eta": "2026-10-16T12:00:00+02:00",
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
+      "reference": "#04 InPost",
+      "container": "FCIU9715664",
+      "status": "SAILING",
+      "eta": "2026-10-16T12:00:00+02:00",
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
+      "reference": "#16 black",
+      "container": "MRKU2538940",
+      "status": "BOOKED",
+      "eta": "2026-11-05T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#36 black",
+      "container": "MRSU6424825",
+      "status": "BOOKED",
+      "eta": "2026-11-05T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#35 BLACK",
+      "container": "EGHU9809241",
+      "status": "BOOKED",
+      "eta": "2026-10-30T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem."
+    },
+    {
+      "reference": "#33 black",
+      "container": "TRHU5809002",
+      "status": "BOOKED",
+      "eta": "2026-10-30T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem."
+    },
+    {
+      "reference": "#34 black",
+      "container": "EITU9218804",
+      "status": "BOOKED",
+      "eta": "2026-10-30T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem."
+    },
+    {
+      "reference": "#32 PSC black",
+      "container": "SEKU5853360",
+      "status": "SAILING",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#13 PSC blue+green (Empik)",
+      "container": "TCNU3222115",
+      "status": "SAILING",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#11 BLACK",
+      "container": "TGHU9300599",
+      "status": "SAILING",
+      "eta": "2026-10-23T12:00:00+02:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#10 PSC black",
+      "container": "MSDU7730546",
+      "status": "SAILING",
+      "eta": "2026-10-23T12:00:00+02:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "TJX-2",
+      "container": "ONEU0423082",
+      "status": "SAILING",
+      "eta": "2026-09-09T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    }
+  ],
+  "changes": []
+}
