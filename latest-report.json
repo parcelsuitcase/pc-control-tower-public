@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-10T20:38:50.986Z",
-  "previous_snapshot_at": "2026-09-10T20:35:35.181Z",
+  "fetched_at": "2026-09-11T05:14:07.091Z",
+  "previous_snapshot_at": "2026-09-10T21:38:19.625Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 11,
     "inpost_red": 7,
     "inpost_orange": 1,
     "other_exceptions": 11,
-    "detected_changes": 0
+    "detected_changes": 3
   },
   "priority_inpost": [
     {
@@ -714,7 +714,65 @@
       "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "id": 6677434,
+      "reference": "#15 (4 kolory)",
+      "shipment_number": "TLLU4090821",
+      "carrier": "CMA CGM",
+      "status": "SAILING",
+      "eta": "2026-10-27T12:00:00+01:00",
+      "etd": "2026-09-08T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-25T12:00:00+01:00",
+          "after": "2026-10-26T12:00:00+01:00",
+          "delta_days": 1
+        }
+      ]
+    },
+    {
+      "id": 6637825,
+      "reference": "#11 BLACK",
+      "shipment_number": "TGHU9300599",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "eta": "2026-10-22T12:00:00+02:00",
+      "etd": "2026-09-05T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "eta",
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-22T12:00:00+02:00",
+          "delta_days": -1
+        }
+      ]
+    },
+    {
+      "id": 6637823,
+      "reference": "#10 PSC black",
+      "shipment_number": "MSDU7730546",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "eta": "2026-10-22T12:00:00+02:00",
+      "etd": "2026-09-05T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "eta",
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-22T12:00:00+02:00",
+          "delta_days": -1
+        }
+      ]
+    }
+  ],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1174,7 +1232,7 @@
       "etd": "2026-09-05T12:00:00+08:00",
       "etd_initial": "2026-09-01T12:00:00+08:00",
       "atd": "2026-09-05T12:00:00+08:00",
-      "eta": "2026-10-23T12:00:00+02:00",
+      "eta": "2026-10-22T12:00:00+02:00",
       "eta_carrier": "2026-10-20T12:00:00+02:00",
       "eta_initial": "2026-10-20T12:00:00+02:00",
       "ata": null,
@@ -1223,11 +1281,11 @@
       },
       "metrics": {
         "etd_slip_days": 4,
-        "eta_slip_days": 3,
-        "predicted_vs_carrier_days": 3
+        "eta_slip_days": 2,
+        "predicted_vs_carrier_days": 2
       },
       "risk": "RED",
-      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+      "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
       "reference": "#10 PSC black",
@@ -1240,7 +1298,7 @@
       "etd": "2026-09-05T12:00:00+08:00",
       "etd_initial": "2026-09-01T12:00:00+08:00",
       "atd": "2026-09-05T12:00:00+08:00",
-      "eta": "2026-10-23T12:00:00+02:00",
+      "eta": "2026-10-22T12:00:00+02:00",
       "eta_carrier": "2026-10-20T12:00:00+02:00",
       "eta_initial": "2026-10-20T12:00:00+02:00",
       "ata": null,
@@ -1289,11 +1347,11 @@
       },
       "metrics": {
         "etd_slip_days": 4,
-        "eta_slip_days": 3,
-        "predicted_vs_carrier_days": 3
+        "eta_slip_days": 2,
+        "predicted_vs_carrier_days": 2
       },
       "risk": "RED",
-      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+      "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
       "reference": "TJX-2",
@@ -1373,7 +1431,7 @@
       "etd_initial": "2026-09-07T12:00:00+08:00",
       "atd": "2026-09-08T12:00:00+08:00",
       "eta": "2026-10-27T12:00:00+01:00",
-      "eta_carrier": "2026-10-25T12:00:00+01:00",
+      "eta_carrier": "2026-10-26T12:00:00+01:00",
       "eta_initial": "2026-10-25T12:00:00+01:00",
       "ata": null,
       "vessel": "OOCL SPAIN",
@@ -1416,19 +1474,19 @@
           "imo": 9908126
         },
         "voyage": "0VAONW1MA",
-        "timestamp": "2026-10-25T12:00:00+01:00",
+        "timestamp": "2026-10-26T12:00:00+01:00",
         "container_number": "TLLU4090821"
       },
       "metrics": {
         "etd_slip_days": 1,
         "eta_slip_days": 2,
-        "predicted_vs_carrier_days": 2
+        "predicted_vs_carrier_days": 1
       },
       "risk": "ORANGE",
       "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-10T20:38:50.986Z",
-  "published_at": "2026-09-10T20:38:51.051Z"
+  "generated_at": "2026-09-11T05:14:07.091Z",
+  "published_at": "2026-09-11T05:14:07.109Z"
 }
