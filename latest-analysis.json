@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-11T05:14:07.109Z",
-  "current_generated_at": "2026-09-11T05:14:07.091Z",
-  "previous_generated_at": "2026-09-10T20:38:50.986Z",
+  "analyzed_at": "2026-09-11T09:15:01.085Z",
+  "current_generated_at": "2026-09-11T09:15:01.064Z",
+  "previous_generated_at": "2026-09-11T05:14:07.091Z",
   "baseline": false,
-  "change_count": 3,
+  "change_count": 2,
   "summary": {
     "inpost_total": 11,
     "inpost_red": 7,
     "inpost_orange": 1,
-    "other_exceptions": 11,
-    "detected_changes": 3
+    "other_exceptions": 12,
+    "detected_changes": 2
   },
   "red_alerts": [
     {
@@ -138,9 +138,9 @@
       "reference": "#10 PSC black",
       "container": "MSDU7730546",
       "status": "SAILING",
-      "eta": "2026-10-22T12:00:00+02:00",
+      "eta": "2026-10-23T12:00:00+02:00",
       "risk": "RED",
-      "recommended_action": "Brak pilnej akcji; monitorować."
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
     {
       "reference": "TJX-2",
@@ -154,75 +154,24 @@
   "changes": [
     {
       "type": "CHANGED",
-      "container": "TGHU9300599",
-      "reference": "#11 BLACK",
-      "risk": "RED",
-      "fields": [
-        {
-          "field": "eta",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-22T12:00:00+02:00"
-        },
-        {
-          "field": "metrics.eta_slip_days",
-          "before": 3,
-          "after": 2
-        },
-        {
-          "field": "metrics.predicted_vs_carrier_days",
-          "before": 3,
-          "after": 2
-        },
-        {
-          "field": "recommended_action",
-          "before": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie.",
-          "after": "Brak pilnej akcji; monitorować."
-        }
-      ]
-    },
-    {
-      "type": "CHANGED",
       "container": "MSDU7730546",
       "reference": "#10 PSC black",
       "risk": "RED",
       "fields": [
         {
           "field": "eta",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-22T12:00:00+02:00"
+          "before": "2026-10-22T12:00:00+02:00",
+          "after": "2026-10-23T12:00:00+02:00"
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-20T12:00:00+02:00",
+          "after": "2026-10-21T12:00:00+02:00"
         },
         {
           "field": "metrics.eta_slip_days",
-          "before": 3,
-          "after": 2
-        },
-        {
-          "field": "metrics.predicted_vs_carrier_days",
-          "before": 3,
-          "after": 2
-        },
-        {
-          "field": "recommended_action",
-          "before": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie.",
-          "after": "Brak pilnej akcji; monitorować."
-        }
-      ]
-    },
-    {
-      "type": "CHANGED",
-      "container": "TLLU4090821",
-      "reference": "#15 (4 kolory)",
-      "risk": "ORANGE",
-      "fields": [
-        {
-          "field": "eta_carrier",
-          "before": "2026-10-25T12:00:00+01:00",
-          "after": "2026-10-26T12:00:00+01:00"
-        },
-        {
-          "field": "metrics.predicted_vs_carrier_days",
           "before": 2,
-          "after": 1
+          "after": 3
         },
         {
           "field": "next_movement",
@@ -239,12 +188,12 @@
               }
             },
             "vessel": {
-              "name": "OOCL SPAIN",
-              "imo": 9908126
+              "name": "MSC KALINA",
+              "imo": 9399026
             },
-            "voyage": "0VAONW1MA",
-            "timestamp": "2026-10-25T12:00:00+01:00",
-            "container_number": "TLLU4090821"
+            "voyage": "GA633W",
+            "timestamp": "2026-10-20T12:00:00+02:00",
+            "container_number": "MSDU7730546"
           },
           "after": {
             "event": "ARRV",
@@ -259,15 +208,26 @@
               }
             },
             "vessel": {
-              "name": "OOCL SPAIN",
-              "imo": 9908126
+              "name": "MSC KALINA",
+              "imo": 9399026
             },
-            "voyage": "0VAONW1MA",
-            "timestamp": "2026-10-26T12:00:00+01:00",
-            "container_number": "TLLU4090821"
+            "voyage": "GA633W",
+            "timestamp": "2026-10-21T12:00:00+02:00",
+            "container_number": "MSDU7730546"
           }
+        },
+        {
+          "field": "recommended_action",
+          "before": "Brak pilnej akcji; monitorować.",
+          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
         }
       ]
+    },
+    {
+      "type": "NEW_SHIPMENT",
+      "container": "CAAU6610289",
+      "reference": "TJX-1",
+      "risk": "ORANGE"
     }
   ]
 }

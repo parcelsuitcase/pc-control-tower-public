@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-11T05:14:07.091Z",
-  "previous_snapshot_at": "2026-09-10T21:38:19.625Z",
+  "fetched_at": "2026-09-11T09:15:01.064Z",
+  "previous_snapshot_at": "2026-09-11T05:14:06.486Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 11,
     "inpost_red": 7,
     "inpost_orange": 1,
-    "other_exceptions": 11,
-    "detected_changes": 3
+    "other_exceptions": 12,
+    "detected_changes": 2
   },
   "priority_inpost": [
     {
@@ -716,59 +716,52 @@
   ],
   "changes": [
     {
-      "id": 6677434,
-      "reference": "#15 (4 kolory)",
-      "shipment_number": "TLLU4090821",
-      "carrier": "CMA CGM",
-      "status": "SAILING",
-      "eta": "2026-10-27T12:00:00+01:00",
-      "etd": "2026-09-08T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "info",
-      "changes": [
-        {
-          "field": "eta_carrier",
-          "before": "2026-10-25T12:00:00+01:00",
-          "after": "2026-10-26T12:00:00+01:00",
-          "delta_days": 1
-        }
-      ]
-    },
-    {
-      "id": 6637825,
-      "reference": "#11 BLACK",
-      "shipment_number": "TGHU9300599",
-      "carrier": "MSC",
-      "status": "SAILING",
-      "eta": "2026-10-22T12:00:00+02:00",
-      "etd": "2026-09-05T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "info",
-      "changes": [
-        {
-          "field": "eta",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-22T12:00:00+02:00",
-          "delta_days": -1
-        }
-      ]
-    },
-    {
       "id": 6637823,
       "reference": "#10 PSC black",
       "shipment_number": "MSDU7730546",
       "carrier": "MSC",
       "status": "SAILING",
-      "eta": "2026-10-22T12:00:00+02:00",
+      "eta": "2026-10-23T12:00:00+02:00",
       "etd": "2026-09-05T12:00:00+08:00",
       "type": "CHANGED",
-      "severity": "info",
+      "severity": "medium",
       "changes": [
         {
           "field": "eta",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-22T12:00:00+02:00",
-          "delta_days": -1
+          "before": "2026-10-22T12:00:00+02:00",
+          "after": "2026-10-23T12:00:00+02:00",
+          "delta_days": 1
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-20T12:00:00+02:00",
+          "after": "2026-10-21T12:00:00+02:00",
+          "delta_days": 1
+        }
+      ]
+    },
+    {
+      "id": 6571041,
+      "reference": "TJX-1",
+      "shipment_number": "CAAU6610289",
+      "carrier": "MAERSK LINE",
+      "status": "SAILING",
+      "eta": "2026-09-12T12:00:00+02:00",
+      "etd": "2026-07-31T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "medium",
+      "changes": [
+        {
+          "field": "eta",
+          "before": "2026-09-11T12:00:00+02:00",
+          "after": "2026-09-12T12:00:00+02:00",
+          "delta_days": 1
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-09-11T12:00:00+02:00",
+          "after": "2026-09-12T12:00:00+02:00",
+          "delta_days": 1
         }
       ]
     }
@@ -1298,8 +1291,8 @@
       "etd": "2026-09-05T12:00:00+08:00",
       "etd_initial": "2026-09-01T12:00:00+08:00",
       "atd": "2026-09-05T12:00:00+08:00",
-      "eta": "2026-10-22T12:00:00+02:00",
-      "eta_carrier": "2026-10-20T12:00:00+02:00",
+      "eta": "2026-10-23T12:00:00+02:00",
+      "eta_carrier": "2026-10-21T12:00:00+02:00",
       "eta_initial": "2026-10-20T12:00:00+02:00",
       "ata": null,
       "vessel": "MSC KALINA",
@@ -1342,16 +1335,16 @@
           "imo": 9399026
         },
         "voyage": "GA633W",
-        "timestamp": "2026-10-20T12:00:00+02:00",
+        "timestamp": "2026-10-21T12:00:00+02:00",
         "container_number": "MSDU7730546"
       },
       "metrics": {
         "etd_slip_days": 4,
-        "eta_slip_days": 2,
+        "eta_slip_days": 3,
         "predicted_vs_carrier_days": 2
       },
       "risk": "RED",
-      "recommended_action": "Brak pilnej akcji; monitorować."
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
     {
       "reference": "TJX-2",
@@ -1484,9 +1477,75 @@
       },
       "risk": "ORANGE",
       "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "TJX-1",
+      "container": "CAAU6610289",
+      "carrier": "MAERSK LINE",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "HAMBURG",
+      "etd": "2026-07-31T12:00:00+08:00",
+      "etd_initial": "2026-07-31T12:00:00+08:00",
+      "atd": "2026-08-01T12:00:00+08:00",
+      "eta": "2026-09-12T12:00:00+02:00",
+      "eta_carrier": "2026-09-12T12:00:00+02:00",
+      "eta_initial": "2026-09-11T12:00:00+02:00",
+      "ata": null,
+      "vessel": "MAASTRICHT MAERSK",
+      "voyage": "630W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "MAASTRICHT MAERSK",
+          "imo": 9780483
+        },
+        "voyage": "630W",
+        "timestamp": "2026-08-01T12:00:00+08:00",
+        "container_number": "CAAU6610289"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "DEHAM",
+          "name": "HAMBURG",
+          "timezone": "Europe/Berlin",
+          "country": {
+            "code": "DE",
+            "name": "Germany"
+          }
+        },
+        "vessel": {
+          "name": "MAASTRICHT MAERSK",
+          "imo": 9780483
+        },
+        "voyage": "630W",
+        "timestamp": "2026-09-12T12:00:00+02:00",
+        "container_number": "CAAU6610289"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 1,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "ORANGE",
+      "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-11T05:14:07.091Z",
-  "published_at": "2026-09-11T05:14:07.109Z"
+  "generated_at": "2026-09-11T09:15:01.064Z",
+  "published_at": "2026-09-11T09:15:01.085Z"
 }
