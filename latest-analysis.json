@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-11T09:15:01.085Z",
-  "current_generated_at": "2026-09-11T09:15:01.064Z",
-  "previous_generated_at": "2026-09-11T05:14:07.091Z",
+  "analyzed_at": "2026-09-11T13:14:53.244Z",
+  "current_generated_at": "2026-09-11T13:14:53.185Z",
+  "previous_generated_at": "2026-09-11T09:15:01.064Z",
   "baseline": false,
-  "change_count": 2,
+  "change_count": 1,
   "summary": {
     "inpost_total": 11,
     "inpost_red": 7,
     "inpost_orange": 1,
     "other_exceptions": 12,
-    "detected_changes": 2
+    "detected_changes": 1
   },
   "red_alerts": [
     {
@@ -130,9 +130,9 @@
       "reference": "#11 BLACK",
       "container": "TGHU9300599",
       "status": "SAILING",
-      "eta": "2026-10-22T12:00:00+02:00",
+      "eta": "2026-10-23T12:00:00+02:00",
       "risk": "RED",
-      "recommended_action": "Brak pilnej akcji; monitorować."
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
     {
       "reference": "#10 PSC black",
@@ -154,8 +154,8 @@
   "changes": [
     {
       "type": "CHANGED",
-      "container": "MSDU7730546",
-      "reference": "#10 PSC black",
+      "container": "TGHU9300599",
+      "reference": "#11 BLACK",
       "risk": "RED",
       "fields": [
         {
@@ -193,7 +193,7 @@
             },
             "voyage": "GA633W",
             "timestamp": "2026-10-20T12:00:00+02:00",
-            "container_number": "MSDU7730546"
+            "container_number": "TGHU9300599"
           },
           "after": {
             "event": "ARRV",
@@ -213,7 +213,7 @@
             },
             "voyage": "GA633W",
             "timestamp": "2026-10-21T12:00:00+02:00",
-            "container_number": "MSDU7730546"
+            "container_number": "TGHU9300599"
           }
         },
         {
@@ -222,12 +222,6 @@
           "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
         }
       ]
-    },
-    {
-      "type": "NEW_SHIPMENT",
-      "container": "CAAU6610289",
-      "reference": "TJX-1",
-      "risk": "ORANGE"
     }
   ]
 }
