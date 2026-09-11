@@ -1,19 +1,27 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-11T13:14:53.244Z",
-  "current_generated_at": "2026-09-11T13:14:53.185Z",
-  "previous_generated_at": "2026-09-11T09:15:01.064Z",
+  "analyzed_at": "2026-09-11T17:13:29.851Z",
+  "current_generated_at": "2026-09-11T17:13:29.795Z",
+  "previous_generated_at": "2026-09-11T13:14:53.185Z",
   "baseline": false,
-  "change_count": 1,
+  "change_count": 4,
   "summary": {
-    "inpost_total": 11,
-    "inpost_red": 7,
+    "inpost_total": 12,
+    "inpost_red": 8,
     "inpost_orange": 1,
     "other_exceptions": 12,
-    "detected_changes": 1
+    "detected_changes": 3
   },
   "red_alerts": [
+    {
+      "reference": "#22 InPost",
+      "container": "TIIU6167828",
+      "status": "BOOKED",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
     {
       "reference": "#17 InPost",
       "container": "CMAU9857534",
@@ -50,7 +58,7 @@
       "reference": "#08 InPost",
       "container": "MSNU7461112",
       "status": "SAILING",
-      "eta": "2026-10-24T12:00:00+02:00",
+      "eta": "2026-10-26T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
     },
@@ -145,33 +153,67 @@
     {
       "reference": "TJX-2",
       "container": "ONEU0423082",
-      "status": "SAILING",
-      "eta": "2026-09-09T12:00:00+01:00",
+      "status": "ARRIVED",
+      "eta": "2026-09-11T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
   "changes": [
     {
+      "type": "NEW_SHIPMENT",
+      "container": "TIIU6167828",
+      "reference": "#22 InPost",
+      "risk": "RED"
+    },
+    {
       "type": "CHANGED",
-      "container": "TGHU9300599",
-      "reference": "#11 BLACK",
+      "container": "MSNU7337919",
+      "reference": "#07 InPost",
       "risk": "RED",
       "fields": [
         {
-          "field": "eta",
-          "before": "2026-10-22T12:00:00+02:00",
-          "after": "2026-10-23T12:00:00+02:00"
-        },
-        {
-          "field": "eta_carrier",
-          "before": "2026-10-20T12:00:00+02:00",
-          "after": "2026-10-21T12:00:00+02:00"
-        },
-        {
-          "field": "metrics.eta_slip_days",
-          "before": 2,
-          "after": 3
+          "field": "last_movement",
+          "before": {
+            "event": "DEPA",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "MSC ROSE",
+              "imo": 9957359
+            },
+            "voyage": "GA632W",
+            "timestamp": "2026-08-26T12:00:00+08:00",
+            "container_number": "MSNU7337919"
+          },
+          "after": {
+            "event": "ARRV",
+            "status": "ACT",
+            "location": {
+              "code": "SGSIN",
+              "name": "SINGAPORE",
+              "timezone": "Asia/Singapore",
+              "country": {
+                "code": "SG",
+                "name": "Singapore"
+              }
+            },
+            "vessel": {
+              "name": "MSC ROSE",
+              "imo": 9957359
+            },
+            "voyage": "GA632W",
+            "timestamp": "2026-09-11T12:00:00+08:00",
+            "container_number": "MSNU7337919"
+          }
         },
         {
           "field": "next_movement",
@@ -179,12 +221,32 @@
             "event": "ARRV",
             "status": "EST",
             "location": {
-              "code": "PLGDN",
-              "name": "GDANSK",
-              "timezone": "Europe/Warsaw",
+              "code": "SGSIN",
+              "name": "SINGAPORE",
+              "timezone": "Asia/Singapore",
               "country": {
-                "code": "PL",
-                "name": "Poland"
+                "code": "SG",
+                "name": "Singapore"
+              }
+            },
+            "vessel": {
+              "name": "MSC ROSE",
+              "imo": 9957359
+            },
+            "voyage": "GA632W",
+            "timestamp": "2026-09-11T12:00:00+08:00",
+            "container_number": "MSNU7337919"
+          },
+          "after": {
+            "event": "DEPA",
+            "status": "EST",
+            "location": {
+              "code": "SGSIN",
+              "name": "SINGAPORE",
+              "timezone": "Asia/Singapore",
+              "country": {
+                "code": "SG",
+                "name": "Singapore"
               }
             },
             "vessel": {
@@ -192,19 +254,113 @@
               "imo": 9399026
             },
             "voyage": "GA633W",
-            "timestamp": "2026-10-20T12:00:00+02:00",
-            "container_number": "TGHU9300599"
+            "timestamp": "2026-09-17T12:00:00+08:00",
+            "container_number": "MSNU7337919"
+          }
+        }
+      ]
+    },
+    {
+      "type": "CHANGED",
+      "container": "MSNU7461112",
+      "reference": "#08 InPost",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "eta",
+          "before": "2026-10-24T12:00:00+02:00",
+          "after": "2026-10-26T12:00:00+01:00"
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-20T12:00:00+02:00",
+          "after": "2026-10-23T12:00:00+02:00"
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 12,
+          "after": 14
+        },
+        {
+          "field": "metrics.predicted_vs_carrier_days",
+          "before": 4,
+          "after": 3
+        },
+        {
+          "field": "last_movement",
+          "before": {
+            "event": "DEPA",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "MSC ROSE",
+              "imo": 9957359
+            },
+            "voyage": "GA632W",
+            "timestamp": "2026-08-26T12:00:00+08:00",
+            "container_number": "MSNU7461112"
           },
           "after": {
             "event": "ARRV",
+            "status": "ACT",
+            "location": {
+              "code": "SGSIN",
+              "name": "SINGAPORE",
+              "timezone": "Asia/Singapore",
+              "country": {
+                "code": "SG",
+                "name": "Singapore"
+              }
+            },
+            "vessel": {
+              "name": "MSC ROSE",
+              "imo": 9957359
+            },
+            "voyage": "GA632W",
+            "timestamp": "2026-09-11T12:00:00+08:00",
+            "container_number": "MSNU7461112"
+          }
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "ARRV",
             "status": "EST",
             "location": {
-              "code": "PLGDN",
-              "name": "GDANSK",
-              "timezone": "Europe/Warsaw",
+              "code": "SGSIN",
+              "name": "SINGAPORE",
+              "timezone": "Asia/Singapore",
               "country": {
-                "code": "PL",
-                "name": "Poland"
+                "code": "SG",
+                "name": "Singapore"
+              }
+            },
+            "vessel": {
+              "name": "MSC ROSE",
+              "imo": 9957359
+            },
+            "voyage": "GA632W",
+            "timestamp": "2026-09-11T12:00:00+08:00",
+            "container_number": "MSNU7461112"
+          },
+          "after": {
+            "event": "DEPA",
+            "status": "EST",
+            "location": {
+              "code": "SGSIN",
+              "name": "SINGAPORE",
+              "timezone": "Asia/Singapore",
+              "country": {
+                "code": "SG",
+                "name": "Singapore"
               }
             },
             "vessel": {
@@ -212,14 +368,143 @@
               "imo": 9399026
             },
             "voyage": "GA633W",
-            "timestamp": "2026-10-21T12:00:00+02:00",
-            "container_number": "TGHU9300599"
+            "timestamp": "2026-09-17T12:00:00+08:00",
+            "container_number": "MSNU7461112"
+          }
+        }
+      ]
+    },
+    {
+      "type": "CHANGED",
+      "container": "ONEU0423082",
+      "reference": "TJX-2",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "status",
+          "before": "SAILING",
+          "after": "ARRIVED"
+        },
+        {
+          "field": "container_status",
+          "before": "SAILING",
+          "after": "ARRIVED"
+        },
+        {
+          "field": "eta",
+          "before": "2026-09-09T12:00:00+01:00",
+          "after": "2026-09-11T12:00:00+01:00"
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-09-09T12:00:00+01:00",
+          "after": "2026-09-11T12:00:00+01:00"
+        },
+        {
+          "field": "ata",
+          "before": null,
+          "after": "2026-09-11T12:00:00+01:00"
+        },
+        {
+          "field": "vessel",
+          "before": "YM TOPMOST",
+          "after": "RAILWAY"
+        },
+        {
+          "field": "voyage",
+          "before": "025W",
+          "after": null
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 3,
+          "after": 5
+        },
+        {
+          "field": "last_movement",
+          "before": {
+            "event": "ARRV",
+            "status": "ACT",
+            "location": {
+              "code": "GBSOU",
+              "name": "SOUTHAMPTON",
+              "timezone": "Europe/London",
+              "country": {
+                "code": "GB",
+                "name": "United Kingdom"
+              }
+            },
+            "vessel": {
+              "name": "YM TOPMOST",
+              "imo": 9878515
+            },
+            "voyage": "025W",
+            "timestamp": "2026-09-06T12:00:00+01:00",
+            "container_number": "ONEU0423082"
+          },
+          "after": {
+            "event": "ARRV",
+            "status": "ACT",
+            "location": {
+              "code": "GBBHM",
+              "name": "BIRMINGHAM (UK)",
+              "timezone": "Europe/London",
+              "country": {
+                "code": "GB",
+                "name": "United Kingdom"
+              }
+            },
+            "vessel": {
+              "name": "RAILWAY",
+              "imo": null
+            },
+            "voyage": null,
+            "timestamp": "2026-09-11T12:00:00+01:00",
+            "container_number": "ONEU0423082"
           }
         },
         {
-          "field": "recommended_action",
-          "before": "Brak pilnej akcji; monitorować.",
-          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+          "field": "next_movement",
+          "before": {
+            "event": "DEPA",
+            "status": "EST",
+            "location": {
+              "code": "GBSOU",
+              "name": "SOUTHAMPTON",
+              "timezone": "Europe/London",
+              "country": {
+                "code": "GB",
+                "name": "United Kingdom"
+              }
+            },
+            "vessel": {
+              "name": "RAILWAY",
+              "imo": null
+            },
+            "voyage": null,
+            "timestamp": "2026-09-08T12:00:00+01:00",
+            "container_number": "ONEU0423082"
+          },
+          "after": {
+            "event": "DISC",
+            "status": "EST",
+            "location": {
+              "code": "GBBHM",
+              "name": "BIRMINGHAM (UK)",
+              "timezone": "Europe/London",
+              "country": {
+                "code": "GB",
+                "name": "United Kingdom"
+              }
+            },
+            "vessel": {
+              "name": "RAILWAY",
+              "imo": null
+            },
+            "voyage": null,
+            "timestamp": "2026-09-11T12:00:00+01:00",
+            "container_number": "ONEU0423082"
+          }
         }
       ]
     }
