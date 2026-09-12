@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-12T09:13:54.093Z",
-  "previous_snapshot_at": "2026-09-12T05:15:32.655Z",
+  "fetched_at": "2026-09-12T13:13:17.052Z",
+  "previous_snapshot_at": "2026-09-12T09:13:53.473Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 12,
     "inpost_red": 8,
     "inpost_orange": 1,
     "other_exceptions": 12,
-    "detected_changes": 4
+    "detected_changes": 1
   },
   "priority_inpost": [
     {
@@ -779,86 +779,9 @@
   ],
   "changes": [
     {
-      "id": 6714607,
-      "reference": "#16 black",
-      "shipment_number": "MRKU2538940",
-      "carrier": "MAERSK LINE",
-      "status": "BOOKED",
-      "eta": "2026-11-05T12:00:00+01:00",
-      "etd": "2026-09-15T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "info",
-      "changes": [
-        {
-          "field": "container_status",
-          "before": "EMPTY_SHIPPER",
-          "after": "GATE_IN"
-        },
-        {
-          "field": "new_actual_movement",
-          "event": "GTIN",
-          "location": "NINGBO",
-          "vessel": null,
-          "voyage": null,
-          "timestamp": "2026-09-10T12:00:00+08:00"
-        }
-      ]
-    },
-    {
-      "id": 6714599,
-      "reference": "#36 black",
-      "shipment_number": "MRSU6424825",
-      "carrier": "MAERSK LINE",
-      "status": "BOOKED",
-      "eta": "2026-11-05T12:00:00+01:00",
-      "etd": "2026-09-15T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "info",
-      "changes": [
-        {
-          "field": "container_status",
-          "before": "EMPTY_SHIPPER",
-          "after": "GATE_IN"
-        },
-        {
-          "field": "new_actual_movement",
-          "event": "GTIN",
-          "location": "NINGBO",
-          "vessel": null,
-          "voyage": null,
-          "timestamp": "2026-09-11T12:00:00+08:00"
-        }
-      ]
-    },
-    {
-      "id": 6637823,
-      "reference": "#10 PSC black",
-      "shipment_number": "MSDU7730546",
-      "carrier": "MSC",
-      "status": "SAILING",
-      "eta": "2026-10-24T12:00:00+02:00",
-      "etd": "2026-09-05T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "medium",
-      "changes": [
-        {
-          "field": "eta",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-24T12:00:00+02:00",
-          "delta_days": 1
-        },
-        {
-          "field": "eta_carrier",
-          "before": "2026-10-21T12:00:00+02:00",
-          "after": "2026-10-23T12:00:00+02:00",
-          "delta_days": 2
-        }
-      ]
-    },
-    {
-      "id": 6637820,
-      "reference": "#09 InPost",
-      "shipment_number": "UETU6022230",
+      "id": 6637825,
+      "reference": "#11 BLACK",
+      "shipment_number": "TGHU9300599",
       "carrier": "MSC",
       "status": "SAILING",
       "eta": "2026-10-24T12:00:00+02:00",
@@ -1340,8 +1263,8 @@
       "etd": "2026-09-05T12:00:00+08:00",
       "etd_initial": "2026-09-01T12:00:00+08:00",
       "atd": "2026-09-05T12:00:00+08:00",
-      "eta": "2026-10-23T12:00:00+02:00",
-      "eta_carrier": "2026-10-21T12:00:00+02:00",
+      "eta": "2026-10-24T12:00:00+02:00",
+      "eta_carrier": "2026-10-23T12:00:00+02:00",
       "eta_initial": "2026-10-20T12:00:00+02:00",
       "ata": null,
       "vessel": "MSC KALINA",
@@ -1384,13 +1307,13 @@
           "imo": 9399026
         },
         "voyage": "GA633W",
-        "timestamp": "2026-10-21T12:00:00+02:00",
+        "timestamp": "2026-10-23T12:00:00+02:00",
         "container_number": "TGHU9300599"
       },
       "metrics": {
         "etd_slip_days": 4,
-        "eta_slip_days": 3,
-        "predicted_vs_carrier_days": 2
+        "eta_slip_days": 4,
+        "predicted_vs_carrier_days": 1
       },
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
@@ -1661,6 +1584,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-12T09:13:54.093Z",
-  "published_at": "2026-09-12T09:13:54.169Z"
+  "generated_at": "2026-09-12T13:13:17.052Z",
+  "published_at": "2026-09-12T13:13:17.110Z"
 }
