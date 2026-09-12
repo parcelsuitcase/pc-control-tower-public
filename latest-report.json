@@ -1,14 +1,14 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-12T05:15:33.284Z",
-  "previous_snapshot_at": "2026-09-11T17:13:29.185Z",
+  "fetched_at": "2026-09-12T09:13:54.093Z",
+  "previous_snapshot_at": "2026-09-12T05:15:32.655Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 12,
     "inpost_red": 8,
     "inpost_orange": 1,
-    "other_exceptions": 13,
+    "other_exceptions": 12,
     "detected_changes": 4
   },
   "priority_inpost": [
@@ -152,8 +152,8 @@
       "etd": "2026-09-05T12:00:00+08:00",
       "etd_initial": "2026-09-01T12:00:00+08:00",
       "atd": "2026-09-05T12:00:00+08:00",
-      "eta": "2026-10-23T12:00:00+02:00",
-      "eta_carrier": "2026-10-21T12:00:00+02:00",
+      "eta": "2026-10-24T12:00:00+02:00",
+      "eta_carrier": "2026-10-23T12:00:00+02:00",
       "eta_initial": "2026-10-20T12:00:00+02:00",
       "ata": null,
       "vessel": "MSC KALINA",
@@ -196,13 +196,13 @@
           "imo": 9399026
         },
         "voyage": "GA633W",
-        "timestamp": "2026-10-21T12:00:00+02:00",
+        "timestamp": "2026-10-23T12:00:00+02:00",
         "container_number": "UETU6022230"
       },
       "metrics": {
         "etd_slip_days": 4,
-        "eta_slip_days": 3,
-        "predicted_vs_carrier_days": 2
+        "eta_slip_days": 4,
+        "predicted_vs_carrier_days": 1
       },
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
@@ -779,21 +779,73 @@
   ],
   "changes": [
     {
-      "id": 6626480,
-      "reference": "#07 InPost",
-      "shipment_number": "MSNU7337919",
+      "id": 6714607,
+      "reference": "#16 black",
+      "shipment_number": "MRKU2538940",
+      "carrier": "MAERSK LINE",
+      "status": "BOOKED",
+      "eta": "2026-11-05T12:00:00+01:00",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "container_status",
+          "before": "EMPTY_SHIPPER",
+          "after": "GATE_IN"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "GTIN",
+          "location": "NINGBO",
+          "vessel": null,
+          "voyage": null,
+          "timestamp": "2026-09-10T12:00:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": 6714599,
+      "reference": "#36 black",
+      "shipment_number": "MRSU6424825",
+      "carrier": "MAERSK LINE",
+      "status": "BOOKED",
+      "eta": "2026-11-05T12:00:00+01:00",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "container_status",
+          "before": "EMPTY_SHIPPER",
+          "after": "GATE_IN"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "GTIN",
+          "location": "NINGBO",
+          "vessel": null,
+          "voyage": null,
+          "timestamp": "2026-09-11T12:00:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": 6637823,
+      "reference": "#10 PSC black",
+      "shipment_number": "MSDU7730546",
       "carrier": "MSC",
       "status": "SAILING",
-      "eta": "2026-10-26T12:00:00+01:00",
-      "etd": "2026-08-26T12:00:00+08:00",
+      "eta": "2026-10-24T12:00:00+02:00",
+      "etd": "2026-09-05T12:00:00+08:00",
       "type": "CHANGED",
       "severity": "medium",
       "changes": [
         {
           "field": "eta",
-          "before": "2026-10-24T12:00:00+02:00",
-          "after": "2026-10-26T12:00:00+01:00",
-          "delta_days": 2
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-24T12:00:00+02:00",
+          "delta_days": 1
         },
         {
           "field": "eta_carrier",
@@ -804,90 +856,27 @@
       ]
     },
     {
-      "id": 6572414,
-      "reference": "TJX-2",
-      "shipment_number": "ONEU0423082",
-      "carrier": "ONE LINE",
-      "status": "ARRIVED",
-      "eta": "2026-09-11T12:00:00+01:00",
-      "etd": "2026-07-30T12:00:00+08:00",
+      "id": 6637820,
+      "reference": "#09 InPost",
+      "shipment_number": "UETU6022230",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "eta": "2026-10-24T12:00:00+02:00",
+      "etd": "2026-09-05T12:00:00+08:00",
       "type": "CHANGED",
-      "severity": "info",
+      "severity": "medium",
       "changes": [
         {
-          "field": "new_actual_movement",
-          "event": "EMSH",
-          "location": "NINGBO",
-          "vessel": null,
-          "voyage": null,
-          "timestamp": "2026-07-24T12:00:00+08:00"
-        }
-      ]
-    },
-    {
-      "id": 6571045,
-      "reference": "Cardio Bunny",
-      "shipment_number": "SELU4082651",
-      "carrier": "MAERSK LINE",
-      "status": "DISCHARGED",
-      "eta": "2026-09-10T12:00:00+02:00",
-      "etd": "2026-07-31T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "info",
-      "changes": [
-        {
-          "field": "status",
-          "before": "ARRIVED",
-          "after": "DISCHARGED"
+          "field": "eta",
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-24T12:00:00+02:00",
+          "delta_days": 1
         },
         {
-          "field": "container_status",
-          "before": "ARRIVED",
-          "after": "DISCHARGED"
-        },
-        {
-          "field": "new_actual_movement",
-          "event": "DISC",
-          "location": "GDANSK",
-          "vessel": "SYNERGY ANTWERP",
-          "voyage": "635N",
-          "timestamp": "2026-09-10T12:00:00+02:00"
-        }
-      ]
-    },
-    {
-      "id": 6571041,
-      "reference": "TJX-1",
-      "shipment_number": "CAAU6610289",
-      "carrier": "MAERSK LINE",
-      "status": "ARRIVED",
-      "eta": "2026-09-12T12:00:00+02:00",
-      "etd": "2026-07-31T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "info",
-      "changes": [
-        {
-          "field": "status",
-          "before": "SAILING",
-          "after": "ARRIVED"
-        },
-        {
-          "field": "container_status",
-          "before": "SAILING",
-          "after": "ARRIVED"
-        },
-        {
-          "field": "ata",
-          "before": null,
-          "after": "2026-09-12T12:00:00+02:00"
-        },
-        {
-          "field": "new_actual_movement",
-          "event": "ARRV",
-          "location": "HAMBURG",
-          "vessel": "MAASTRICHT MAERSK",
-          "voyage": "630W",
-          "timestamp": "2026-09-12T12:00:00+02:00"
+          "field": "eta_carrier",
+          "before": "2026-10-21T12:00:00+02:00",
+          "after": "2026-10-23T12:00:00+02:00",
+          "delta_days": 2
         }
       ]
     }
@@ -898,7 +887,7 @@
       "container": "MRKU2538940",
       "carrier": "MAERSK LINE",
       "status": "BOOKED",
-      "container_status": "EMPTY_SHIPPER",
+      "container_status": "GATE_IN",
       "pol": "NINGBO",
       "pod": "GDANSK",
       "etd": "2026-09-15T12:00:00+08:00",
@@ -912,7 +901,7 @@
       "voyage": "636W",
       "transshipments": 1,
       "last_movement": {
-        "event": "EMSH",
+        "event": "GTIN",
         "status": "ACT",
         "location": {
           "code": "CNNBG",
@@ -925,7 +914,7 @@
         },
         "vessel": null,
         "voyage": null,
-        "timestamp": "2026-09-09T12:00:00+08:00",
+        "timestamp": "2026-09-10T12:00:00+08:00",
         "container_number": "MRKU2538940"
       },
       "next_movement": {
@@ -961,7 +950,7 @@
       "container": "MRSU6424825",
       "carrier": "MAERSK LINE",
       "status": "BOOKED",
-      "container_status": "EMPTY_SHIPPER",
+      "container_status": "GATE_IN",
       "pol": "NINGBO",
       "pod": "GDANSK",
       "etd": "2026-09-15T12:00:00+08:00",
@@ -975,7 +964,7 @@
       "voyage": "636W",
       "transshipments": 1,
       "last_movement": {
-        "event": "EMSH",
+        "event": "GTIN",
         "status": "ACT",
         "location": {
           "code": "CNNBG",
@@ -988,7 +977,7 @@
         },
         "vessel": null,
         "voyage": null,
-        "timestamp": "2026-09-09T12:00:00+08:00",
+        "timestamp": "2026-09-11T12:00:00+08:00",
         "container_number": "MRSU6424825"
       },
       "next_movement": {
@@ -1417,8 +1406,8 @@
       "etd": "2026-09-05T12:00:00+08:00",
       "etd_initial": "2026-09-01T12:00:00+08:00",
       "atd": "2026-09-05T12:00:00+08:00",
-      "eta": "2026-10-23T12:00:00+02:00",
-      "eta_carrier": "2026-10-21T12:00:00+02:00",
+      "eta": "2026-10-24T12:00:00+02:00",
+      "eta_carrier": "2026-10-23T12:00:00+02:00",
       "eta_initial": "2026-10-20T12:00:00+02:00",
       "ata": null,
       "vessel": "MSC KALINA",
@@ -1461,13 +1450,13 @@
           "imo": 9399026
         },
         "voyage": "GA633W",
-        "timestamp": "2026-10-21T12:00:00+02:00",
+        "timestamp": "2026-10-23T12:00:00+02:00",
         "container_number": "MSDU7730546"
       },
       "metrics": {
         "etd_slip_days": 4,
-        "eta_slip_days": 3,
-        "predicted_vs_carrier_days": 2
+        "eta_slip_days": 4,
+        "predicted_vs_carrier_days": 1
       },
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
@@ -1669,56 +1658,9 @@
       },
       "risk": "ORANGE",
       "recommended_action": "Brak pilnej akcji; monitorować."
-    },
-    {
-      "reference": "Cardio Bunny",
-      "container": "SELU4082651",
-      "carrier": "MAERSK LINE",
-      "status": "DISCHARGED",
-      "container_status": "DISCHARGED",
-      "pol": "SHANGHAI",
-      "pod": "GDANSK",
-      "etd": "2026-07-31T12:00:00+08:00",
-      "etd_initial": "2026-07-31T12:00:00+08:00",
-      "atd": "2026-07-31T12:00:00+08:00",
-      "eta": "2026-09-10T12:00:00+02:00",
-      "eta_carrier": "2026-09-10T12:00:00+02:00",
-      "eta_initial": "2026-09-10T12:00:00+02:00",
-      "ata": "2026-09-10T12:00:00+02:00",
-      "vessel": "SYNERGY ANTWERP",
-      "voyage": "635N",
-      "transshipments": 1,
-      "last_movement": {
-        "event": "DISC",
-        "status": "ACT",
-        "location": {
-          "code": "PLGDN",
-          "name": "GDANSK",
-          "timezone": "Europe/Warsaw",
-          "country": {
-            "code": "PL",
-            "name": "Poland"
-          }
-        },
-        "vessel": {
-          "name": "SYNERGY ANTWERP",
-          "imo": 9443580
-        },
-        "voyage": "635N",
-        "timestamp": "2026-09-10T12:00:00+02:00",
-        "container_number": "SELU4082651"
-      },
-      "next_movement": null,
-      "metrics": {
-        "etd_slip_days": 0,
-        "eta_slip_days": 0,
-        "predicted_vs_carrier_days": 0
-      },
-      "risk": "GREEN",
-      "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-12T05:15:33.284Z",
-  "published_at": "2026-09-12T05:15:33.306Z"
+  "generated_at": "2026-09-12T09:13:54.093Z",
+  "published_at": "2026-09-12T09:13:54.169Z"
 }
