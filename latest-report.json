@@ -1,8 +1,8 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-12T13:13:17.052Z",
-  "previous_snapshot_at": "2026-09-12T09:13:53.473Z",
+  "fetched_at": "2026-09-12T17:12:36.006Z",
+  "previous_snapshot_at": "2026-09-12T13:13:16.617Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 12,
@@ -779,27 +779,49 @@
   ],
   "changes": [
     {
-      "id": 6637825,
-      "reference": "#11 BLACK",
-      "shipment_number": "TGHU9300599",
-      "carrier": "MSC",
-      "status": "SAILING",
-      "eta": "2026-10-24T12:00:00+02:00",
-      "etd": "2026-09-05T12:00:00+08:00",
+      "id": 6572414,
+      "reference": "TJX-2",
+      "shipment_number": "ONEU0423082",
+      "carrier": "ONE LINE",
+      "status": "DISCHARGED",
+      "eta": "2026-09-11T12:00:00+01:00",
+      "etd": "2026-07-30T12:00:00+08:00",
       "type": "CHANGED",
-      "severity": "medium",
+      "severity": "info",
       "changes": [
         {
-          "field": "eta",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-24T12:00:00+02:00",
-          "delta_days": 1
+          "field": "status",
+          "before": "ARRIVED",
+          "after": "DISCHARGED"
         },
         {
-          "field": "eta_carrier",
-          "before": "2026-10-21T12:00:00+02:00",
-          "after": "2026-10-23T12:00:00+02:00",
-          "delta_days": 2
+          "field": "container_status",
+          "before": "ARRIVED",
+          "after": "GATE_OUT"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "EMSH",
+          "location": "NINGBO",
+          "vessel": null,
+          "voyage": null,
+          "timestamp": "2026-07-25T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "DISC",
+          "location": "BIRMINGHAM (UK)",
+          "vessel": "RAILWAY",
+          "voyage": null,
+          "timestamp": "2026-09-11T12:00:00+01:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "GTOT",
+          "location": "BIRMINGHAM (UK)",
+          "vessel": null,
+          "voyage": null,
+          "timestamp": "2026-09-12T12:00:00+01:00"
         }
       ]
     }
@@ -1388,8 +1410,8 @@
       "reference": "TJX-2",
       "container": "ONEU0423082",
       "carrier": "ONE LINE",
-      "status": "ARRIVED",
-      "container_status": "ARRIVED",
+      "status": "DISCHARGED",
+      "container_status": "GATE_OUT",
       "pol": "NINGBO",
       "pod": "BIRMINGHAM (UK)",
       "etd": "2026-07-30T12:00:00+08:00",
@@ -1403,7 +1425,7 @@
       "voyage": null,
       "transshipments": 1,
       "last_movement": {
-        "event": "ARRV",
+        "event": "GTOT",
         "status": "ACT",
         "location": {
           "code": "GBBHM",
@@ -1414,34 +1436,12 @@
             "name": "United Kingdom"
           }
         },
-        "vessel": {
-          "name": "RAILWAY",
-          "imo": null
-        },
+        "vessel": null,
         "voyage": null,
-        "timestamp": "2026-09-11T12:00:00+01:00",
+        "timestamp": "2026-09-12T12:00:00+01:00",
         "container_number": "ONEU0423082"
       },
-      "next_movement": {
-        "event": "DISC",
-        "status": "EST",
-        "location": {
-          "code": "GBBHM",
-          "name": "BIRMINGHAM (UK)",
-          "timezone": "Europe/London",
-          "country": {
-            "code": "GB",
-            "name": "United Kingdom"
-          }
-        },
-        "vessel": {
-          "name": "RAILWAY",
-          "imo": null
-        },
-        "voyage": null,
-        "timestamp": "2026-09-11T12:00:00+01:00",
-        "container_number": "ONEU0423082"
-      },
+      "next_movement": null,
       "metrics": {
         "etd_slip_days": 0,
         "eta_slip_days": 5,
@@ -1584,6 +1584,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-12T13:13:17.052Z",
-  "published_at": "2026-09-12T13:13:17.110Z"
+  "generated_at": "2026-09-12T17:12:36.006Z",
+  "published_at": "2026-09-12T17:12:36.071Z"
 }

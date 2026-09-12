@@ -1,9 +1,9 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-12T13:13:17.110Z",
-  "current_generated_at": "2026-09-12T13:13:17.052Z",
-  "previous_generated_at": "2026-09-12T09:13:54.093Z",
+  "analyzed_at": "2026-09-12T17:12:36.071Z",
+  "current_generated_at": "2026-09-12T17:12:36.006Z",
+  "previous_generated_at": "2026-09-12T13:13:17.052Z",
   "baseline": false,
   "change_count": 1,
   "summary": {
@@ -153,7 +153,7 @@
     {
       "reference": "TJX-2",
       "container": "ONEU0423082",
-      "status": "ARRIVED",
+      "status": "DISCHARGED",
       "eta": "2026-09-11T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
@@ -162,72 +162,83 @@
   "changes": [
     {
       "type": "CHANGED",
-      "container": "TGHU9300599",
-      "reference": "#11 BLACK",
+      "container": "ONEU0423082",
+      "reference": "TJX-2",
       "risk": "RED",
       "fields": [
         {
-          "field": "eta",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-24T12:00:00+02:00"
+          "field": "status",
+          "before": "ARRIVED",
+          "after": "DISCHARGED"
         },
         {
-          "field": "eta_carrier",
-          "before": "2026-10-21T12:00:00+02:00",
-          "after": "2026-10-23T12:00:00+02:00"
+          "field": "container_status",
+          "before": "ARRIVED",
+          "after": "GATE_OUT"
         },
         {
-          "field": "metrics.eta_slip_days",
-          "before": 3,
-          "after": 4
-        },
-        {
-          "field": "metrics.predicted_vs_carrier_days",
-          "before": 2,
-          "after": 1
+          "field": "last_movement",
+          "before": {
+            "event": "ARRV",
+            "status": "ACT",
+            "location": {
+              "code": "GBBHM",
+              "name": "BIRMINGHAM (UK)",
+              "timezone": "Europe/London",
+              "country": {
+                "code": "GB",
+                "name": "United Kingdom"
+              }
+            },
+            "vessel": {
+              "name": "RAILWAY",
+              "imo": null
+            },
+            "voyage": null,
+            "timestamp": "2026-09-11T12:00:00+01:00",
+            "container_number": "ONEU0423082"
+          },
+          "after": {
+            "event": "GTOT",
+            "status": "ACT",
+            "location": {
+              "code": "GBBHM",
+              "name": "BIRMINGHAM (UK)",
+              "timezone": "Europe/London",
+              "country": {
+                "code": "GB",
+                "name": "United Kingdom"
+              }
+            },
+            "vessel": null,
+            "voyage": null,
+            "timestamp": "2026-09-12T12:00:00+01:00",
+            "container_number": "ONEU0423082"
+          }
         },
         {
           "field": "next_movement",
           "before": {
-            "event": "ARRV",
+            "event": "DISC",
             "status": "EST",
             "location": {
-              "code": "PLGDN",
-              "name": "GDANSK",
-              "timezone": "Europe/Warsaw",
+              "code": "GBBHM",
+              "name": "BIRMINGHAM (UK)",
+              "timezone": "Europe/London",
               "country": {
-                "code": "PL",
-                "name": "Poland"
+                "code": "GB",
+                "name": "United Kingdom"
               }
             },
             "vessel": {
-              "name": "MSC KALINA",
-              "imo": 9399026
+              "name": "RAILWAY",
+              "imo": null
             },
-            "voyage": "GA633W",
-            "timestamp": "2026-10-21T12:00:00+02:00",
-            "container_number": "TGHU9300599"
+            "voyage": null,
+            "timestamp": "2026-09-11T12:00:00+01:00",
+            "container_number": "ONEU0423082"
           },
-          "after": {
-            "event": "ARRV",
-            "status": "EST",
-            "location": {
-              "code": "PLGDN",
-              "name": "GDANSK",
-              "timezone": "Europe/Warsaw",
-              "country": {
-                "code": "PL",
-                "name": "Poland"
-              }
-            },
-            "vessel": {
-              "name": "MSC KALINA",
-              "imo": 9399026
-            },
-            "voyage": "GA633W",
-            "timestamp": "2026-10-23T12:00:00+02:00",
-            "container_number": "TGHU9300599"
-          }
+          "after": null
         }
       ]
     }
