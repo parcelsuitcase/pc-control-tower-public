@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-12T17:12:36.071Z",
-  "current_generated_at": "2026-09-12T17:12:36.006Z",
-  "previous_generated_at": "2026-09-12T13:13:17.052Z",
+  "analyzed_at": "2026-09-13T05:13:30.140Z",
+  "current_generated_at": "2026-09-13T05:13:30.090Z",
+  "previous_generated_at": "2026-09-12T17:12:36.006Z",
   "baseline": false,
   "change_count": 1,
   "summary": {
     "inpost_total": 12,
     "inpost_red": 8,
     "inpost_orange": 1,
-    "other_exceptions": 12,
-    "detected_changes": 1
+    "other_exceptions": 11,
+    "detected_changes": 0
   },
   "red_alerts": [
     {
@@ -149,98 +149,14 @@
       "eta": "2026-10-24T12:00:00+02:00",
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
-    },
-    {
-      "reference": "TJX-2",
-      "container": "ONEU0423082",
-      "status": "DISCHARGED",
-      "eta": "2026-09-11T12:00:00+01:00",
-      "risk": "RED",
-      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
   "changes": [
     {
-      "type": "CHANGED",
+      "type": "REMOVED_SHIPMENT",
       "container": "ONEU0423082",
       "reference": "TJX-2",
-      "risk": "RED",
-      "fields": [
-        {
-          "field": "status",
-          "before": "ARRIVED",
-          "after": "DISCHARGED"
-        },
-        {
-          "field": "container_status",
-          "before": "ARRIVED",
-          "after": "GATE_OUT"
-        },
-        {
-          "field": "last_movement",
-          "before": {
-            "event": "ARRV",
-            "status": "ACT",
-            "location": {
-              "code": "GBBHM",
-              "name": "BIRMINGHAM (UK)",
-              "timezone": "Europe/London",
-              "country": {
-                "code": "GB",
-                "name": "United Kingdom"
-              }
-            },
-            "vessel": {
-              "name": "RAILWAY",
-              "imo": null
-            },
-            "voyage": null,
-            "timestamp": "2026-09-11T12:00:00+01:00",
-            "container_number": "ONEU0423082"
-          },
-          "after": {
-            "event": "GTOT",
-            "status": "ACT",
-            "location": {
-              "code": "GBBHM",
-              "name": "BIRMINGHAM (UK)",
-              "timezone": "Europe/London",
-              "country": {
-                "code": "GB",
-                "name": "United Kingdom"
-              }
-            },
-            "vessel": null,
-            "voyage": null,
-            "timestamp": "2026-09-12T12:00:00+01:00",
-            "container_number": "ONEU0423082"
-          }
-        },
-        {
-          "field": "next_movement",
-          "before": {
-            "event": "DISC",
-            "status": "EST",
-            "location": {
-              "code": "GBBHM",
-              "name": "BIRMINGHAM (UK)",
-              "timezone": "Europe/London",
-              "country": {
-                "code": "GB",
-                "name": "United Kingdom"
-              }
-            },
-            "vessel": {
-              "name": "RAILWAY",
-              "imo": null
-            },
-            "voyage": null,
-            "timestamp": "2026-09-11T12:00:00+01:00",
-            "container_number": "ONEU0423082"
-          },
-          "after": null
-        }
-      ]
+      "previous_risk": "RED"
     }
   ]
 }
