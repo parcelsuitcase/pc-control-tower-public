@@ -1,8 +1,8 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-13T13:13:42.916Z",
-  "previous_snapshot_at": "2026-09-13T09:39:42.761Z",
+  "fetched_at": "2026-09-13T17:13:09.645Z",
+  "previous_snapshot_at": "2026-09-13T13:13:42.512Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 12,
@@ -779,9 +779,9 @@
   ],
   "changes": [
     {
-      "id": 6682271,
-      "reference": "#34 black",
-      "shipment_number": "EITU9218804",
+      "id": 6682905,
+      "reference": "#33 black",
+      "shipment_number": "TRHU5809002",
       "carrier": "EVERGREEN",
       "status": "SAILING",
       "eta": "2026-10-30T12:00:00+01:00",
@@ -1020,13 +1020,13 @@
       "reference": "#33 black",
       "container": "TRHU5809002",
       "carrier": "EVERGREEN",
-      "status": "BOOKED",
-      "container_status": "GATE_IN",
+      "status": "SAILING",
+      "container_status": "SAILING",
       "pol": "NINGBO",
       "pod": "GDANSK",
       "etd": "2026-09-13T12:00:00+08:00",
       "etd_initial": "2026-09-07T12:00:00+08:00",
-      "atd": null,
+      "atd": "2026-09-13T12:00:00+08:00",
       "eta": "2026-10-30T12:00:00+01:00",
       "eta_carrier": "2026-10-28T12:00:00+01:00",
       "eta_initial": "2026-10-28T12:00:00+01:00",
@@ -1035,25 +1035,8 @@
       "voyage": "011W",
       "transshipments": 0,
       "last_movement": {
-        "event": "GTIN",
+        "event": "DEPA",
         "status": "ACT",
-        "location": {
-          "code": "CNNBG",
-          "name": "NINGBO",
-          "timezone": "Asia/Shanghai",
-          "country": {
-            "code": "CN",
-            "name": "China"
-          }
-        },
-        "vessel": null,
-        "voyage": null,
-        "timestamp": "2026-09-03T12:00:00+08:00",
-        "container_number": "TRHU5809002"
-      },
-      "next_movement": {
-        "event": "LOAD",
-        "status": "EST",
         "location": {
           "code": "CNNBG",
           "name": "NINGBO",
@@ -1071,13 +1054,33 @@
         "timestamp": "2026-09-13T12:00:00+08:00",
         "container_number": "TRHU5809002"
       },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "OOCL VALENCIA",
+          "imo": 9922598
+        },
+        "voyage": "011W",
+        "timestamp": "2026-10-28T12:00:00+01:00",
+        "container_number": "TRHU5809002"
+      },
       "metrics": {
         "etd_slip_days": 6,
         "eta_slip_days": 2,
         "predicted_vs_carrier_days": 2
       },
       "risk": "RED",
-      "recommended_action": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem."
+      "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
       "reference": "#34 black",
@@ -1543,6 +1546,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-13T13:13:42.916Z",
-  "published_at": "2026-09-13T13:13:42.972Z"
+  "generated_at": "2026-09-13T17:13:09.645Z",
+  "published_at": "2026-09-13T17:13:09.666Z"
 }
