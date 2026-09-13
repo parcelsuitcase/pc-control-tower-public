@@ -1,9 +1,9 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-13T05:13:30.140Z",
-  "current_generated_at": "2026-09-13T05:13:30.090Z",
-  "previous_generated_at": "2026-09-12T17:12:36.006Z",
+  "analyzed_at": "2026-09-13T09:39:43.306Z",
+  "current_generated_at": "2026-09-13T09:39:43.282Z",
+  "previous_generated_at": "2026-09-13T05:13:30.090Z",
   "baseline": false,
   "change_count": 1,
   "summary": {
@@ -97,10 +97,10 @@
     {
       "reference": "#35 BLACK",
       "container": "EGHU9809241",
-      "status": "BOOKED",
+      "status": "SAILING",
       "eta": "2026-10-30T12:00:00+01:00",
       "risk": "RED",
-      "recommended_action": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem."
+      "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
       "reference": "#33 black",
@@ -153,10 +153,115 @@
   ],
   "changes": [
     {
-      "type": "REMOVED_SHIPMENT",
-      "container": "ONEU0423082",
-      "reference": "TJX-2",
-      "previous_risk": "RED"
+      "type": "CHANGED",
+      "container": "EGHU9809241",
+      "reference": "#35 BLACK",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "status",
+          "before": "BOOKED",
+          "after": "SAILING"
+        },
+        {
+          "field": "container_status",
+          "before": "GATE_IN",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-13T12:00:00+08:00"
+        },
+        {
+          "field": "last_movement",
+          "before": {
+            "event": "GTIN",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": null,
+            "voyage": null,
+            "timestamp": "2026-09-04T12:00:00+08:00",
+            "container_number": "EGHU9809241"
+          },
+          "after": {
+            "event": "DEPA",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "OOCL VALENCIA",
+              "imo": 9922598
+            },
+            "voyage": "011W",
+            "timestamp": "2026-09-13T12:00:00+08:00",
+            "container_number": "EGHU9809241"
+          }
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "LOAD",
+            "status": "EST",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "OOCL VALENCIA",
+              "imo": 9922598
+            },
+            "voyage": "011W",
+            "timestamp": "2026-09-13T12:00:00+08:00",
+            "container_number": "EGHU9809241"
+          },
+          "after": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDN",
+              "name": "GDANSK",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "OOCL VALENCIA",
+              "imo": 9922598
+            },
+            "voyage": "011W",
+            "timestamp": "2026-10-28T12:00:00+01:00",
+            "container_number": "EGHU9809241"
+          }
+        },
+        {
+          "field": "recommended_action",
+          "before": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem.",
+          "after": "Brak pilnej akcji; monitorować."
+        }
+      ]
     }
   ]
 }

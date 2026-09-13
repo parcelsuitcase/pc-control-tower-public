@@ -1,8 +1,8 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-13T05:13:30.090Z",
-  "previous_snapshot_at": "2026-09-12T17:12:35.589Z",
+  "fetched_at": "2026-09-13T09:39:43.282Z",
+  "previous_snapshot_at": "2026-09-13T09:26:32.960Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 12,
@@ -909,13 +909,13 @@
       "reference": "#35 BLACK",
       "container": "EGHU9809241",
       "carrier": "EVERGREEN",
-      "status": "BOOKED",
-      "container_status": "GATE_IN",
+      "status": "SAILING",
+      "container_status": "SAILING",
       "pol": "NINGBO",
       "pod": "GDANSK",
       "etd": "2026-09-13T12:00:00+08:00",
       "etd_initial": "2026-09-07T12:00:00+08:00",
-      "atd": null,
+      "atd": "2026-09-13T12:00:00+08:00",
       "eta": "2026-10-30T12:00:00+01:00",
       "eta_carrier": "2026-10-28T12:00:00+01:00",
       "eta_initial": "2026-10-28T12:00:00+01:00",
@@ -924,25 +924,8 @@
       "voyage": "011W",
       "transshipments": 0,
       "last_movement": {
-        "event": "GTIN",
+        "event": "DEPA",
         "status": "ACT",
-        "location": {
-          "code": "CNNBG",
-          "name": "NINGBO",
-          "timezone": "Asia/Shanghai",
-          "country": {
-            "code": "CN",
-            "name": "China"
-          }
-        },
-        "vessel": null,
-        "voyage": null,
-        "timestamp": "2026-09-04T12:00:00+08:00",
-        "container_number": "EGHU9809241"
-      },
-      "next_movement": {
-        "event": "LOAD",
-        "status": "EST",
         "location": {
           "code": "CNNBG",
           "name": "NINGBO",
@@ -960,13 +943,33 @@
         "timestamp": "2026-09-13T12:00:00+08:00",
         "container_number": "EGHU9809241"
       },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "OOCL VALENCIA",
+          "imo": 9922598
+        },
+        "voyage": "011W",
+        "timestamp": "2026-10-28T12:00:00+01:00",
+        "container_number": "EGHU9809241"
+      },
       "metrics": {
         "etd_slip_days": 6,
         "eta_slip_days": 2,
         "predicted_vs_carrier_days": 2
       },
       "risk": "RED",
-      "recommended_action": "Sprawdź roll / potwierdzenie załadunku z armatorem lub spedytorem."
+      "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
       "reference": "#33 black",
@@ -1492,6 +1495,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-13T05:13:30.090Z",
-  "published_at": "2026-09-13T05:13:30.140Z"
+  "generated_at": "2026-09-13T09:39:43.282Z",
+  "published_at": "2026-09-13T09:39:43.306Z"
 }
