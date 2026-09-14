@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-14T09:16:57.220Z",
-  "current_generated_at": "2026-09-14T09:16:57.164Z",
-  "previous_generated_at": "2026-09-14T05:14:27.422Z",
+  "analyzed_at": "2026-09-14T13:17:12.933Z",
+  "current_generated_at": "2026-09-14T13:17:12.871Z",
+  "previous_generated_at": "2026-09-14T09:16:57.164Z",
   "baseline": false,
-  "change_count": 0,
+  "change_count": 3,
   "summary": {
-    "inpost_total": 12,
+    "inpost_total": 13,
     "inpost_red": 8,
-    "inpost_orange": 1,
+    "inpost_orange": 2,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 2
   },
   "red_alerts": [
     {
@@ -50,17 +50,17 @@
       "reference": "#07 InPost",
       "container": "MSNU7337919",
       "status": "SAILING",
-      "eta": "2026-10-26T12:00:00+01:00",
+      "eta": "2026-10-25T12:00:00+01:00",
       "risk": "RED",
-      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
     {
       "reference": "#08 InPost",
       "container": "MSNU7461112",
       "status": "SAILING",
-      "eta": "2026-10-26T12:00:00+01:00",
+      "eta": "2026-10-25T12:00:00+01:00",
       "risk": "RED",
-      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
     {
       "reference": "#05 InPost",
@@ -151,5 +151,68 @@
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "type": "CHANGED",
+      "container": "MSNU7337919",
+      "reference": "#07 InPost",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "eta",
+          "before": "2026-10-26T12:00:00+01:00",
+          "after": "2026-10-25T12:00:00+01:00"
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 14,
+          "after": 13
+        },
+        {
+          "field": "metrics.predicted_vs_carrier_days",
+          "before": 3,
+          "after": 2
+        },
+        {
+          "field": "recommended_action",
+          "before": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie.",
+          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+        }
+      ]
+    },
+    {
+      "type": "CHANGED",
+      "container": "MSNU7461112",
+      "reference": "#08 InPost",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "eta",
+          "before": "2026-10-26T12:00:00+01:00",
+          "after": "2026-10-25T12:00:00+01:00"
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 14,
+          "after": 13
+        },
+        {
+          "field": "metrics.predicted_vs_carrier_days",
+          "before": 3,
+          "after": 2
+        },
+        {
+          "field": "recommended_action",
+          "before": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie.",
+          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+        }
+      ]
+    },
+    {
+      "type": "NEW_SHIPMENT",
+      "container": "TLLU4396874",
+      "reference": "#23 InPost",
+      "risk": "ORANGE"
+    }
+  ]
 }

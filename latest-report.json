@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-14T09:16:57.164Z",
-  "previous_snapshot_at": "2026-09-14T05:14:26.969Z",
+  "fetched_at": "2026-09-14T13:17:12.871Z",
+  "previous_snapshot_at": "2026-09-14T09:16:56.750Z",
   "detail_errors": 0,
   "summary": {
-    "inpost_total": 12,
+    "inpost_total": 13,
     "inpost_red": 8,
-    "inpost_orange": 1,
+    "inpost_orange": 2,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 2
   },
   "priority_inpost": [
     {
@@ -284,7 +284,7 @@
       "etd": "2026-08-26T12:00:00+08:00",
       "etd_initial": "2026-08-26T12:00:00+08:00",
       "atd": "2026-08-26T12:00:00+08:00",
-      "eta": "2026-10-26T12:00:00+01:00",
+      "eta": "2026-10-25T12:00:00+01:00",
       "eta_carrier": "2026-10-23T12:00:00+02:00",
       "eta_initial": "2026-10-12T12:00:00+02:00",
       "ata": null,
@@ -333,11 +333,11 @@
       },
       "metrics": {
         "etd_slip_days": 0,
-        "eta_slip_days": 14,
-        "predicted_vs_carrier_days": 3
+        "eta_slip_days": 13,
+        "predicted_vs_carrier_days": 2
       },
       "risk": "RED",
-      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
     {
       "reference": "#08 InPost",
@@ -350,7 +350,7 @@
       "etd": "2026-08-26T12:00:00+08:00",
       "etd_initial": "2026-08-26T12:00:00+08:00",
       "atd": "2026-08-26T12:00:00+08:00",
-      "eta": "2026-10-26T12:00:00+01:00",
+      "eta": "2026-10-25T12:00:00+01:00",
       "eta_carrier": "2026-10-23T12:00:00+02:00",
       "eta_initial": "2026-10-12T12:00:00+02:00",
       "ata": null,
@@ -399,11 +399,11 @@
       },
       "metrics": {
         "etd_slip_days": 0,
-        "eta_slip_days": 14,
-        "predicted_vs_carrier_days": 3
+        "eta_slip_days": 13,
+        "predicted_vs_carrier_days": 2
       },
       "risk": "RED",
-      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
     {
       "reference": "#05 InPost",
@@ -536,6 +536,69 @@
       },
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
+      "reference": "#23 InPost",
+      "container": "TLLU4396874",
+      "carrier": "CMA CGM",
+      "status": "BOOKED",
+      "container_status": "EMPTY_SHIPPER",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-18T12:00:00+08:00",
+      "etd_initial": "2026-09-18T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-11-06T12:00:00+01:00",
+      "eta_carrier": "2026-11-04T12:00:00+01:00",
+      "eta_initial": "2026-11-04T12:00:00+01:00",
+      "ata": null,
+      "vessel": "OOCL FINLAND",
+      "voyage": "0VAORW1MA",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "EMSH",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-14T12:00:00+08:00",
+        "container_number": "TLLU4396874"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "OOCL FINLAND",
+          "imo": 9922536
+        },
+        "voyage": "0VAORW1MA",
+        "timestamp": "2026-09-18T12:00:00+08:00",
+        "container_number": "TLLU4396874"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 2,
+        "predicted_vs_carrier_days": 2
+      },
+      "risk": "ORANGE",
+      "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
     },
     {
       "reference": "#03 InPost - CAX",
@@ -777,7 +840,46 @@
       "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "id": 6626480,
+      "reference": "#07 InPost",
+      "shipment_number": "MSNU7337919",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "eta": "2026-10-25T12:00:00+01:00",
+      "etd": "2026-08-26T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "eta",
+          "before": "2026-10-26T12:00:00+01:00",
+          "after": "2026-10-25T12:00:00+01:00",
+          "delta_days": -1
+        }
+      ]
+    },
+    {
+      "id": 6623742,
+      "reference": "#08 InPost",
+      "shipment_number": "MSNU7461112",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "eta": "2026-10-25T12:00:00+01:00",
+      "etd": "2026-08-26T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "eta",
+          "before": "2026-10-26T12:00:00+01:00",
+          "after": "2026-10-25T12:00:00+01:00",
+          "delta_days": -1
+        }
+      ]
+    }
+  ],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1435,6 +1537,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-14T09:16:57.164Z",
-  "published_at": "2026-09-14T09:16:57.220Z"
+  "generated_at": "2026-09-14T13:17:12.871Z",
+  "published_at": "2026-09-14T13:17:12.933Z"
 }
