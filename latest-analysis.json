@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-14T05:14:27.457Z",
-  "current_generated_at": "2026-09-14T05:14:27.422Z",
-  "previous_generated_at": "2026-09-13T17:13:09.645Z",
+  "analyzed_at": "2026-09-14T09:16:57.220Z",
+  "current_generated_at": "2026-09-14T09:16:57.164Z",
+  "previous_generated_at": "2026-09-14T05:14:27.422Z",
   "baseline": false,
-  "change_count": 1,
+  "change_count": 0,
   "summary": {
     "inpost_total": 12,
     "inpost_red": 8,
@@ -151,12 +151,5 @@
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
-  "changes": [
-    {
-      "type": "REMOVED_SHIPMENT",
-      "container": "CAAU6610289",
-      "reference": "TJX-1",
-      "previous_risk": "ORANGE"
-    }
-  ]
+  "changes": []
 }
