@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-13T17:13:09.645Z",
-  "previous_snapshot_at": "2026-09-13T13:13:42.512Z",
+  "fetched_at": "2026-09-14T05:14:27.422Z",
+  "previous_snapshot_at": "2026-09-13T17:13:09.233Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 12,
     "inpost_red": 8,
     "inpost_orange": 1,
-    "other_exceptions": 11,
-    "detected_changes": 1
+    "other_exceptions": 10,
+    "detected_changes": 0
   },
   "priority_inpost": [
     {
@@ -777,52 +777,7 @@
       "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
     }
   ],
-  "changes": [
-    {
-      "id": 6682905,
-      "reference": "#33 black",
-      "shipment_number": "TRHU5809002",
-      "carrier": "EVERGREEN",
-      "status": "SAILING",
-      "eta": "2026-10-30T12:00:00+01:00",
-      "etd": "2026-09-13T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "info",
-      "changes": [
-        {
-          "field": "status",
-          "before": "BOOKED",
-          "after": "SAILING"
-        },
-        {
-          "field": "container_status",
-          "before": "GATE_IN",
-          "after": "SAILING"
-        },
-        {
-          "field": "atd",
-          "before": null,
-          "after": "2026-09-13T12:00:00+08:00"
-        },
-        {
-          "field": "new_actual_movement",
-          "event": "LOAD",
-          "location": "NINGBO",
-          "vessel": "OOCL VALENCIA",
-          "voyage": "011W",
-          "timestamp": "2026-09-13T12:00:00+08:00"
-        },
-        {
-          "field": "new_actual_movement",
-          "event": "DEPA",
-          "location": "NINGBO",
-          "vessel": "OOCL VALENCIA",
-          "voyage": "011W",
-          "timestamp": "2026-09-13T12:00:00+08:00"
-        }
-      ]
-    }
-  ],
+  "changes": [],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1477,75 +1432,9 @@
       },
       "risk": "ORANGE",
       "recommended_action": "Brak pilnej akcji; monitorować."
-    },
-    {
-      "reference": "TJX-1",
-      "container": "CAAU6610289",
-      "carrier": "MAERSK LINE",
-      "status": "ARRIVED",
-      "container_status": "ARRIVED",
-      "pol": "NINGBO",
-      "pod": "HAMBURG",
-      "etd": "2026-07-31T12:00:00+08:00",
-      "etd_initial": "2026-07-31T12:00:00+08:00",
-      "atd": "2026-08-01T12:00:00+08:00",
-      "eta": "2026-09-12T12:00:00+02:00",
-      "eta_carrier": "2026-09-12T12:00:00+02:00",
-      "eta_initial": "2026-09-11T12:00:00+02:00",
-      "ata": "2026-09-12T12:00:00+02:00",
-      "vessel": "MAASTRICHT MAERSK",
-      "voyage": "630W",
-      "transshipments": 0,
-      "last_movement": {
-        "event": "ARRV",
-        "status": "ACT",
-        "location": {
-          "code": "DEHAM",
-          "name": "HAMBURG",
-          "timezone": "Europe/Berlin",
-          "country": {
-            "code": "DE",
-            "name": "Germany"
-          }
-        },
-        "vessel": {
-          "name": "MAASTRICHT MAERSK",
-          "imo": 9780483
-        },
-        "voyage": "630W",
-        "timestamp": "2026-09-12T12:00:00+02:00",
-        "container_number": "CAAU6610289"
-      },
-      "next_movement": {
-        "event": "DISC",
-        "status": "EST",
-        "location": {
-          "code": "DEHAM",
-          "name": "HAMBURG",
-          "timezone": "Europe/Berlin",
-          "country": {
-            "code": "DE",
-            "name": "Germany"
-          }
-        },
-        "vessel": {
-          "name": "MAASTRICHT MAERSK",
-          "imo": 9780483
-        },
-        "voyage": "630W",
-        "timestamp": "2026-09-12T12:00:00+02:00",
-        "container_number": "CAAU6610289"
-      },
-      "metrics": {
-        "etd_slip_days": 0,
-        "eta_slip_days": 1,
-        "predicted_vs_carrier_days": 0
-      },
-      "risk": "ORANGE",
-      "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-13T17:13:09.645Z",
-  "published_at": "2026-09-13T17:13:09.666Z"
+  "generated_at": "2026-09-14T05:14:27.422Z",
+  "published_at": "2026-09-14T05:14:27.457Z"
 }
