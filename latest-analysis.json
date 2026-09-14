@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-14T13:17:12.933Z",
-  "current_generated_at": "2026-09-14T13:17:12.871Z",
-  "previous_generated_at": "2026-09-14T09:16:57.164Z",
+  "analyzed_at": "2026-09-14T17:13:18.724Z",
+  "current_generated_at": "2026-09-14T17:13:18.703Z",
+  "previous_generated_at": "2026-09-14T13:17:12.871Z",
   "baseline": false,
-  "change_count": 3,
+  "change_count": 1,
   "summary": {
     "inpost_total": 13,
     "inpost_red": 8,
     "inpost_orange": 2,
     "other_exceptions": 10,
-    "detected_changes": 2
+    "detected_changes": 1
   },
   "red_alerts": [
     {
@@ -81,7 +81,7 @@
     {
       "reference": "#16 black",
       "container": "MRKU2538940",
-      "status": "BOOKED",
+      "status": "LOADED",
       "eta": "2026-11-05T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
@@ -154,65 +154,114 @@
   "changes": [
     {
       "type": "CHANGED",
-      "container": "MSNU7337919",
-      "reference": "#07 InPost",
+      "container": "MRKU2538940",
+      "reference": "#16 black",
       "risk": "RED",
       "fields": [
         {
-          "field": "eta",
-          "before": "2026-10-26T12:00:00+01:00",
-          "after": "2026-10-25T12:00:00+01:00"
+          "field": "status",
+          "before": "BOOKED",
+          "after": "LOADED"
         },
         {
-          "field": "metrics.eta_slip_days",
-          "before": 14,
-          "after": 13
+          "field": "container_status",
+          "before": "GATE_IN",
+          "after": "LOADED"
         },
         {
-          "field": "metrics.predicted_vs_carrier_days",
-          "before": 3,
-          "after": 2
+          "field": "etd",
+          "before": "2026-09-15T12:00:00+08:00",
+          "after": "2026-09-14T12:00:00+08:00"
         },
         {
-          "field": "recommended_action",
-          "before": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie.",
-          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+          "field": "metrics.etd_slip_days",
+          "before": 0,
+          "after": -1
+        },
+        {
+          "field": "last_movement",
+          "before": {
+            "event": "GTIN",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": null,
+            "voyage": null,
+            "timestamp": "2026-09-10T12:00:00+08:00",
+            "container_number": "MRKU2538940"
+          },
+          "after": {
+            "event": "LOAD",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "AL MURAYKH",
+              "imo": 9708863
+            },
+            "voyage": "636W",
+            "timestamp": "2026-09-14T12:00:00+08:00",
+            "container_number": "MRKU2538940"
+          }
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "LOAD",
+            "status": "EST",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "AL MURAYKH",
+              "imo": 9708863
+            },
+            "voyage": "636W",
+            "timestamp": "2026-09-15T12:00:00+08:00",
+            "container_number": "MRKU2538940"
+          },
+          "after": {
+            "event": "DEPA",
+            "status": "EST",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "AL MURAYKH",
+              "imo": 9708863
+            },
+            "voyage": "636W",
+            "timestamp": "2026-09-15T12:00:00+08:00",
+            "container_number": "MRKU2538940"
+          }
         }
       ]
-    },
-    {
-      "type": "CHANGED",
-      "container": "MSNU7461112",
-      "reference": "#08 InPost",
-      "risk": "RED",
-      "fields": [
-        {
-          "field": "eta",
-          "before": "2026-10-26T12:00:00+01:00",
-          "after": "2026-10-25T12:00:00+01:00"
-        },
-        {
-          "field": "metrics.eta_slip_days",
-          "before": 14,
-          "after": 13
-        },
-        {
-          "field": "metrics.predicted_vs_carrier_days",
-          "before": 3,
-          "after": 2
-        },
-        {
-          "field": "recommended_action",
-          "before": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie.",
-          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
-        }
-      ]
-    },
-    {
-      "type": "NEW_SHIPMENT",
-      "container": "TLLU4396874",
-      "reference": "#23 InPost",
-      "risk": "ORANGE"
     }
   ]
 }
