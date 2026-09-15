@@ -1,8 +1,8 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-15T13:16:44.041Z",
-  "previous_snapshot_at": "2026-09-15T09:17:07.609Z",
+  "fetched_at": "2026-09-15T17:13:34.895Z",
+  "previous_snapshot_at": "2026-09-15T13:16:43.626Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 14,
@@ -1567,6 +1567,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-15T13:16:44.041Z",
-  "published_at": "2026-09-15T13:16:44.084Z"
+  "generated_at": "2026-09-15T17:13:34.895Z",
+  "published_at": "2026-09-15T17:13:34.931Z"
 }
