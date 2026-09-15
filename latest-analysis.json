@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-15T09:17:08.276Z",
-  "current_generated_at": "2026-09-15T09:17:08.216Z",
-  "previous_generated_at": "2026-09-15T05:15:05.529Z",
+  "analyzed_at": "2026-09-15T13:16:44.084Z",
+  "current_generated_at": "2026-09-15T13:16:44.041Z",
+  "previous_generated_at": "2026-09-15T09:17:08.216Z",
   "baseline": false,
-  "change_count": 2,
+  "change_count": 0,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 9,
@@ -159,18 +159,5 @@
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
-  "changes": [
-    {
-      "type": "NEW_SHIPMENT",
-      "container": "TCNU1157793",
-      "reference": "#21 InPost",
-      "risk": "RED"
-    },
-    {
-      "type": "REMOVED_SHIPMENT",
-      "container": "TFLU4505062",
-      "reference": "#12 - Empik kolory",
-      "previous_risk": "GREEN"
-    }
-  ]
+  "changes": []
 }
