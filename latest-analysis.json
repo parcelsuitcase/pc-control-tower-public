@@ -1,19 +1,27 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-15T05:15:05.569Z",
-  "current_generated_at": "2026-09-15T05:15:05.529Z",
-  "previous_generated_at": "2026-09-14T17:13:18.703Z",
+  "analyzed_at": "2026-09-15T09:17:08.276Z",
+  "current_generated_at": "2026-09-15T09:17:08.216Z",
+  "previous_generated_at": "2026-09-15T05:15:05.529Z",
   "baseline": false,
-  "change_count": 4,
+  "change_count": 2,
   "summary": {
-    "inpost_total": 13,
-    "inpost_red": 8,
+    "inpost_total": 14,
+    "inpost_red": 9,
     "inpost_orange": 2,
-    "other_exceptions": 11,
-    "detected_changes": 4
+    "other_exceptions": 10,
+    "detected_changes": 0
   },
   "red_alerts": [
+    {
+      "reference": "#21 InPost",
+      "container": "TCNU1157793",
+      "status": "BOOKED",
+      "eta": "2026-11-07T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
     {
       "reference": "#22 InPost",
       "container": "TIIU6167828",
@@ -153,209 +161,16 @@
   ],
   "changes": [
     {
-      "type": "CHANGED",
-      "container": "TIIU6167828",
-      "reference": "#22 InPost",
-      "risk": "RED",
-      "fields": [
-        {
-          "field": "container_status",
-          "before": "EMPTY_SHIPPER",
-          "after": "GATE_IN"
-        },
-        {
-          "field": "last_movement",
-          "before": {
-            "event": "EMSH",
-            "status": "ACT",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": null,
-            "voyage": null,
-            "timestamp": "2026-09-11T12:00:00+08:00",
-            "container_number": "TIIU6167828"
-          },
-          "after": {
-            "event": "GTIN",
-            "status": "ACT",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": null,
-            "voyage": null,
-            "timestamp": "2026-09-13T12:00:00+08:00",
-            "container_number": "TIIU6167828"
-          }
-        }
-      ]
-    },
-    {
-      "type": "CHANGED",
-      "container": "MRKU2538940",
-      "reference": "#16 black",
-      "risk": "RED",
-      "fields": [
-        {
-          "field": "eta",
-          "before": "2026-11-05T12:00:00+01:00",
-          "after": "2026-11-04T12:00:00+01:00"
-        },
-        {
-          "field": "metrics.eta_slip_days",
-          "before": 5,
-          "after": 4
-        },
-        {
-          "field": "metrics.predicted_vs_carrier_days",
-          "before": 5,
-          "after": 4
-        }
-      ]
-    },
-    {
-      "type": "CHANGED",
-      "container": "MRSU6424825",
-      "reference": "#36 black",
-      "risk": "RED",
-      "fields": [
-        {
-          "field": "status",
-          "before": "BOOKED",
-          "after": "LOADED"
-        },
-        {
-          "field": "container_status",
-          "before": "GATE_IN",
-          "after": "LOADED"
-        },
-        {
-          "field": "etd",
-          "before": "2026-09-15T12:00:00+08:00",
-          "after": "2026-09-14T12:00:00+08:00"
-        },
-        {
-          "field": "eta",
-          "before": "2026-11-05T12:00:00+01:00",
-          "after": "2026-11-04T12:00:00+01:00"
-        },
-        {
-          "field": "metrics.etd_slip_days",
-          "before": 0,
-          "after": -1
-        },
-        {
-          "field": "metrics.eta_slip_days",
-          "before": 5,
-          "after": 4
-        },
-        {
-          "field": "metrics.predicted_vs_carrier_days",
-          "before": 5,
-          "after": 4
-        },
-        {
-          "field": "last_movement",
-          "before": {
-            "event": "GTIN",
-            "status": "ACT",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": null,
-            "voyage": null,
-            "timestamp": "2026-09-11T12:00:00+08:00",
-            "container_number": "MRSU6424825"
-          },
-          "after": {
-            "event": "LOAD",
-            "status": "ACT",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": {
-              "name": "AL MURAYKH",
-              "imo": 9708863
-            },
-            "voyage": "636W",
-            "timestamp": "2026-09-14T12:00:00+08:00",
-            "container_number": "MRSU6424825"
-          }
-        },
-        {
-          "field": "next_movement",
-          "before": {
-            "event": "LOAD",
-            "status": "EST",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": {
-              "name": "AL MURAYKH",
-              "imo": 9708863
-            },
-            "voyage": "636W",
-            "timestamp": "2026-09-15T12:00:00+08:00",
-            "container_number": "MRSU6424825"
-          },
-          "after": {
-            "event": "DEPA",
-            "status": "EST",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": {
-              "name": "AL MURAYKH",
-              "imo": 9708863
-            },
-            "voyage": "636W",
-            "timestamp": "2026-09-15T12:00:00+08:00",
-            "container_number": "MRSU6424825"
-          }
-        }
-      ]
-    },
-    {
       "type": "NEW_SHIPMENT",
+      "container": "TCNU1157793",
+      "reference": "#21 InPost",
+      "risk": "RED"
+    },
+    {
+      "type": "REMOVED_SHIPMENT",
       "container": "TFLU4505062",
       "reference": "#12 - Empik kolory",
-      "risk": "GREEN"
+      "previous_risk": "GREEN"
     }
   ]
 }
