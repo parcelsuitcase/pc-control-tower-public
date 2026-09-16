@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-16T13:16:27.007Z",
-  "previous_snapshot_at": "2026-09-16T09:15:16.232Z",
+  "fetched_at": "2026-09-16T17:13:28.709Z",
+  "previous_snapshot_at": "2026-09-16T13:16:26.515Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 9,
     "inpost_orange": 2,
     "other_exceptions": 10,
-    "detected_changes": 1
+    "detected_changes": 0
   },
   "priority_inpost": [
     {
@@ -928,33 +928,7 @@
       "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
-  "changes": [
-    {
-      "id": 6739340,
-      "reference": "#21 InPost",
-      "shipment_number": "TCNU1157793",
-      "carrier": "MSC",
-      "status": "BOOKED",
-      "eta": "2026-11-07T12:00:00+01:00",
-      "etd": "2026-09-21T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "medium",
-      "changes": [
-        {
-          "field": "etd",
-          "before": "2026-09-20T12:00:00+08:00",
-          "after": "2026-09-21T12:00:00+08:00",
-          "delta_days": 1
-        },
-        {
-          "field": "eta_carrier",
-          "before": "2026-11-04T12:00:00+01:00",
-          "after": "2026-11-03T12:00:00+01:00",
-          "delta_days": -1
-        }
-      ]
-    }
-  ],
+  "changes": [],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1618,6 +1592,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-16T13:16:27.007Z",
-  "published_at": "2026-09-16T13:16:27.046Z"
+  "generated_at": "2026-09-16T17:13:28.709Z",
+  "published_at": "2026-09-16T17:13:28.797Z"
 }
