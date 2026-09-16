@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-16T05:14:07.941Z",
-  "previous_snapshot_at": "2026-09-15T17:13:34.188Z",
+  "fetched_at": "2026-09-16T09:15:16.652Z",
+  "previous_snapshot_at": "2026-09-16T05:14:07.536Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 9,
     "inpost_orange": 2,
-    "other_exceptions": 10,
-    "detected_changes": 3
+    "other_exceptions": 11,
+    "detected_changes": 5
   },
   "priority_inpost": [
     {
@@ -413,8 +413,8 @@
       "etd": "2026-08-26T12:00:00+08:00",
       "etd_initial": "2026-08-26T12:00:00+08:00",
       "atd": "2026-08-26T12:00:00+08:00",
-      "eta": "2026-10-25T12:00:00+01:00",
-      "eta_carrier": "2026-10-23T12:00:00+02:00",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "eta_carrier": "2026-10-27T12:00:00+01:00",
       "eta_initial": "2026-10-12T12:00:00+02:00",
       "ata": null,
       "vessel": "MSC ROSE",
@@ -462,8 +462,8 @@
       },
       "metrics": {
         "etd_slip_days": 0,
-        "eta_slip_days": 13,
-        "predicted_vs_carrier_days": 2
+        "eta_slip_days": 16,
+        "predicted_vs_carrier_days": 1
       },
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
@@ -733,13 +733,13 @@
       "reference": "#18 InPost",
       "container": "TFLU4500543",
       "carrier": "SEA LEGEND SHIPPING",
-      "status": "BOOKED",
-      "container_status": "UNKNOWN",
+      "status": "SAILING",
+      "container_status": "SAILING",
       "pol": "NINGBO",
       "pod": "GDYNIA",
       "etd": "2026-09-15T12:00:00+08:00",
       "etd_initial": "2026-09-15T12:00:00+08:00",
-      "atd": null,
+      "atd": "2026-09-15T12:00:00+08:00",
       "eta": "2026-10-15T12:00:00+02:00",
       "eta_carrier": "2026-10-15T12:00:00+02:00",
       "eta_initial": "2026-10-15T12:00:00+02:00",
@@ -747,10 +747,9 @@
       "vessel": "TIGER MAANSHAN",
       "voyage": "2636W",
       "transshipments": 0,
-      "last_movement": null,
-      "next_movement": {
-        "event": "LOAD",
-        "status": "EST",
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
         "location": {
           "code": "CNNBG",
           "name": "NINGBO",
@@ -768,25 +767,45 @@
         "timestamp": "2026-09-15T12:00:00+08:00",
         "container_number": "TFLU4500543"
       },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDY",
+          "name": "GDYNIA",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-10-15T12:00:00+02:00",
+        "container_number": "TFLU4500543"
+      },
       "metrics": {
         "etd_slip_days": 0,
         "eta_slip_days": 0,
         "predicted_vs_carrier_days": 0
       },
       "risk": "GREEN",
-      "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
+      "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
       "reference": "#19 InPost",
       "container": "TFLU4502443",
       "carrier": "SEA LEGEND SHIPPING",
-      "status": "BOOKED",
-      "container_status": "EMPTY_SHIPPER",
+      "status": "SAILING",
+      "container_status": "SAILING",
       "pol": "NINGBO",
       "pod": "GDYNIA",
       "etd": "2026-09-15T12:00:00+08:00",
       "etd_initial": "2026-09-15T12:00:00+08:00",
-      "atd": null,
+      "atd": "2026-09-15T12:00:00+08:00",
       "eta": "2026-10-15T12:00:00+02:00",
       "eta_carrier": "2026-10-15T12:00:00+02:00",
       "eta_initial": "2026-10-15T12:00:00+02:00",
@@ -795,25 +814,8 @@
       "voyage": "2636W",
       "transshipments": 0,
       "last_movement": {
-        "event": "EMSH",
+        "event": "DEPA",
         "status": "ACT",
-        "location": {
-          "code": "CNNBG",
-          "name": "NINGBO",
-          "timezone": "Asia/Shanghai",
-          "country": {
-            "code": "CN",
-            "name": "China"
-          }
-        },
-        "vessel": null,
-        "voyage": null,
-        "timestamp": "2026-09-08T12:00:00+08:00",
-        "container_number": "TFLU4502443"
-      },
-      "next_movement": {
-        "event": "LOAD",
-        "status": "EST",
         "location": {
           "code": "CNNBG",
           "name": "NINGBO",
@@ -831,25 +833,45 @@
         "timestamp": "2026-09-15T12:00:00+08:00",
         "container_number": "TFLU4502443"
       },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDY",
+          "name": "GDYNIA",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-10-15T12:00:00+02:00",
+        "container_number": "TFLU4502443"
+      },
       "metrics": {
         "etd_slip_days": 0,
         "eta_slip_days": 0,
         "predicted_vs_carrier_days": 0
       },
       "risk": "GREEN",
-      "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
+      "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
       "reference": "#26 InPost XMAS",
       "container": "TFLU4502607",
       "carrier": "SEA LEGEND SHIPPING",
-      "status": "BOOKED",
-      "container_status": "EMPTY_SHIPPER",
+      "status": "SAILING",
+      "container_status": "SAILING",
       "pol": "NINGBO",
       "pod": "GDYNIA",
       "etd": "2026-09-15T12:00:00+08:00",
       "etd_initial": "2026-09-15T12:00:00+08:00",
-      "atd": null,
+      "atd": "2026-09-15T12:00:00+08:00",
       "eta": "2026-10-15T12:00:00+02:00",
       "eta_carrier": "2026-10-15T12:00:00+02:00",
       "eta_initial": "2026-10-15T12:00:00+02:00",
@@ -858,25 +880,8 @@
       "voyage": "2636W",
       "transshipments": 0,
       "last_movement": {
-        "event": "EMSH",
+        "event": "DEPA",
         "status": "ACT",
-        "location": {
-          "code": "CNNBG",
-          "name": "NINGBO",
-          "timezone": "Asia/Shanghai",
-          "country": {
-            "code": "CN",
-            "name": "China"
-          }
-        },
-        "vessel": null,
-        "voyage": null,
-        "timestamp": "2026-09-08T12:00:00+08:00",
-        "container_number": "TFLU4502607"
-      },
-      "next_movement": {
-        "event": "LOAD",
-        "status": "EST",
         "location": {
           "code": "CNNBG",
           "name": "NINGBO",
@@ -894,82 +899,227 @@
         "timestamp": "2026-09-15T12:00:00+08:00",
         "container_number": "TFLU4502607"
       },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDY",
+          "name": "GDYNIA",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-10-15T12:00:00+02:00",
+        "container_number": "TFLU4502607"
+      },
       "metrics": {
         "etd_slip_days": 0,
         "eta_slip_days": 0,
         "predicted_vs_carrier_days": 0
       },
       "risk": "GREEN",
-      "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
+      "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
   "changes": [
     {
-      "id": 6732565,
-      "reference": "#23 InPost",
-      "shipment_number": "TLLU4396874",
-      "carrier": "CMA CGM",
-      "status": "BOOKED",
-      "eta": "2026-11-06T12:00:00+01:00",
-      "etd": "2026-09-18T12:00:00+08:00",
+      "id": 6711531,
+      "reference": "#18 InPost",
+      "shipment_number": "TFLU4500543",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "SAILING",
+      "eta": "2026-10-15T12:00:00+02:00",
+      "etd": "2026-09-15T12:00:00+08:00",
       "type": "CHANGED",
       "severity": "info",
       "changes": [
         {
+          "field": "status",
+          "before": "BOOKED",
+          "after": "SAILING"
+        },
+        {
           "field": "container_status",
-          "before": "EMPTY_SHIPPER",
-          "after": "GATE_IN"
+          "before": "UNKNOWN",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-15T12:00:00+08:00"
         },
         {
           "field": "new_actual_movement",
-          "event": "GTIN",
+          "event": "LOAD",
           "location": "NINGBO",
-          "vessel": null,
-          "voyage": null,
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
+          "timestamp": "2026-09-15T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "DEPA",
+          "location": "NINGBO",
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
           "timestamp": "2026-09-15T12:00:00+08:00"
         }
       ]
     },
     {
-      "id": 6637825,
-      "reference": "#11 BLACK",
-      "shipment_number": "TGHU9300599",
-      "carrier": "MSC",
+      "id": 6710539,
+      "reference": "#19 InPost",
+      "shipment_number": "TFLU4502443",
+      "carrier": "SEA LEGEND SHIPPING",
       "status": "SAILING",
-      "eta": "2026-10-27T12:00:00+01:00",
-      "etd": "2026-09-05T12:00:00+08:00",
+      "eta": "2026-10-15T12:00:00+02:00",
+      "etd": "2026-09-15T12:00:00+08:00",
       "type": "CHANGED",
-      "severity": "high",
+      "severity": "info",
       "changes": [
         {
-          "field": "eta",
-          "before": "2026-10-24T12:00:00+02:00",
-          "after": "2026-10-27T12:00:00+01:00",
-          "delta_days": 3
+          "field": "status",
+          "before": "BOOKED",
+          "after": "SAILING"
         },
         {
-          "field": "eta_carrier",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-27T12:00:00+01:00",
-          "delta_days": 4
+          "field": "container_status",
+          "before": "EMPTY_SHIPPER",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-15T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "LOAD",
+          "location": "NINGBO",
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
+          "timestamp": "2026-09-15T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "DEPA",
+          "location": "NINGBO",
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
+          "timestamp": "2026-09-15T12:00:00+08:00"
         }
       ]
     },
     {
-      "id": 6637823,
-      "reference": "#10 PSC black",
-      "shipment_number": "MSDU7730546",
+      "id": 6710527,
+      "reference": "#26 InPost XMAS",
+      "shipment_number": "TFLU4502607",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "SAILING",
+      "eta": "2026-10-15T12:00:00+02:00",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "status",
+          "before": "BOOKED",
+          "after": "SAILING"
+        },
+        {
+          "field": "container_status",
+          "before": "EMPTY_SHIPPER",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-15T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "LOAD",
+          "location": "NINGBO",
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
+          "timestamp": "2026-09-15T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "DEPA",
+          "location": "NINGBO",
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
+          "timestamp": "2026-09-15T12:00:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": 6710504,
+      "reference": "#14 Kolorowe",
+      "shipment_number": "TFLU4505930",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "SAILING",
+      "eta": "2026-10-15T12:00:00+02:00",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "status",
+          "before": "BOOKED",
+          "after": "SAILING"
+        },
+        {
+          "field": "container_status",
+          "before": "EMPTY_SHIPPER",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-15T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "LOAD",
+          "location": "NINGBO",
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
+          "timestamp": "2026-09-15T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "DEPA",
+          "location": "NINGBO",
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
+          "timestamp": "2026-09-15T12:00:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": 6623742,
+      "reference": "#08 InPost",
+      "shipment_number": "MSNU7461112",
       "carrier": "MSC",
       "status": "SAILING",
-      "eta": "2026-10-27T12:00:00+01:00",
-      "etd": "2026-09-05T12:00:00+08:00",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "etd": "2026-08-26T12:00:00+08:00",
       "type": "CHANGED",
       "severity": "high",
       "changes": [
         {
           "field": "eta",
-          "before": "2026-10-24T12:00:00+02:00",
-          "after": "2026-10-27T12:00:00+01:00",
+          "before": "2026-10-25T12:00:00+01:00",
+          "after": "2026-10-28T12:00:00+01:00",
           "delta_days": 3
         },
         {
@@ -1641,9 +1791,75 @@
       },
       "risk": "ORANGE",
       "recommended_action": "Brak pilnej akcji; monitorować."
+    },
+    {
+      "reference": "#14 Kolorowe",
+      "container": "TFLU4505930",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDYNIA",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "etd_initial": "2026-09-15T12:00:00+08:00",
+      "atd": "2026-09-15T12:00:00+08:00",
+      "eta": "2026-10-15T12:00:00+02:00",
+      "eta_carrier": "2026-10-15T12:00:00+02:00",
+      "eta_initial": "2026-10-15T12:00:00+02:00",
+      "ata": null,
+      "vessel": "TIGER MAANSHAN",
+      "voyage": "2636W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-09-15T12:00:00+08:00",
+        "container_number": "TFLU4505930"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDY",
+          "name": "GDYNIA",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-10-15T12:00:00+02:00",
+        "container_number": "TFLU4505930"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 0,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "GREEN",
+      "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-16T05:14:07.941Z",
-  "published_at": "2026-09-16T05:14:07.963Z"
+  "generated_at": "2026-09-16T09:15:16.652Z",
+  "published_at": "2026-09-16T09:15:16.717Z"
 }
