@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-15T17:13:34.931Z",
-  "current_generated_at": "2026-09-15T17:13:34.895Z",
-  "previous_generated_at": "2026-09-15T13:16:44.041Z",
+  "analyzed_at": "2026-09-16T05:14:07.963Z",
+  "current_generated_at": "2026-09-16T05:14:07.941Z",
+  "previous_generated_at": "2026-09-15T17:13:34.895Z",
   "baseline": false,
-  "change_count": 0,
+  "change_count": 3,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 9,
     "inpost_orange": 2,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 3
   },
   "red_alerts": [
     {
@@ -146,7 +146,7 @@
       "reference": "#11 BLACK",
       "container": "TGHU9300599",
       "status": "SAILING",
-      "eta": "2026-10-24T12:00:00+02:00",
+      "eta": "2026-10-27T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
@@ -154,10 +154,203 @@
       "reference": "#10 PSC black",
       "container": "MSDU7730546",
       "status": "SAILING",
-      "eta": "2026-10-24T12:00:00+02:00",
+      "eta": "2026-10-27T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "type": "CHANGED",
+      "container": "TLLU4396874",
+      "reference": "#23 InPost",
+      "risk": "ORANGE",
+      "fields": [
+        {
+          "field": "container_status",
+          "before": "EMPTY_SHIPPER",
+          "after": "GATE_IN"
+        },
+        {
+          "field": "last_movement",
+          "before": {
+            "event": "EMSH",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": null,
+            "voyage": null,
+            "timestamp": "2026-09-14T12:00:00+08:00",
+            "container_number": "TLLU4396874"
+          },
+          "after": {
+            "event": "GTIN",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": null,
+            "voyage": null,
+            "timestamp": "2026-09-15T12:00:00+08:00",
+            "container_number": "TLLU4396874"
+          }
+        }
+      ]
+    },
+    {
+      "type": "CHANGED",
+      "container": "TGHU9300599",
+      "reference": "#11 BLACK",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "eta",
+          "before": "2026-10-24T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00"
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00"
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 4,
+          "after": 7
+        },
+        {
+          "field": "metrics.predicted_vs_carrier_days",
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDN",
+              "name": "GDANSK",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "MSC KALINA",
+              "imo": 9399026
+            },
+            "voyage": "GA633W",
+            "timestamp": "2026-10-23T12:00:00+02:00",
+            "container_number": "TGHU9300599"
+          },
+          "after": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDN",
+              "name": "GDANSK",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "MSC KALINA",
+              "imo": 9399026
+            },
+            "voyage": "GA633W",
+            "timestamp": "2026-10-27T12:00:00+01:00",
+            "container_number": "TGHU9300599"
+          }
+        }
+      ]
+    },
+    {
+      "type": "CHANGED",
+      "container": "MSDU7730546",
+      "reference": "#10 PSC black",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "eta",
+          "before": "2026-10-24T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00"
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00"
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 4,
+          "after": 7
+        },
+        {
+          "field": "metrics.predicted_vs_carrier_days",
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDN",
+              "name": "GDANSK",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "MSC KALINA",
+              "imo": 9399026
+            },
+            "voyage": "GA633W",
+            "timestamp": "2026-10-23T12:00:00+02:00",
+            "container_number": "MSDU7730546"
+          },
+          "after": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDN",
+              "name": "GDANSK",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "MSC KALINA",
+              "imo": 9399026
+            },
+            "voyage": "GA633W",
+            "timestamp": "2026-10-27T12:00:00+01:00",
+            "container_number": "MSDU7730546"
+          }
+        }
+      ]
+    }
+  ]
 }

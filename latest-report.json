@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-15T17:13:34.895Z",
-  "previous_snapshot_at": "2026-09-15T13:16:43.626Z",
+  "fetched_at": "2026-09-16T05:14:07.941Z",
+  "previous_snapshot_at": "2026-09-15T17:13:34.188Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 9,
     "inpost_orange": 2,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 3
   },
   "priority_inpost": [
     {
@@ -605,7 +605,7 @@
       "container": "TLLU4396874",
       "carrier": "CMA CGM",
       "status": "BOOKED",
-      "container_status": "EMPTY_SHIPPER",
+      "container_status": "GATE_IN",
       "pol": "NINGBO",
       "pod": "GDANSK",
       "etd": "2026-09-18T12:00:00+08:00",
@@ -619,7 +619,7 @@
       "voyage": "0VAORW1MA",
       "transshipments": 0,
       "last_movement": {
-        "event": "EMSH",
+        "event": "GTIN",
         "status": "ACT",
         "location": {
           "code": "CNNBG",
@@ -632,7 +632,7 @@
         },
         "vessel": null,
         "voyage": null,
-        "timestamp": "2026-09-14T12:00:00+08:00",
+        "timestamp": "2026-09-15T12:00:00+08:00",
         "container_number": "TLLU4396874"
       },
       "next_movement": {
@@ -903,7 +903,84 @@
       "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "id": 6732565,
+      "reference": "#23 InPost",
+      "shipment_number": "TLLU4396874",
+      "carrier": "CMA CGM",
+      "status": "BOOKED",
+      "eta": "2026-11-06T12:00:00+01:00",
+      "etd": "2026-09-18T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "container_status",
+          "before": "EMPTY_SHIPPER",
+          "after": "GATE_IN"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "GTIN",
+          "location": "NINGBO",
+          "vessel": null,
+          "voyage": null,
+          "timestamp": "2026-09-15T12:00:00+08:00"
+        }
+      ]
+    },
+    {
+      "id": 6637825,
+      "reference": "#11 BLACK",
+      "shipment_number": "TGHU9300599",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "eta": "2026-10-27T12:00:00+01:00",
+      "etd": "2026-09-05T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "high",
+      "changes": [
+        {
+          "field": "eta",
+          "before": "2026-10-24T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00",
+          "delta_days": 3
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00",
+          "delta_days": 4
+        }
+      ]
+    },
+    {
+      "id": 6637823,
+      "reference": "#10 PSC black",
+      "shipment_number": "MSDU7730546",
+      "carrier": "MSC",
+      "status": "SAILING",
+      "eta": "2026-10-27T12:00:00+01:00",
+      "etd": "2026-09-05T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "high",
+      "changes": [
+        {
+          "field": "eta",
+          "before": "2026-10-24T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00",
+          "delta_days": 3
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00",
+          "delta_days": 4
+        }
+      ]
+    }
+  ],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1378,8 +1455,8 @@
       "etd": "2026-09-05T12:00:00+08:00",
       "etd_initial": "2026-09-01T12:00:00+08:00",
       "atd": "2026-09-05T12:00:00+08:00",
-      "eta": "2026-10-24T12:00:00+02:00",
-      "eta_carrier": "2026-10-23T12:00:00+02:00",
+      "eta": "2026-10-27T12:00:00+01:00",
+      "eta_carrier": "2026-10-27T12:00:00+01:00",
       "eta_initial": "2026-10-20T12:00:00+02:00",
       "ata": null,
       "vessel": "MSC KALINA",
@@ -1422,13 +1499,13 @@
           "imo": 9399026
         },
         "voyage": "GA633W",
-        "timestamp": "2026-10-23T12:00:00+02:00",
+        "timestamp": "2026-10-27T12:00:00+01:00",
         "container_number": "TGHU9300599"
       },
       "metrics": {
         "etd_slip_days": 4,
-        "eta_slip_days": 4,
-        "predicted_vs_carrier_days": 1
+        "eta_slip_days": 7,
+        "predicted_vs_carrier_days": 0
       },
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
@@ -1444,8 +1521,8 @@
       "etd": "2026-09-05T12:00:00+08:00",
       "etd_initial": "2026-09-01T12:00:00+08:00",
       "atd": "2026-09-05T12:00:00+08:00",
-      "eta": "2026-10-24T12:00:00+02:00",
-      "eta_carrier": "2026-10-23T12:00:00+02:00",
+      "eta": "2026-10-27T12:00:00+01:00",
+      "eta_carrier": "2026-10-27T12:00:00+01:00",
       "eta_initial": "2026-10-20T12:00:00+02:00",
       "ata": null,
       "vessel": "MSC KALINA",
@@ -1488,13 +1565,13 @@
           "imo": 9399026
         },
         "voyage": "GA633W",
-        "timestamp": "2026-10-23T12:00:00+02:00",
+        "timestamp": "2026-10-27T12:00:00+01:00",
         "container_number": "MSDU7730546"
       },
       "metrics": {
         "etd_slip_days": 4,
-        "eta_slip_days": 4,
-        "predicted_vs_carrier_days": 1
+        "eta_slip_days": 7,
+        "predicted_vs_carrier_days": 0
       },
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
@@ -1567,6 +1644,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-15T17:13:34.895Z",
-  "published_at": "2026-09-15T17:13:34.931Z"
+  "generated_at": "2026-09-16T05:14:07.941Z",
+  "published_at": "2026-09-16T05:14:07.963Z"
 }
