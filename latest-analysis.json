@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-17T09:15:22.273Z",
-  "current_generated_at": "2026-09-17T09:15:22.245Z",
-  "previous_generated_at": "2026-09-17T05:14:35.277Z",
+  "analyzed_at": "2026-09-17T13:16:35.632Z",
+  "current_generated_at": "2026-09-17T13:16:35.610Z",
+  "previous_generated_at": "2026-09-17T09:15:22.245Z",
   "baseline": false,
-  "change_count": 0,
+  "change_count": 2,
   "summary": {
     "inpost_total": 14,
-    "inpost_red": 9,
-    "inpost_orange": 2,
+    "inpost_red": 10,
+    "inpost_orange": 1,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 2
   },
   "red_alerts": [
     {
@@ -87,6 +87,14 @@
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
     {
+      "reference": "#03 InPost - CAX",
+      "container": "TFLU4987555",
+      "status": "SAILING",
+      "eta": "2026-09-18T12:00:00+02:00",
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
       "reference": "#16 black",
       "container": "MRKU2538940",
       "status": "SAILING",
@@ -127,6 +135,14 @@
       "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
+      "reference": "#15 (4 kolory)",
+      "container": "TLLU4090821",
+      "status": "SAILING",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
       "reference": "#32 PSC black",
       "container": "SEKU5853360",
       "status": "SAILING",
@@ -159,5 +175,158 @@
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "type": "CHANGED",
+      "container": "TFLU4987555",
+      "reference": "#03 InPost - CAX",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "risk",
+          "before": "ORANGE",
+          "after": "RED"
+        },
+        {
+          "field": "eta",
+          "before": "2026-09-15T12:00:00+02:00",
+          "after": "2026-09-18T12:00:00+02:00"
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-09-15T12:00:00+02:00",
+          "after": "2026-09-18T12:00:00+02:00"
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 2,
+          "after": 5
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDY",
+              "name": "GDYNIA",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "DUBAI TOWER",
+              "imo": 9433066
+            },
+            "voyage": "2633W",
+            "timestamp": "2026-09-15T12:00:00+02:00",
+            "container_number": "TFLU4987555"
+          },
+          "after": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDY",
+              "name": "GDYNIA",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "DUBAI TOWER",
+              "imo": 9433066
+            },
+            "voyage": "2633W",
+            "timestamp": "2026-09-18T12:00:00+02:00",
+            "container_number": "TFLU4987555"
+          }
+        },
+        {
+          "field": "recommended_action",
+          "before": "Brak pilnej akcji; monitorować.",
+          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+        }
+      ]
+    },
+    {
+      "type": "CHANGED",
+      "container": "TLLU4090821",
+      "reference": "#15 (4 kolory)",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "risk",
+          "before": "ORANGE",
+          "after": "RED"
+        },
+        {
+          "field": "eta",
+          "before": "2026-10-27T12:00:00+01:00",
+          "after": "2026-10-28T12:00:00+01:00"
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-26T12:00:00+01:00",
+          "after": "2026-10-27T12:00:00+01:00"
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 2,
+          "after": 3
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDN",
+              "name": "GDANSK",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "OOCL SPAIN",
+              "imo": 9908126
+            },
+            "voyage": "0VAONW1MA",
+            "timestamp": "2026-10-26T12:00:00+01:00",
+            "container_number": "TLLU4090821"
+          },
+          "after": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDN",
+              "name": "GDANSK",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "OOCL SPAIN",
+              "imo": 9908126
+            },
+            "voyage": "0VAONW1MA",
+            "timestamp": "2026-10-27T12:00:00+01:00",
+            "container_number": "TLLU4090821"
+          }
+        },
+        {
+          "field": "recommended_action",
+          "before": "Brak pilnej akcji; monitorować.",
+          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+        }
+      ]
+    }
+  ]
 }

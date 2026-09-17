@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-17T09:15:22.245Z",
-  "previous_snapshot_at": "2026-09-17T05:14:34.777Z",
+  "fetched_at": "2026-09-17T13:16:35.610Z",
+  "previous_snapshot_at": "2026-09-17T09:15:21.823Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 14,
-    "inpost_red": 9,
-    "inpost_orange": 2,
+    "inpost_red": 10,
+    "inpost_orange": 1,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 2
   },
   "priority_inpost": [
     {
@@ -601,6 +601,72 @@
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
     {
+      "reference": "#03 InPost - CAX",
+      "container": "TFLU4987555",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDYNIA",
+      "etd": "2026-08-15T12:00:00+08:00",
+      "etd_initial": "2026-08-15T12:00:00+08:00",
+      "atd": "2026-08-15T12:00:00+08:00",
+      "eta": "2026-09-18T12:00:00+02:00",
+      "eta_carrier": "2026-09-18T12:00:00+02:00",
+      "eta_initial": "2026-09-13T12:00:00+02:00",
+      "ata": null,
+      "vessel": "DUBAI TOWER",
+      "voyage": "2633W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "DUBAI TOWER",
+          "imo": 9433066
+        },
+        "voyage": "2633W",
+        "timestamp": "2026-08-15T12:00:00+08:00",
+        "container_number": "TFLU4987555"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDY",
+          "name": "GDYNIA",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "DUBAI TOWER",
+          "imo": 9433066
+        },
+        "voyage": "2633W",
+        "timestamp": "2026-09-18T12:00:00+02:00",
+        "container_number": "TFLU4987555"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 5,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
       "reference": "#23 InPost",
       "container": "TLLU4396874",
       "carrier": "CMA CGM",
@@ -662,72 +728,6 @@
       },
       "risk": "ORANGE",
       "recommended_action": "Monitoruj potwierdzenie LOAD/DEPA w najbliższym odczycie."
-    },
-    {
-      "reference": "#03 InPost - CAX",
-      "container": "TFLU4987555",
-      "carrier": "SEA LEGEND SHIPPING",
-      "status": "SAILING",
-      "container_status": "SAILING",
-      "pol": "NINGBO",
-      "pod": "GDYNIA",
-      "etd": "2026-08-15T12:00:00+08:00",
-      "etd_initial": "2026-08-15T12:00:00+08:00",
-      "atd": "2026-08-15T12:00:00+08:00",
-      "eta": "2026-09-15T12:00:00+02:00",
-      "eta_carrier": "2026-09-15T12:00:00+02:00",
-      "eta_initial": "2026-09-13T12:00:00+02:00",
-      "ata": null,
-      "vessel": "DUBAI TOWER",
-      "voyage": "2633W",
-      "transshipments": 0,
-      "last_movement": {
-        "event": "DEPA",
-        "status": "ACT",
-        "location": {
-          "code": "CNNBG",
-          "name": "NINGBO",
-          "timezone": "Asia/Shanghai",
-          "country": {
-            "code": "CN",
-            "name": "China"
-          }
-        },
-        "vessel": {
-          "name": "DUBAI TOWER",
-          "imo": 9433066
-        },
-        "voyage": "2633W",
-        "timestamp": "2026-08-15T12:00:00+08:00",
-        "container_number": "TFLU4987555"
-      },
-      "next_movement": {
-        "event": "ARRV",
-        "status": "EST",
-        "location": {
-          "code": "PLGDY",
-          "name": "GDYNIA",
-          "timezone": "Europe/Warsaw",
-          "country": {
-            "code": "PL",
-            "name": "Poland"
-          }
-        },
-        "vessel": {
-          "name": "DUBAI TOWER",
-          "imo": 9433066
-        },
-        "voyage": "2633W",
-        "timestamp": "2026-09-15T12:00:00+02:00",
-        "container_number": "TFLU4987555"
-      },
-      "metrics": {
-        "etd_slip_days": 0,
-        "eta_slip_days": 2,
-        "predicted_vs_carrier_days": 0
-      },
-      "risk": "ORANGE",
-      "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
       "reference": "#18 InPost",
@@ -928,7 +928,58 @@
       "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "id": 6677434,
+      "reference": "#15 (4 kolory)",
+      "shipment_number": "TLLU4090821",
+      "carrier": "CMA CGM",
+      "status": "SAILING",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "etd": "2026-09-08T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "medium",
+      "changes": [
+        {
+          "field": "eta",
+          "before": "2026-10-27T12:00:00+01:00",
+          "after": "2026-10-28T12:00:00+01:00",
+          "delta_days": 1
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-26T12:00:00+01:00",
+          "after": "2026-10-27T12:00:00+01:00",
+          "delta_days": 1
+        }
+      ]
+    },
+    {
+      "id": 6597896,
+      "reference": "#03 InPost - CAX",
+      "shipment_number": "TFLU4987555",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "SAILING",
+      "eta": "2026-09-18T12:00:00+02:00",
+      "etd": "2026-08-15T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "high",
+      "changes": [
+        {
+          "field": "eta",
+          "before": "2026-09-15T12:00:00+02:00",
+          "after": "2026-09-18T12:00:00+02:00",
+          "delta_days": 3
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-09-15T12:00:00+02:00",
+          "after": "2026-09-18T12:00:00+02:00",
+          "delta_days": 3
+        }
+      ]
+    }
+  ],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1261,6 +1312,72 @@
       "recommended_action": "Brak pilnej akcji; monitorować."
     },
     {
+      "reference": "#15 (4 kolory)",
+      "container": "TLLU4090821",
+      "carrier": "CMA CGM",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDANSK",
+      "etd": "2026-09-08T12:00:00+08:00",
+      "etd_initial": "2026-09-07T12:00:00+08:00",
+      "atd": "2026-09-08T12:00:00+08:00",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "eta_carrier": "2026-10-27T12:00:00+01:00",
+      "eta_initial": "2026-10-25T12:00:00+01:00",
+      "ata": null,
+      "vessel": "OOCL SPAIN",
+      "voyage": "0VAONW1MA",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "OOCL SPAIN",
+          "imo": 9908126
+        },
+        "voyage": "0VAONW1MA",
+        "timestamp": "2026-09-08T12:00:00+08:00",
+        "container_number": "TLLU4090821"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDN",
+          "name": "GDANSK",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "OOCL SPAIN",
+          "imo": 9908126
+        },
+        "voyage": "0VAONW1MA",
+        "timestamp": "2026-10-27T12:00:00+01:00",
+        "container_number": "TLLU4090821"
+      },
+      "metrics": {
+        "etd_slip_days": 1,
+        "eta_slip_days": 3,
+        "predicted_vs_carrier_days": 1
+      },
+      "risk": "RED",
+      "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
       "reference": "#32 PSC black",
       "container": "SEKU5853360",
       "carrier": "CMA CGM",
@@ -1523,75 +1640,9 @@
       },
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
-    },
-    {
-      "reference": "#15 (4 kolory)",
-      "container": "TLLU4090821",
-      "carrier": "CMA CGM",
-      "status": "SAILING",
-      "container_status": "SAILING",
-      "pol": "NINGBO",
-      "pod": "GDANSK",
-      "etd": "2026-09-08T12:00:00+08:00",
-      "etd_initial": "2026-09-07T12:00:00+08:00",
-      "atd": "2026-09-08T12:00:00+08:00",
-      "eta": "2026-10-27T12:00:00+01:00",
-      "eta_carrier": "2026-10-26T12:00:00+01:00",
-      "eta_initial": "2026-10-25T12:00:00+01:00",
-      "ata": null,
-      "vessel": "OOCL SPAIN",
-      "voyage": "0VAONW1MA",
-      "transshipments": 0,
-      "last_movement": {
-        "event": "DEPA",
-        "status": "ACT",
-        "location": {
-          "code": "CNNBG",
-          "name": "NINGBO",
-          "timezone": "Asia/Shanghai",
-          "country": {
-            "code": "CN",
-            "name": "China"
-          }
-        },
-        "vessel": {
-          "name": "OOCL SPAIN",
-          "imo": 9908126
-        },
-        "voyage": "0VAONW1MA",
-        "timestamp": "2026-09-08T12:00:00+08:00",
-        "container_number": "TLLU4090821"
-      },
-      "next_movement": {
-        "event": "ARRV",
-        "status": "EST",
-        "location": {
-          "code": "PLGDN",
-          "name": "GDANSK",
-          "timezone": "Europe/Warsaw",
-          "country": {
-            "code": "PL",
-            "name": "Poland"
-          }
-        },
-        "vessel": {
-          "name": "OOCL SPAIN",
-          "imo": 9908126
-        },
-        "voyage": "0VAONW1MA",
-        "timestamp": "2026-10-26T12:00:00+01:00",
-        "container_number": "TLLU4090821"
-      },
-      "metrics": {
-        "etd_slip_days": 1,
-        "eta_slip_days": 2,
-        "predicted_vs_carrier_days": 1
-      },
-      "risk": "ORANGE",
-      "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-17T09:15:22.245Z",
-  "published_at": "2026-09-17T09:15:22.273Z"
+  "generated_at": "2026-09-17T13:16:35.610Z",
+  "published_at": "2026-09-17T13:16:35.632Z"
 }
