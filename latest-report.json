@@ -1,14 +1,14 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-17T13:16:35.610Z",
-  "previous_snapshot_at": "2026-09-17T09:15:21.823Z",
+  "fetched_at": "2026-09-17T17:12:52.596Z",
+  "previous_snapshot_at": "2026-09-17T13:16:35.006Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 10,
     "inpost_orange": 1,
-    "other_exceptions": 10,
+    "other_exceptions": 11,
     "detected_changes": 2
   },
   "priority_inpost": [
@@ -930,52 +930,82 @@
   ],
   "changes": [
     {
-      "id": 6677434,
-      "reference": "#15 (4 kolory)",
-      "shipment_number": "TLLU4090821",
-      "carrier": "CMA CGM",
+      "id": 6714599,
+      "reference": "#36 black",
+      "shipment_number": "MRSU6424825",
+      "carrier": "MAERSK LINE",
       "status": "SAILING",
-      "eta": "2026-10-28T12:00:00+01:00",
-      "etd": "2026-09-08T12:00:00+08:00",
+      "eta": "2026-11-04T12:00:00+01:00",
+      "etd": "2026-09-14T12:00:00+08:00",
       "type": "CHANGED",
-      "severity": "medium",
+      "severity": "info",
       "changes": [
         {
-          "field": "eta",
-          "before": "2026-10-27T12:00:00+01:00",
-          "after": "2026-10-28T12:00:00+01:00",
-          "delta_days": 1
+          "field": "status",
+          "before": "LOADED",
+          "after": "SAILING"
         },
         {
-          "field": "eta_carrier",
-          "before": "2026-10-26T12:00:00+01:00",
-          "after": "2026-10-27T12:00:00+01:00",
-          "delta_days": 1
+          "field": "container_status",
+          "before": "LOADED",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-16T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "DEPA",
+          "location": "NINGBO",
+          "vessel": "AL MURAYKH",
+          "voyage": "636W",
+          "timestamp": "2026-09-16T12:00:00+08:00"
         }
       ]
     },
     {
-      "id": 6597896,
-      "reference": "#03 InPost - CAX",
-      "shipment_number": "TFLU4987555",
+      "id": 6708039,
+      "reference": "#12 Empik kolory",
+      "shipment_number": "TFLU4505062",
       "carrier": "SEA LEGEND SHIPPING",
       "status": "SAILING",
-      "eta": "2026-09-18T12:00:00+02:00",
-      "etd": "2026-08-15T12:00:00+08:00",
+      "eta": "2026-10-15T12:00:00+02:00",
+      "etd": "2026-09-15T12:00:00+08:00",
       "type": "CHANGED",
-      "severity": "high",
+      "severity": "info",
       "changes": [
         {
-          "field": "eta",
-          "before": "2026-09-15T12:00:00+02:00",
-          "after": "2026-09-18T12:00:00+02:00",
-          "delta_days": 3
+          "field": "status",
+          "before": "BOOKED",
+          "after": "SAILING"
         },
         {
-          "field": "eta_carrier",
-          "before": "2026-09-15T12:00:00+02:00",
-          "after": "2026-09-18T12:00:00+02:00",
-          "delta_days": 3
+          "field": "container_status",
+          "before": "UNKNOWN",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-15T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "LOAD",
+          "location": "NINGBO",
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
+          "timestamp": "2026-09-15T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "DEPA",
+          "location": "NINGBO",
+          "vessel": "TIGER MAANSHAN",
+          "voyage": "2636W",
+          "timestamp": "2026-09-15T12:00:00+08:00"
         }
       ]
     }
@@ -1051,13 +1081,13 @@
       "reference": "#36 black",
       "container": "MRSU6424825",
       "carrier": "MAERSK LINE",
-      "status": "LOADED",
-      "container_status": "LOADED",
+      "status": "SAILING",
+      "container_status": "SAILING",
       "pol": "NINGBO",
       "pod": "GDANSK",
       "etd": "2026-09-14T12:00:00+08:00",
       "etd_initial": "2026-09-15T12:00:00+08:00",
-      "atd": null,
+      "atd": "2026-09-16T12:00:00+08:00",
       "eta": "2026-11-04T12:00:00+01:00",
       "eta_carrier": "2026-10-31T12:00:00+01:00",
       "eta_initial": "2026-10-31T12:00:00+01:00",
@@ -1066,7 +1096,7 @@
       "voyage": "636W",
       "transshipments": 1,
       "last_movement": {
-        "event": "LOAD",
+        "event": "DEPA",
         "status": "ACT",
         "location": {
           "code": "CNNBG",
@@ -1082,19 +1112,19 @@
           "imo": 9708863
         },
         "voyage": "636W",
-        "timestamp": "2026-09-14T12:00:00+08:00",
+        "timestamp": "2026-09-16T12:00:00+08:00",
         "container_number": "MRSU6424825"
       },
       "next_movement": {
-        "event": "DEPA",
+        "event": "ARRV",
         "status": "EST",
         "location": {
-          "code": "CNNBG",
-          "name": "NINGBO",
-          "timezone": "Asia/Shanghai",
+          "code": "DEWVN",
+          "name": "WILHELMSHAVEN",
+          "timezone": "Europe/Berlin",
           "country": {
-            "code": "CN",
-            "name": "China"
+            "code": "DE",
+            "name": "Germany"
           }
         },
         "vessel": {
@@ -1102,7 +1132,7 @@
           "imo": 9708863
         },
         "voyage": "636W",
-        "timestamp": "2026-09-15T12:00:00+08:00",
+        "timestamp": "2026-10-20T12:00:00+02:00",
         "container_number": "MRSU6424825"
       },
       "metrics": {
@@ -1640,9 +1670,75 @@
       },
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
+    },
+    {
+      "reference": "#12 Empik kolory",
+      "container": "TFLU4505062",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "SAILING",
+      "container_status": "SAILING",
+      "pol": "NINGBO",
+      "pod": "GDYNIA",
+      "etd": "2026-09-15T12:00:00+08:00",
+      "etd_initial": "2026-09-15T12:00:00+08:00",
+      "atd": "2026-09-15T12:00:00+08:00",
+      "eta": "2026-10-15T12:00:00+02:00",
+      "eta_carrier": "2026-10-15T12:00:00+02:00",
+      "eta_initial": "2026-10-15T12:00:00+02:00",
+      "ata": null,
+      "vessel": "TIGER MAANSHAN",
+      "voyage": "2636W",
+      "transshipments": 0,
+      "last_movement": {
+        "event": "DEPA",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-09-15T12:00:00+08:00",
+        "container_number": "TFLU4505062"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "PLGDY",
+          "name": "GDYNIA",
+          "timezone": "Europe/Warsaw",
+          "country": {
+            "code": "PL",
+            "name": "Poland"
+          }
+        },
+        "vessel": {
+          "name": "TIGER MAANSHAN",
+          "imo": 9913559
+        },
+        "voyage": "2636W",
+        "timestamp": "2026-10-15T12:00:00+02:00",
+        "container_number": "TFLU4505062"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 0,
+        "predicted_vs_carrier_days": 0
+      },
+      "risk": "GREEN",
+      "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-17T13:16:35.610Z",
-  "published_at": "2026-09-17T13:16:35.632Z"
+  "generated_at": "2026-09-17T17:12:52.596Z",
+  "published_at": "2026-09-17T17:12:52.659Z"
 }

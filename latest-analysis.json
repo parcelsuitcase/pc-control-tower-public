@@ -1,16 +1,16 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-17T13:16:35.632Z",
-  "current_generated_at": "2026-09-17T13:16:35.610Z",
-  "previous_generated_at": "2026-09-17T09:15:22.245Z",
+  "analyzed_at": "2026-09-17T17:12:52.659Z",
+  "current_generated_at": "2026-09-17T17:12:52.596Z",
+  "previous_generated_at": "2026-09-17T13:16:35.610Z",
   "baseline": false,
   "change_count": 2,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 10,
     "inpost_orange": 1,
-    "other_exceptions": 10,
+    "other_exceptions": 11,
     "detected_changes": 2
   },
   "red_alerts": [
@@ -105,7 +105,7 @@
     {
       "reference": "#36 black",
       "container": "MRSU6424825",
-      "status": "LOADED",
+      "status": "SAILING",
       "eta": "2026-11-04T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
@@ -178,155 +178,118 @@
   "changes": [
     {
       "type": "CHANGED",
-      "container": "TFLU4987555",
-      "reference": "#03 InPost - CAX",
+      "container": "MRSU6424825",
+      "reference": "#36 black",
       "risk": "RED",
       "fields": [
         {
-          "field": "risk",
-          "before": "ORANGE",
-          "after": "RED"
+          "field": "status",
+          "before": "LOADED",
+          "after": "SAILING"
         },
         {
-          "field": "eta",
-          "before": "2026-09-15T12:00:00+02:00",
-          "after": "2026-09-18T12:00:00+02:00"
+          "field": "container_status",
+          "before": "LOADED",
+          "after": "SAILING"
         },
         {
-          "field": "eta_carrier",
-          "before": "2026-09-15T12:00:00+02:00",
-          "after": "2026-09-18T12:00:00+02:00"
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-16T12:00:00+08:00"
         },
         {
-          "field": "metrics.eta_slip_days",
-          "before": 2,
-          "after": 5
+          "field": "last_movement",
+          "before": {
+            "event": "LOAD",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "AL MURAYKH",
+              "imo": 9708863
+            },
+            "voyage": "636W",
+            "timestamp": "2026-09-14T12:00:00+08:00",
+            "container_number": "MRSU6424825"
+          },
+          "after": {
+            "event": "DEPA",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "AL MURAYKH",
+              "imo": 9708863
+            },
+            "voyage": "636W",
+            "timestamp": "2026-09-16T12:00:00+08:00",
+            "container_number": "MRSU6424825"
+          }
         },
         {
           "field": "next_movement",
           "before": {
-            "event": "ARRV",
+            "event": "DEPA",
             "status": "EST",
             "location": {
-              "code": "PLGDY",
-              "name": "GDYNIA",
-              "timezone": "Europe/Warsaw",
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
               "country": {
-                "code": "PL",
-                "name": "Poland"
+                "code": "CN",
+                "name": "China"
               }
             },
             "vessel": {
-              "name": "DUBAI TOWER",
-              "imo": 9433066
+              "name": "AL MURAYKH",
+              "imo": 9708863
             },
-            "voyage": "2633W",
-            "timestamp": "2026-09-15T12:00:00+02:00",
-            "container_number": "TFLU4987555"
+            "voyage": "636W",
+            "timestamp": "2026-09-15T12:00:00+08:00",
+            "container_number": "MRSU6424825"
           },
           "after": {
             "event": "ARRV",
             "status": "EST",
             "location": {
-              "code": "PLGDY",
-              "name": "GDYNIA",
-              "timezone": "Europe/Warsaw",
+              "code": "DEWVN",
+              "name": "WILHELMSHAVEN",
+              "timezone": "Europe/Berlin",
               "country": {
-                "code": "PL",
-                "name": "Poland"
+                "code": "DE",
+                "name": "Germany"
               }
             },
             "vessel": {
-              "name": "DUBAI TOWER",
-              "imo": 9433066
+              "name": "AL MURAYKH",
+              "imo": 9708863
             },
-            "voyage": "2633W",
-            "timestamp": "2026-09-18T12:00:00+02:00",
-            "container_number": "TFLU4987555"
+            "voyage": "636W",
+            "timestamp": "2026-10-20T12:00:00+02:00",
+            "container_number": "MRSU6424825"
           }
-        },
-        {
-          "field": "recommended_action",
-          "before": "Brak pilnej akcji; monitorować.",
-          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
         }
       ]
     },
     {
-      "type": "CHANGED",
-      "container": "TLLU4090821",
-      "reference": "#15 (4 kolory)",
-      "risk": "RED",
-      "fields": [
-        {
-          "field": "risk",
-          "before": "ORANGE",
-          "after": "RED"
-        },
-        {
-          "field": "eta",
-          "before": "2026-10-27T12:00:00+01:00",
-          "after": "2026-10-28T12:00:00+01:00"
-        },
-        {
-          "field": "eta_carrier",
-          "before": "2026-10-26T12:00:00+01:00",
-          "after": "2026-10-27T12:00:00+01:00"
-        },
-        {
-          "field": "metrics.eta_slip_days",
-          "before": 2,
-          "after": 3
-        },
-        {
-          "field": "next_movement",
-          "before": {
-            "event": "ARRV",
-            "status": "EST",
-            "location": {
-              "code": "PLGDN",
-              "name": "GDANSK",
-              "timezone": "Europe/Warsaw",
-              "country": {
-                "code": "PL",
-                "name": "Poland"
-              }
-            },
-            "vessel": {
-              "name": "OOCL SPAIN",
-              "imo": 9908126
-            },
-            "voyage": "0VAONW1MA",
-            "timestamp": "2026-10-26T12:00:00+01:00",
-            "container_number": "TLLU4090821"
-          },
-          "after": {
-            "event": "ARRV",
-            "status": "EST",
-            "location": {
-              "code": "PLGDN",
-              "name": "GDANSK",
-              "timezone": "Europe/Warsaw",
-              "country": {
-                "code": "PL",
-                "name": "Poland"
-              }
-            },
-            "vessel": {
-              "name": "OOCL SPAIN",
-              "imo": 9908126
-            },
-            "voyage": "0VAONW1MA",
-            "timestamp": "2026-10-27T12:00:00+01:00",
-            "container_number": "TLLU4090821"
-          }
-        },
-        {
-          "field": "recommended_action",
-          "before": "Brak pilnej akcji; monitorować.",
-          "after": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
-        }
-      ]
+      "type": "NEW_SHIPMENT",
+      "container": "TFLU4505062",
+      "reference": "#12 Empik kolory",
+      "risk": "GREEN"
     }
   ]
 }
