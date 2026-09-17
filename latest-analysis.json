@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-16T17:13:28.797Z",
-  "current_generated_at": "2026-09-16T17:13:28.709Z",
-  "previous_generated_at": "2026-09-16T13:16:27.007Z",
+  "analyzed_at": "2026-09-17T05:14:35.324Z",
+  "current_generated_at": "2026-09-17T05:14:35.277Z",
+  "previous_generated_at": "2026-09-16T17:13:28.709Z",
   "baseline": false,
-  "change_count": 0,
+  "change_count": 3,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 9,
     "inpost_orange": 2,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 3
   },
   "red_alerts": [
     {
@@ -42,7 +42,7 @@
       "reference": "#09 InPost",
       "container": "UETU6022230",
       "status": "SAILING",
-      "eta": "2026-10-24T12:00:00+02:00",
+      "eta": "2026-10-27T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
@@ -58,7 +58,7 @@
       "reference": "#07 InPost",
       "container": "MSNU7337919",
       "status": "SAILING",
-      "eta": "2026-10-25T12:00:00+01:00",
+      "eta": "2026-10-28T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     },
@@ -89,7 +89,7 @@
     {
       "reference": "#16 black",
       "container": "MRKU2538940",
-      "status": "LOADED",
+      "status": "SAILING",
       "eta": "2026-11-04T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
@@ -159,5 +159,214 @@
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "type": "CHANGED",
+      "container": "UETU6022230",
+      "reference": "#09 InPost",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "eta",
+          "before": "2026-10-24T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00"
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00"
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 4,
+          "after": 7
+        },
+        {
+          "field": "metrics.predicted_vs_carrier_days",
+          "before": 1,
+          "after": 0
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDN",
+              "name": "GDANSK",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "MSC KALINA",
+              "imo": 9399026
+            },
+            "voyage": "GA633W",
+            "timestamp": "2026-10-23T12:00:00+02:00",
+            "container_number": "UETU6022230"
+          },
+          "after": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "PLGDN",
+              "name": "GDANSK",
+              "timezone": "Europe/Warsaw",
+              "country": {
+                "code": "PL",
+                "name": "Poland"
+              }
+            },
+            "vessel": {
+              "name": "MSC KALINA",
+              "imo": 9399026
+            },
+            "voyage": "GA633W",
+            "timestamp": "2026-10-27T12:00:00+01:00",
+            "container_number": "UETU6022230"
+          }
+        }
+      ]
+    },
+    {
+      "type": "CHANGED",
+      "container": "MSNU7337919",
+      "reference": "#07 InPost",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "eta",
+          "before": "2026-10-25T12:00:00+01:00",
+          "after": "2026-10-28T12:00:00+01:00"
+        },
+        {
+          "field": "eta_carrier",
+          "before": "2026-10-23T12:00:00+02:00",
+          "after": "2026-10-27T12:00:00+01:00"
+        },
+        {
+          "field": "metrics.eta_slip_days",
+          "before": 13,
+          "after": 16
+        },
+        {
+          "field": "metrics.predicted_vs_carrier_days",
+          "before": 2,
+          "after": 1
+        }
+      ]
+    },
+    {
+      "type": "CHANGED",
+      "container": "MRKU2538940",
+      "reference": "#16 black",
+      "risk": "RED",
+      "fields": [
+        {
+          "field": "status",
+          "before": "LOADED",
+          "after": "SAILING"
+        },
+        {
+          "field": "container_status",
+          "before": "LOADED",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-16T12:00:00+08:00"
+        },
+        {
+          "field": "last_movement",
+          "before": {
+            "event": "LOAD",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "AL MURAYKH",
+              "imo": 9708863
+            },
+            "voyage": "636W",
+            "timestamp": "2026-09-14T12:00:00+08:00",
+            "container_number": "MRKU2538940"
+          },
+          "after": {
+            "event": "DEPA",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "AL MURAYKH",
+              "imo": 9708863
+            },
+            "voyage": "636W",
+            "timestamp": "2026-09-16T12:00:00+08:00",
+            "container_number": "MRKU2538940"
+          }
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "DEPA",
+            "status": "EST",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "AL MURAYKH",
+              "imo": 9708863
+            },
+            "voyage": "636W",
+            "timestamp": "2026-09-15T12:00:00+08:00",
+            "container_number": "MRKU2538940"
+          },
+          "after": {
+            "event": "ARRV",
+            "status": "EST",
+            "location": {
+              "code": "DEWVN",
+              "name": "WILHELMSHAVEN",
+              "timezone": "Europe/Berlin",
+              "country": {
+                "code": "DE",
+                "name": "Germany"
+              }
+            },
+            "vessel": {
+              "name": "AL MURAYKH",
+              "imo": 9708863
+            },
+            "voyage": "636W",
+            "timestamp": "2026-10-20T12:00:00+02:00",
+            "container_number": "MRKU2538940"
+          }
+        }
+      ]
+    }
+  ]
 }
