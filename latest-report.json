@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-17T05:14:35.277Z",
-  "previous_snapshot_at": "2026-09-16T17:13:28.305Z",
+  "fetched_at": "2026-09-17T09:15:22.245Z",
+  "previous_snapshot_at": "2026-09-17T05:14:34.777Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 9,
     "inpost_orange": 2,
     "other_exceptions": 10,
-    "detected_changes": 3
+    "detected_changes": 0
   },
   "priority_inpost": [
     {
@@ -928,94 +928,7 @@
       "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
-  "changes": [
-    {
-      "id": 6714607,
-      "reference": "#16 black",
-      "shipment_number": "MRKU2538940",
-      "carrier": "MAERSK LINE",
-      "status": "SAILING",
-      "eta": "2026-11-04T12:00:00+01:00",
-      "etd": "2026-09-14T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "info",
-      "changes": [
-        {
-          "field": "status",
-          "before": "LOADED",
-          "after": "SAILING"
-        },
-        {
-          "field": "container_status",
-          "before": "LOADED",
-          "after": "SAILING"
-        },
-        {
-          "field": "atd",
-          "before": null,
-          "after": "2026-09-16T12:00:00+08:00"
-        },
-        {
-          "field": "new_actual_movement",
-          "event": "DEPA",
-          "location": "NINGBO",
-          "vessel": "AL MURAYKH",
-          "voyage": "636W",
-          "timestamp": "2026-09-16T12:00:00+08:00"
-        }
-      ]
-    },
-    {
-      "id": 6637820,
-      "reference": "#09 InPost",
-      "shipment_number": "UETU6022230",
-      "carrier": "MSC",
-      "status": "SAILING",
-      "eta": "2026-10-27T12:00:00+01:00",
-      "etd": "2026-09-05T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "high",
-      "changes": [
-        {
-          "field": "eta",
-          "before": "2026-10-24T12:00:00+02:00",
-          "after": "2026-10-27T12:00:00+01:00",
-          "delta_days": 3
-        },
-        {
-          "field": "eta_carrier",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-27T12:00:00+01:00",
-          "delta_days": 4
-        }
-      ]
-    },
-    {
-      "id": 6626480,
-      "reference": "#07 InPost",
-      "shipment_number": "MSNU7337919",
-      "carrier": "MSC",
-      "status": "SAILING",
-      "eta": "2026-10-28T12:00:00+01:00",
-      "etd": "2026-08-26T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "high",
-      "changes": [
-        {
-          "field": "eta",
-          "before": "2026-10-25T12:00:00+01:00",
-          "after": "2026-10-28T12:00:00+01:00",
-          "delta_days": 3
-        },
-        {
-          "field": "eta_carrier",
-          "before": "2026-10-23T12:00:00+02:00",
-          "after": "2026-10-27T12:00:00+01:00",
-          "delta_days": 4
-        }
-      ]
-    }
-  ],
+  "changes": [],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1679,6 +1592,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-17T05:14:35.277Z",
-  "published_at": "2026-09-17T05:14:35.324Z"
+  "generated_at": "2026-09-17T09:15:22.245Z",
+  "published_at": "2026-09-17T09:15:22.273Z"
 }
