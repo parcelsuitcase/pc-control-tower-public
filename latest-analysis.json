@@ -1,19 +1,43 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-18T09:14:52.079Z",
-  "current_generated_at": "2026-09-18T09:14:52.058Z",
-  "previous_generated_at": "2026-09-18T05:13:32.912Z",
+  "analyzed_at": "2026-09-18T13:14:06.746Z",
+  "current_generated_at": "2026-09-18T13:14:06.727Z",
+  "previous_generated_at": "2026-09-18T09:14:52.058Z",
   "baseline": false,
-  "change_count": 1,
+  "change_count": 4,
   "summary": {
-    "inpost_total": 14,
-    "inpost_red": 10,
+    "inpost_total": 17,
+    "inpost_red": 13,
     "inpost_orange": 1,
     "other_exceptions": 10,
     "detected_changes": 1
   },
   "red_alerts": [
+    {
+      "reference": "#27 InPost XMAS",
+      "container": "MIEU4052515",
+      "status": "BOOKED",
+      "eta": "2026-11-03T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#28 InPost MIX",
+      "container": "TLLU5997519",
+      "status": "BOOKED",
+      "eta": "2026-11-03T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#24 InPost",
+      "container": "GAOU7267561",
+      "status": "BOOKED",
+      "eta": "2026-11-03T12:00:00+01:00",
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
     {
       "reference": "#21 InPost",
       "container": "TCNU1157793",
@@ -25,7 +49,7 @@
     {
       "reference": "#22 InPost",
       "container": "TIIU6167828",
-      "status": "BOOKED",
+      "status": "SAILING",
       "eta": "2026-10-28T12:00:00+01:00",
       "risk": "RED",
       "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
@@ -177,20 +201,83 @@
   ],
   "changes": [
     {
+      "type": "NEW_SHIPMENT",
+      "container": "MIEU4052515",
+      "reference": "#27 InPost XMAS",
+      "risk": "RED"
+    },
+    {
+      "type": "NEW_SHIPMENT",
+      "container": "TLLU5997519",
+      "reference": "#28 InPost MIX",
+      "risk": "RED"
+    },
+    {
+      "type": "NEW_SHIPMENT",
+      "container": "GAOU7267561",
+      "reference": "#24 InPost",
+      "risk": "RED"
+    },
+    {
       "type": "CHANGED",
-      "container": "TLLU4396874",
-      "reference": "#23 InPost",
-      "risk": "ORANGE",
+      "container": "TIIU6167828",
+      "reference": "#22 InPost",
+      "risk": "RED",
       "fields": [
         {
-          "field": "etd",
-          "before": "2026-09-18T12:00:00+08:00",
-          "after": "2026-09-19T12:00:00+08:00"
+          "field": "status",
+          "before": "BOOKED",
+          "after": "SAILING"
         },
         {
-          "field": "metrics.etd_slip_days",
-          "before": 0,
-          "after": 1
+          "field": "container_status",
+          "before": "GATE_IN",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-17T12:00:00+08:00"
+        },
+        {
+          "field": "last_movement",
+          "before": {
+            "event": "GTIN",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": null,
+            "voyage": null,
+            "timestamp": "2026-09-13T12:00:00+08:00",
+            "container_number": "TIIU6167828"
+          },
+          "after": {
+            "event": "DEPA",
+            "status": "ACT",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "COSCO SHIPPING STAR",
+              "imo": 9795658
+            },
+            "voyage": "0FANVW1MA",
+            "timestamp": "2026-09-17T12:00:00+08:00",
+            "container_number": "TIIU6167828"
+          }
         },
         {
           "field": "next_movement",
@@ -207,32 +294,32 @@
               }
             },
             "vessel": {
-              "name": "OOCL FINLAND",
-              "imo": 9922536
+              "name": "COSCO SHIPPING STAR",
+              "imo": 9795658
             },
-            "voyage": "0VAORW1MA",
-            "timestamp": "2026-09-18T12:00:00+08:00",
-            "container_number": "TLLU4396874"
+            "voyage": "0FANVW1MA",
+            "timestamp": "2026-09-17T12:00:00+08:00",
+            "container_number": "TIIU6167828"
           },
           "after": {
-            "event": "LOAD",
+            "event": "ARRV",
             "status": "EST",
             "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
+              "code": "DEHAM",
+              "name": "HAMBURG",
+              "timezone": "Europe/Berlin",
               "country": {
-                "code": "CN",
-                "name": "China"
+                "code": "DE",
+                "name": "Germany"
               }
             },
             "vessel": {
-              "name": "OOCL FINLAND",
-              "imo": 9922536
+              "name": "COSCO SHIPPING STAR",
+              "imo": 9795658
             },
-            "voyage": "0VAORW1MA",
-            "timestamp": "2026-09-19T12:00:00+08:00",
-            "container_number": "TLLU4396874"
+            "voyage": "0FANVW1MA",
+            "timestamp": "2026-10-21T12:00:00+02:00",
+            "container_number": "TIIU6167828"
           }
         }
       ]

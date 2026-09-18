@@ -1,17 +1,206 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-18T09:14:52.058Z",
-  "previous_snapshot_at": "2026-09-18T05:13:32.497Z",
+  "fetched_at": "2026-09-18T13:14:06.727Z",
+  "previous_snapshot_at": "2026-09-18T09:14:51.427Z",
   "detail_errors": 0,
   "summary": {
-    "inpost_total": 14,
-    "inpost_red": 10,
+    "inpost_total": 17,
+    "inpost_red": 13,
     "inpost_orange": 1,
     "other_exceptions": 10,
     "detected_changes": 1
   },
   "priority_inpost": [
+    {
+      "reference": "#27 InPost XMAS",
+      "container": "MIEU4052515",
+      "carrier": "MAERSK LINE",
+      "status": "BOOKED",
+      "container_status": "EMPTY_SHIPPER",
+      "pol": "NINGBO",
+      "pod": "ROTTERDAM",
+      "etd": "2026-09-23T12:00:00+08:00",
+      "etd_initial": "2026-09-23T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-11-03T12:00:00+01:00",
+      "eta_carrier": "2026-10-31T12:00:00+01:00",
+      "eta_initial": "2026-10-31T12:00:00+01:00",
+      "ata": null,
+      "vessel": "MARIT MAERSK",
+      "voyage": "638W",
+      "transshipments": 1,
+      "last_movement": {
+        "event": "EMSH",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-17T12:00:00+08:00",
+        "container_number": "MIEU4052515"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "MARIT MAERSK",
+          "imo": 9632167
+        },
+        "voyage": "638W",
+        "timestamp": "2026-09-23T12:00:00+08:00",
+        "container_number": "MIEU4052515"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 3,
+        "predicted_vs_carrier_days": 3
+      },
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#28 InPost MIX",
+      "container": "TLLU5997519",
+      "carrier": "MAERSK LINE",
+      "status": "BOOKED",
+      "container_status": "EMPTY_SHIPPER",
+      "pol": "NINGBO",
+      "pod": "ROTTERDAM",
+      "etd": "2026-09-23T12:00:00+08:00",
+      "etd_initial": "2026-09-23T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-11-03T12:00:00+01:00",
+      "eta_carrier": "2026-10-31T12:00:00+01:00",
+      "eta_initial": "2026-10-31T12:00:00+01:00",
+      "ata": null,
+      "vessel": "MARIT MAERSK",
+      "voyage": "638W",
+      "transshipments": 1,
+      "last_movement": {
+        "event": "EMSH",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-17T12:00:00+08:00",
+        "container_number": "TLLU5997519"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "MARIT MAERSK",
+          "imo": 9632167
+        },
+        "voyage": "638W",
+        "timestamp": "2026-09-23T12:00:00+08:00",
+        "container_number": "TLLU5997519"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 3,
+        "predicted_vs_carrier_days": 3
+      },
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
+    {
+      "reference": "#24 InPost",
+      "container": "GAOU7267561",
+      "carrier": "MAERSK LINE",
+      "status": "BOOKED",
+      "container_status": "EMPTY_SHIPPER",
+      "pol": "NINGBO",
+      "pod": "ROTTERDAM",
+      "etd": "2026-09-23T12:00:00+08:00",
+      "etd_initial": "2026-09-23T12:00:00+08:00",
+      "atd": null,
+      "eta": "2026-11-03T12:00:00+01:00",
+      "eta_carrier": "2026-10-31T12:00:00+01:00",
+      "eta_initial": "2026-10-31T12:00:00+01:00",
+      "ata": null,
+      "vessel": "MARIT MAERSK",
+      "voyage": "638W",
+      "transshipments": 1,
+      "last_movement": {
+        "event": "EMSH",
+        "status": "ACT",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": null,
+        "voyage": null,
+        "timestamp": "2026-09-17T12:00:00+08:00",
+        "container_number": "GAOU7267561"
+      },
+      "next_movement": {
+        "event": "LOAD",
+        "status": "EST",
+        "location": {
+          "code": "CNNBG",
+          "name": "NINGBO",
+          "timezone": "Asia/Shanghai",
+          "country": {
+            "code": "CN",
+            "name": "China"
+          }
+        },
+        "vessel": {
+          "name": "MARIT MAERSK",
+          "imo": 9632167
+        },
+        "voyage": "638W",
+        "timestamp": "2026-09-23T12:00:00+08:00",
+        "container_number": "GAOU7267561"
+      },
+      "metrics": {
+        "etd_slip_days": 0,
+        "eta_slip_days": 3,
+        "predicted_vs_carrier_days": 3
+      },
+      "risk": "RED",
+      "recommended_action": "Zweryfikuj ETA z armatorem; ShipsGo wskazuje istotnie późniejsze przybycie."
+    },
     {
       "reference": "#21 InPost",
       "container": "TCNU1157793",
@@ -79,13 +268,13 @@
       "reference": "#22 InPost",
       "container": "TIIU6167828",
       "carrier": "CMA CGM",
-      "status": "BOOKED",
-      "container_status": "GATE_IN",
+      "status": "SAILING",
+      "container_status": "SAILING",
       "pol": "NINGBO",
       "pod": "HAMBURG",
       "etd": "2026-09-17T12:00:00+08:00",
       "etd_initial": "2026-09-17T12:00:00+08:00",
-      "atd": null,
+      "atd": "2026-09-17T12:00:00+08:00",
       "eta": "2026-10-28T12:00:00+01:00",
       "eta_carrier": "2026-10-21T12:00:00+02:00",
       "eta_initial": "2026-10-21T12:00:00+02:00",
@@ -94,25 +283,8 @@
       "voyage": "0FANVW1MA",
       "transshipments": 0,
       "last_movement": {
-        "event": "GTIN",
+        "event": "DEPA",
         "status": "ACT",
-        "location": {
-          "code": "CNNBG",
-          "name": "NINGBO",
-          "timezone": "Asia/Shanghai",
-          "country": {
-            "code": "CN",
-            "name": "China"
-          }
-        },
-        "vessel": null,
-        "voyage": null,
-        "timestamp": "2026-09-13T12:00:00+08:00",
-        "container_number": "TIIU6167828"
-      },
-      "next_movement": {
-        "event": "LOAD",
-        "status": "EST",
         "location": {
           "code": "CNNBG",
           "name": "NINGBO",
@@ -128,6 +300,26 @@
         },
         "voyage": "0FANVW1MA",
         "timestamp": "2026-09-17T12:00:00+08:00",
+        "container_number": "TIIU6167828"
+      },
+      "next_movement": {
+        "event": "ARRV",
+        "status": "EST",
+        "location": {
+          "code": "DEHAM",
+          "name": "HAMBURG",
+          "timezone": "Europe/Berlin",
+          "country": {
+            "code": "DE",
+            "name": "Germany"
+          }
+        },
+        "vessel": {
+          "name": "COSCO SHIPPING STAR",
+          "imo": 9795658
+        },
+        "voyage": "0FANVW1MA",
+        "timestamp": "2026-10-21T12:00:00+02:00",
         "container_number": "TIIU6167828"
       },
       "metrics": {
@@ -930,21 +1122,46 @@
   ],
   "changes": [
     {
-      "id": 6732565,
-      "reference": "#23 InPost",
-      "shipment_number": "TLLU4396874",
+      "id": 6724937,
+      "reference": "#22 InPost",
+      "shipment_number": "TIIU6167828",
       "carrier": "CMA CGM",
-      "status": "BOOKED",
-      "eta": "2026-11-06T12:00:00+01:00",
-      "etd": "2026-09-19T12:00:00+08:00",
+      "status": "SAILING",
+      "eta": "2026-10-28T12:00:00+01:00",
+      "etd": "2026-09-17T12:00:00+08:00",
       "type": "CHANGED",
-      "severity": "medium",
+      "severity": "info",
       "changes": [
         {
-          "field": "etd",
-          "before": "2026-09-18T12:00:00+08:00",
-          "after": "2026-09-19T12:00:00+08:00",
-          "delta_days": 1
+          "field": "status",
+          "before": "BOOKED",
+          "after": "SAILING"
+        },
+        {
+          "field": "container_status",
+          "before": "GATE_IN",
+          "after": "SAILING"
+        },
+        {
+          "field": "atd",
+          "before": null,
+          "after": "2026-09-17T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "LOAD",
+          "location": "NINGBO",
+          "vessel": "COSCO SHIPPING STAR",
+          "voyage": "0FANVW1MA",
+          "timestamp": "2026-09-17T12:00:00+08:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "DEPA",
+          "location": "NINGBO",
+          "vessel": "COSCO SHIPPING STAR",
+          "voyage": "0FANVW1MA",
+          "timestamp": "2026-09-17T12:00:00+08:00"
         }
       ]
     }
@@ -1612,6 +1829,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-18T09:14:52.058Z",
-  "published_at": "2026-09-18T09:14:52.079Z"
+  "generated_at": "2026-09-18T13:14:06.727Z",
+  "published_at": "2026-09-18T13:14:06.746Z"
 }
