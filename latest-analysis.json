@@ -1,11 +1,11 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-18T13:14:06.746Z",
-  "current_generated_at": "2026-09-18T13:14:06.727Z",
-  "previous_generated_at": "2026-09-18T09:14:52.058Z",
+  "analyzed_at": "2026-09-18T17:12:54.751Z",
+  "current_generated_at": "2026-09-18T17:12:54.725Z",
+  "previous_generated_at": "2026-09-18T13:14:06.727Z",
   "baseline": false,
-  "change_count": 4,
+  "change_count": 1,
   "summary": {
     "inpost_total": 17,
     "inpost_red": 13,
@@ -201,48 +201,20 @@
   ],
   "changes": [
     {
-      "type": "NEW_SHIPMENT",
-      "container": "MIEU4052515",
-      "reference": "#27 InPost XMAS",
-      "risk": "RED"
-    },
-    {
-      "type": "NEW_SHIPMENT",
-      "container": "TLLU5997519",
-      "reference": "#28 InPost MIX",
-      "risk": "RED"
-    },
-    {
-      "type": "NEW_SHIPMENT",
-      "container": "GAOU7267561",
-      "reference": "#24 InPost",
-      "risk": "RED"
-    },
-    {
       "type": "CHANGED",
-      "container": "TIIU6167828",
-      "reference": "#22 InPost",
+      "container": "TCNU1157793",
+      "reference": "#21 InPost",
       "risk": "RED",
       "fields": [
         {
-          "field": "status",
-          "before": "BOOKED",
-          "after": "SAILING"
-        },
-        {
           "field": "container_status",
-          "before": "GATE_IN",
-          "after": "SAILING"
-        },
-        {
-          "field": "atd",
-          "before": null,
-          "after": "2026-09-17T12:00:00+08:00"
+          "before": "EMPTY_SHIPPER",
+          "after": "GATE_IN"
         },
         {
           "field": "last_movement",
           "before": {
-            "event": "GTIN",
+            "event": "EMSH",
             "status": "ACT",
             "location": {
               "code": "CNNBG",
@@ -256,10 +228,10 @@
             "vessel": null,
             "voyage": null,
             "timestamp": "2026-09-13T12:00:00+08:00",
-            "container_number": "TIIU6167828"
+            "container_number": "TCNU1157793"
           },
           "after": {
-            "event": "DEPA",
+            "event": "GTIN",
             "status": "ACT",
             "location": {
               "code": "CNNBG",
@@ -270,56 +242,10 @@
                 "name": "China"
               }
             },
-            "vessel": {
-              "name": "COSCO SHIPPING STAR",
-              "imo": 9795658
-            },
-            "voyage": "0FANVW1MA",
+            "vessel": null,
+            "voyage": null,
             "timestamp": "2026-09-17T12:00:00+08:00",
-            "container_number": "TIIU6167828"
-          }
-        },
-        {
-          "field": "next_movement",
-          "before": {
-            "event": "LOAD",
-            "status": "EST",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": {
-              "name": "COSCO SHIPPING STAR",
-              "imo": 9795658
-            },
-            "voyage": "0FANVW1MA",
-            "timestamp": "2026-09-17T12:00:00+08:00",
-            "container_number": "TIIU6167828"
-          },
-          "after": {
-            "event": "ARRV",
-            "status": "EST",
-            "location": {
-              "code": "DEHAM",
-              "name": "HAMBURG",
-              "timezone": "Europe/Berlin",
-              "country": {
-                "code": "DE",
-                "name": "Germany"
-              }
-            },
-            "vessel": {
-              "name": "COSCO SHIPPING STAR",
-              "imo": 9795658
-            },
-            "voyage": "0FANVW1MA",
-            "timestamp": "2026-10-21T12:00:00+02:00",
-            "container_number": "TIIU6167828"
+            "container_number": "TCNU1157793"
           }
         }
       ]

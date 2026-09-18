@@ -1,8 +1,8 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-18T13:14:06.727Z",
-  "previous_snapshot_at": "2026-09-18T09:14:51.427Z",
+  "fetched_at": "2026-09-18T17:12:54.725Z",
+  "previous_snapshot_at": "2026-09-18T13:14:06.094Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 17,
@@ -206,7 +206,7 @@
       "container": "TCNU1157793",
       "carrier": "MSC",
       "status": "BOOKED",
-      "container_status": "EMPTY_SHIPPER",
+      "container_status": "GATE_IN",
       "pol": "NINGBO",
       "pod": "GDANSK",
       "etd": "2026-09-21T12:00:00+08:00",
@@ -220,7 +220,7 @@
       "voyage": "GA635W",
       "transshipments": 0,
       "last_movement": {
-        "event": "EMSH",
+        "event": "GTIN",
         "status": "ACT",
         "location": {
           "code": "CNNBG",
@@ -233,7 +233,7 @@
         },
         "vessel": null,
         "voyage": null,
-        "timestamp": "2026-09-13T12:00:00+08:00",
+        "timestamp": "2026-09-17T12:00:00+08:00",
         "container_number": "TCNU1157793"
       },
       "next_movement": {
@@ -1122,45 +1122,27 @@
   ],
   "changes": [
     {
-      "id": 6724937,
-      "reference": "#22 InPost",
-      "shipment_number": "TIIU6167828",
-      "carrier": "CMA CGM",
-      "status": "SAILING",
-      "eta": "2026-10-28T12:00:00+01:00",
-      "etd": "2026-09-17T12:00:00+08:00",
+      "id": 6739340,
+      "reference": "#21 InPost",
+      "shipment_number": "TCNU1157793",
+      "carrier": "MSC",
+      "status": "BOOKED",
+      "eta": "2026-11-07T12:00:00+01:00",
+      "etd": "2026-09-21T12:00:00+08:00",
       "type": "CHANGED",
       "severity": "info",
       "changes": [
         {
-          "field": "status",
-          "before": "BOOKED",
-          "after": "SAILING"
-        },
-        {
           "field": "container_status",
-          "before": "GATE_IN",
-          "after": "SAILING"
-        },
-        {
-          "field": "atd",
-          "before": null,
-          "after": "2026-09-17T12:00:00+08:00"
+          "before": "EMPTY_SHIPPER",
+          "after": "GATE_IN"
         },
         {
           "field": "new_actual_movement",
-          "event": "LOAD",
+          "event": "GTIN",
           "location": "NINGBO",
-          "vessel": "COSCO SHIPPING STAR",
-          "voyage": "0FANVW1MA",
-          "timestamp": "2026-09-17T12:00:00+08:00"
-        },
-        {
-          "field": "new_actual_movement",
-          "event": "DEPA",
-          "location": "NINGBO",
-          "vessel": "COSCO SHIPPING STAR",
-          "voyage": "0FANVW1MA",
+          "vessel": null,
+          "voyage": null,
           "timestamp": "2026-09-17T12:00:00+08:00"
         }
       ]
@@ -1829,6 +1811,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-18T13:14:06.727Z",
-  "published_at": "2026-09-18T13:14:06.746Z"
+  "generated_at": "2026-09-18T17:12:54.725Z",
+  "published_at": "2026-09-18T17:12:54.751Z"
 }
