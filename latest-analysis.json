@@ -1,9 +1,9 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-18T05:13:32.931Z",
-  "current_generated_at": "2026-09-18T05:13:32.912Z",
-  "previous_generated_at": "2026-09-17T17:12:52.596Z",
+  "analyzed_at": "2026-09-18T09:14:52.079Z",
+  "current_generated_at": "2026-09-18T09:14:52.058Z",
+  "previous_generated_at": "2026-09-18T05:13:32.912Z",
   "baseline": false,
   "change_count": 1,
   "summary": {
@@ -11,7 +11,7 @@
     "inpost_red": 10,
     "inpost_orange": 1,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 1
   },
   "red_alerts": [
     {
@@ -177,10 +177,65 @@
   ],
   "changes": [
     {
-      "type": "REMOVED_SHIPMENT",
-      "container": "TFLU4505062",
-      "reference": "#12 Empik kolory",
-      "previous_risk": "GREEN"
+      "type": "CHANGED",
+      "container": "TLLU4396874",
+      "reference": "#23 InPost",
+      "risk": "ORANGE",
+      "fields": [
+        {
+          "field": "etd",
+          "before": "2026-09-18T12:00:00+08:00",
+          "after": "2026-09-19T12:00:00+08:00"
+        },
+        {
+          "field": "metrics.etd_slip_days",
+          "before": 0,
+          "after": 1
+        },
+        {
+          "field": "next_movement",
+          "before": {
+            "event": "LOAD",
+            "status": "EST",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "OOCL FINLAND",
+              "imo": 9922536
+            },
+            "voyage": "0VAORW1MA",
+            "timestamp": "2026-09-18T12:00:00+08:00",
+            "container_number": "TLLU4396874"
+          },
+          "after": {
+            "event": "LOAD",
+            "status": "EST",
+            "location": {
+              "code": "CNNBG",
+              "name": "NINGBO",
+              "timezone": "Asia/Shanghai",
+              "country": {
+                "code": "CN",
+                "name": "China"
+              }
+            },
+            "vessel": {
+              "name": "OOCL FINLAND",
+              "imo": 9922536
+            },
+            "voyage": "0VAORW1MA",
+            "timestamp": "2026-09-19T12:00:00+08:00",
+            "container_number": "TLLU4396874"
+          }
+        }
+      ]
     }
   ]
 }

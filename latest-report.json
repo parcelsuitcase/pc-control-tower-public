@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-18T05:13:32.912Z",
-  "previous_snapshot_at": "2026-09-17T17:12:52.182Z",
+  "fetched_at": "2026-09-18T09:14:52.058Z",
+  "previous_snapshot_at": "2026-09-18T05:13:32.497Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 14,
     "inpost_red": 10,
     "inpost_orange": 1,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 1
   },
   "priority_inpost": [
     {
@@ -674,7 +674,7 @@
       "container_status": "GATE_IN",
       "pol": "NINGBO",
       "pod": "GDANSK",
-      "etd": "2026-09-18T12:00:00+08:00",
+      "etd": "2026-09-19T12:00:00+08:00",
       "etd_initial": "2026-09-18T12:00:00+08:00",
       "atd": null,
       "eta": "2026-11-06T12:00:00+01:00",
@@ -718,11 +718,11 @@
           "imo": 9922536
         },
         "voyage": "0VAORW1MA",
-        "timestamp": "2026-09-18T12:00:00+08:00",
+        "timestamp": "2026-09-19T12:00:00+08:00",
         "container_number": "TLLU4396874"
       },
       "metrics": {
-        "etd_slip_days": 0,
+        "etd_slip_days": 1,
         "eta_slip_days": 2,
         "predicted_vs_carrier_days": 2
       },
@@ -928,7 +928,27 @@
       "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "id": 6732565,
+      "reference": "#23 InPost",
+      "shipment_number": "TLLU4396874",
+      "carrier": "CMA CGM",
+      "status": "BOOKED",
+      "eta": "2026-11-06T12:00:00+01:00",
+      "etd": "2026-09-19T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "medium",
+      "changes": [
+        {
+          "field": "etd",
+          "before": "2026-09-18T12:00:00+08:00",
+          "after": "2026-09-19T12:00:00+08:00",
+          "delta_days": 1
+        }
+      ]
+    }
+  ],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1592,6 +1612,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-18T05:13:32.912Z",
-  "published_at": "2026-09-18T05:13:32.931Z"
+  "generated_at": "2026-09-18T09:14:52.058Z",
+  "published_at": "2026-09-18T09:14:52.079Z"
 }
