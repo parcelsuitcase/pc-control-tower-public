@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-19T13:14:16.434Z",
-  "current_generated_at": "2026-09-19T13:14:16.402Z",
-  "previous_generated_at": "2026-09-19T09:14:24.792Z",
+  "analyzed_at": "2026-09-19T17:12:37.661Z",
+  "current_generated_at": "2026-09-19T17:12:37.631Z",
+  "previous_generated_at": "2026-09-19T13:14:16.402Z",
   "baseline": false,
-  "change_count": 1,
+  "change_count": 0,
   "summary": {
     "inpost_total": 17,
     "inpost_red": 13,
     "inpost_orange": 1,
     "other_exceptions": 10,
-    "detected_changes": 1
+    "detected_changes": 0
   },
   "red_alerts": [
     {
@@ -199,115 +199,5 @@
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
-  "changes": [
-    {
-      "type": "CHANGED",
-      "container": "TFLU4987555",
-      "reference": "#03 InPost - CAX",
-      "risk": "RED",
-      "fields": [
-        {
-          "field": "status",
-          "before": "SAILING",
-          "after": "ARRIVED"
-        },
-        {
-          "field": "container_status",
-          "before": "SAILING",
-          "after": "ARRIVED"
-        },
-        {
-          "field": "ata",
-          "before": null,
-          "after": "2026-09-18T12:00:00+02:00"
-        },
-        {
-          "field": "last_movement",
-          "before": {
-            "event": "DEPA",
-            "status": "ACT",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": {
-              "name": "DUBAI TOWER",
-              "imo": 9433066
-            },
-            "voyage": "2633W",
-            "timestamp": "2026-08-15T12:00:00+08:00",
-            "container_number": "TFLU4987555"
-          },
-          "after": {
-            "event": "ARRV",
-            "status": "ACT",
-            "location": {
-              "code": "PLGDY",
-              "name": "GDYNIA",
-              "timezone": "Europe/Warsaw",
-              "country": {
-                "code": "PL",
-                "name": "Poland"
-              }
-            },
-            "vessel": {
-              "name": "DUBAI TOWER",
-              "imo": 9433066
-            },
-            "voyage": "2633W",
-            "timestamp": "2026-09-18T12:00:00+02:00",
-            "container_number": "TFLU4987555"
-          }
-        },
-        {
-          "field": "next_movement",
-          "before": {
-            "event": "ARRV",
-            "status": "EST",
-            "location": {
-              "code": "PLGDY",
-              "name": "GDYNIA",
-              "timezone": "Europe/Warsaw",
-              "country": {
-                "code": "PL",
-                "name": "Poland"
-              }
-            },
-            "vessel": {
-              "name": "DUBAI TOWER",
-              "imo": 9433066
-            },
-            "voyage": "2633W",
-            "timestamp": "2026-09-18T12:00:00+02:00",
-            "container_number": "TFLU4987555"
-          },
-          "after": {
-            "event": "DISC",
-            "status": "EST",
-            "location": {
-              "code": "PLGDY",
-              "name": "GDYNIA",
-              "timezone": "Europe/Warsaw",
-              "country": {
-                "code": "PL",
-                "name": "Poland"
-              }
-            },
-            "vessel": {
-              "name": "DUBAI TOWER",
-              "imo": 9433066
-            },
-            "voyage": "2633W",
-            "timestamp": "2026-09-18T12:00:00+02:00",
-            "container_number": "TFLU4987555"
-          }
-        }
-      ]
-    }
-  ]
+  "changes": []
 }

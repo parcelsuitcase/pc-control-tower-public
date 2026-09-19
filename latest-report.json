@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-19T13:14:16.402Z",
-  "previous_snapshot_at": "2026-09-19T09:14:24.378Z",
+  "fetched_at": "2026-09-19T17:12:37.631Z",
+  "previous_snapshot_at": "2026-09-19T13:14:15.926Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 17,
     "inpost_red": 13,
     "inpost_orange": 1,
     "other_exceptions": 10,
-    "detected_changes": 1
+    "detected_changes": 0
   },
   "priority_inpost": [
     {
@@ -1120,44 +1120,7 @@
       "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
-  "changes": [
-    {
-      "id": 6597896,
-      "reference": "#03 InPost - CAX",
-      "shipment_number": "TFLU4987555",
-      "carrier": "SEA LEGEND SHIPPING",
-      "status": "ARRIVED",
-      "eta": "2026-09-18T12:00:00+02:00",
-      "etd": "2026-08-15T12:00:00+08:00",
-      "type": "CHANGED",
-      "severity": "info",
-      "changes": [
-        {
-          "field": "status",
-          "before": "SAILING",
-          "after": "ARRIVED"
-        },
-        {
-          "field": "container_status",
-          "before": "SAILING",
-          "after": "ARRIVED"
-        },
-        {
-          "field": "ata",
-          "before": null,
-          "after": "2026-09-18T12:00:00+02:00"
-        },
-        {
-          "field": "new_actual_movement",
-          "event": "ARRV",
-          "location": "GDYNIA",
-          "vessel": "DUBAI TOWER",
-          "voyage": "2633W",
-          "timestamp": "2026-09-18T12:00:00+02:00"
-        }
-      ]
-    }
-  ],
+  "changes": [],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1821,6 +1784,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-19T13:14:16.402Z",
-  "published_at": "2026-09-19T13:14:16.434Z"
+  "generated_at": "2026-09-19T17:12:37.631Z",
+  "published_at": "2026-09-19T17:12:37.661Z"
 }
