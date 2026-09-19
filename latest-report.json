@@ -1,15 +1,15 @@
 {
   "source": "Parcel Case Control Tower",
   "bridge_version": "2.6.0",
-  "fetched_at": "2026-09-19T09:14:24.792Z",
-  "previous_snapshot_at": "2026-09-19T05:13:18.398Z",
+  "fetched_at": "2026-09-19T13:14:16.402Z",
+  "previous_snapshot_at": "2026-09-19T09:14:24.378Z",
   "detail_errors": 0,
   "summary": {
     "inpost_total": 17,
     "inpost_red": 13,
     "inpost_orange": 1,
     "other_exceptions": 10,
-    "detected_changes": 0
+    "detected_changes": 1
   },
   "priority_inpost": [
     {
@@ -796,8 +796,8 @@
       "reference": "#03 InPost - CAX",
       "container": "TFLU4987555",
       "carrier": "SEA LEGEND SHIPPING",
-      "status": "SAILING",
-      "container_status": "SAILING",
+      "status": "ARRIVED",
+      "container_status": "ARRIVED",
       "pol": "NINGBO",
       "pod": "GDYNIA",
       "etd": "2026-08-15T12:00:00+08:00",
@@ -806,20 +806,20 @@
       "eta": "2026-09-18T12:00:00+02:00",
       "eta_carrier": "2026-09-18T12:00:00+02:00",
       "eta_initial": "2026-09-13T12:00:00+02:00",
-      "ata": null,
+      "ata": "2026-09-18T12:00:00+02:00",
       "vessel": "DUBAI TOWER",
       "voyage": "2633W",
       "transshipments": 0,
       "last_movement": {
-        "event": "DEPA",
+        "event": "ARRV",
         "status": "ACT",
         "location": {
-          "code": "CNNBG",
-          "name": "NINGBO",
-          "timezone": "Asia/Shanghai",
+          "code": "PLGDY",
+          "name": "GDYNIA",
+          "timezone": "Europe/Warsaw",
           "country": {
-            "code": "CN",
-            "name": "China"
+            "code": "PL",
+            "name": "Poland"
           }
         },
         "vessel": {
@@ -827,11 +827,11 @@
           "imo": 9433066
         },
         "voyage": "2633W",
-        "timestamp": "2026-08-15T12:00:00+08:00",
+        "timestamp": "2026-09-18T12:00:00+02:00",
         "container_number": "TFLU4987555"
       },
       "next_movement": {
-        "event": "ARRV",
+        "event": "DISC",
         "status": "EST",
         "location": {
           "code": "PLGDY",
@@ -1120,7 +1120,44 @@
       "recommended_action": "Brak pilnej akcji; monitorować."
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "id": 6597896,
+      "reference": "#03 InPost - CAX",
+      "shipment_number": "TFLU4987555",
+      "carrier": "SEA LEGEND SHIPPING",
+      "status": "ARRIVED",
+      "eta": "2026-09-18T12:00:00+02:00",
+      "etd": "2026-08-15T12:00:00+08:00",
+      "type": "CHANGED",
+      "severity": "info",
+      "changes": [
+        {
+          "field": "status",
+          "before": "SAILING",
+          "after": "ARRIVED"
+        },
+        {
+          "field": "container_status",
+          "before": "SAILING",
+          "after": "ARRIVED"
+        },
+        {
+          "field": "ata",
+          "before": null,
+          "after": "2026-09-18T12:00:00+02:00"
+        },
+        {
+          "field": "new_actual_movement",
+          "event": "ARRV",
+          "location": "GDYNIA",
+          "vessel": "DUBAI TOWER",
+          "voyage": "2633W",
+          "timestamp": "2026-09-18T12:00:00+02:00"
+        }
+      ]
+    }
+  ],
   "other_exceptions": [
     {
       "reference": "#16 black",
@@ -1784,6 +1821,6 @@
     }
   ],
   "version": "2.6",
-  "generated_at": "2026-09-19T09:14:24.792Z",
-  "published_at": "2026-09-19T09:14:24.811Z"
+  "generated_at": "2026-09-19T13:14:16.402Z",
+  "published_at": "2026-09-19T13:14:16.434Z"
 }
