@@ -1,17 +1,17 @@
 {
   "version": "1.0",
   "source": "Parcel Case Control Tower comparison",
-  "analyzed_at": "2026-09-18T17:12:54.751Z",
-  "current_generated_at": "2026-09-18T17:12:54.725Z",
-  "previous_generated_at": "2026-09-18T13:14:06.727Z",
+  "analyzed_at": "2026-09-19T05:13:18.835Z",
+  "current_generated_at": "2026-09-19T05:13:18.806Z",
+  "previous_generated_at": "2026-09-18T17:12:54.725Z",
   "baseline": false,
-  "change_count": 1,
+  "change_count": 0,
   "summary": {
     "inpost_total": 17,
     "inpost_red": 13,
     "inpost_orange": 1,
     "other_exceptions": 10,
-    "detected_changes": 1
+    "detected_changes": 0
   },
   "red_alerts": [
     {
@@ -199,56 +199,5 @@
       "recommended_action": "Traktuj jako zagrożenie terminu dostawy i przygotuj plan awaryjny."
     }
   ],
-  "changes": [
-    {
-      "type": "CHANGED",
-      "container": "TCNU1157793",
-      "reference": "#21 InPost",
-      "risk": "RED",
-      "fields": [
-        {
-          "field": "container_status",
-          "before": "EMPTY_SHIPPER",
-          "after": "GATE_IN"
-        },
-        {
-          "field": "last_movement",
-          "before": {
-            "event": "EMSH",
-            "status": "ACT",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": null,
-            "voyage": null,
-            "timestamp": "2026-09-13T12:00:00+08:00",
-            "container_number": "TCNU1157793"
-          },
-          "after": {
-            "event": "GTIN",
-            "status": "ACT",
-            "location": {
-              "code": "CNNBG",
-              "name": "NINGBO",
-              "timezone": "Asia/Shanghai",
-              "country": {
-                "code": "CN",
-                "name": "China"
-              }
-            },
-            "vessel": null,
-            "voyage": null,
-            "timestamp": "2026-09-17T12:00:00+08:00",
-            "container_number": "TCNU1157793"
-          }
-        }
-      ]
-    }
-  ]
+  "changes": []
 }
